@@ -1,0 +1,46 @@
+table {
+  width: 500px;
+  height: 541px;
+  border: 1px solid white;
+  margin: 20px auto;
+}
+
+td {
+  border: 10px solid black;
+}
+
+.yellow {
+  background-color: #FFE339;
+}
+
+.black {
+  background-color: #262123;
+}
+
+.blue {
+  background-color: #004282;
+}
+
+.red {
+  background-color: #FF5B18;
+}
+
+.top {
+  border-top: 0;
+}
+
+.left {
+  border-left: 0;
+}
+
+.bottom {
+  border-bottom: 0;
+}
+
+.right {
+  border-right: 0;
+}
+
+tr :first-child {
+  width: 46px;
+}
