@@ -2,7 +2,7 @@ table {
   width: 500px;
   height: 541px;
   border: 1px solid white;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 td {
@@ -26,11 +26,11 @@ td {
 }
 
 .top {
-  border-top: 0;
+  border-top: none;
 }
 
 .left {
-  border-left: 0;
+  border-left: 10px solid white;
 }
 
 .bottom {
@@ -38,7 +38,7 @@ td {
 }
 
 .right {
-  border-right: 0;
+  border-right: 10px solid white;
 }
 
 tr :first-child {
