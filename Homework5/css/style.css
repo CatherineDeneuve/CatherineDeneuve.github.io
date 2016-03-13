@@ -152,6 +152,11 @@ form input,
   display: block;
   text-align: center;
   margin: 3% auto;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(#4877D6, #2E56C4);
 }
 
 ::-webkit-input-placeholder {
@@ -186,10 +191,6 @@ input:focus {
   box-shadow: none;
 }
 
-#button:focus {
-  box-shadow: none;
-  background: linear-gradient(#48A2D6, #2E7AC4);
-}
 
 input {
   padding-left: 10px;
