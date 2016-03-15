@@ -1,0 +1,150 @@
+.wrapper {
+  margin: 0 auto;
+  width: 909px;
+  padding-top: 18px;
+}
+
+/*SECTION*/
+section {
+  height: 53px;
+  margin: 0 auto;
+}
+.handset {
+  /*display: inline-block;*/
+  border-radius: 50%;
+  background: linear-gradient(#0F3B60, #5E92A8);
+  vertical-align: middle;
+
+}
+
+.phone {
+  display: inline-block;
+  font: 18px Arial, sans-serif;
+  color: #5e696d;
+  /*vertical-align: bottom;*/
+}
+
+form {
+  background: linear-gradient(#1D6181, #0C3357);
+  width: 496px;
+  height: 27px;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 5px 2px 12px 2px rgba(192,192,192,1);
+  /*vertical-align: bottom;*/
+
+
+}
+
+.man {
+  width: 14px;
+  height: 18px;
+
+  /*vertical-align: top;*/
+}
+
+.registration input {
+  /*vertical-align: bottom;*/
+  height: 17px;
+}
+
+.reg {
+  display: inline-block;
+  font: 11px "Lucida Sans Unicode", sans-serif;
+  color: #fff;
+}
+
+.reg span {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.reg span a {
+  color: #bfbfbf;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+input {
+  width: 115px;
+}
+
+.navi {
+  display: inline-block;
+  border-radius: 15px;
+  border: 1px solid #BDC4C7;
+  width: 75px;
+  height: 20px;
+  text-align: center;
+  float: right;
+  box-shadow: 1px 3px 13px -2px rgba(189,196,199,1);
+  /*vertical-align: bottom;*/
+  margin-top: 3px;
+}
+
+.navi a {
+  margin: 0 3px;
+}
+
+
+/*HEADER*/
+.top_menu {
+ background: linear-gradient(#2A2E32, #010101);
+ height: 35px;
+ border-radius: 5px;
+ box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.75);
+}
+
+.menu {
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.menu li {
+  display: inline-block;
+  /*width: 123px;
+  height: 26px;*/
+  font: 14px "Lucida Sans Unicode", sans-serif;
+  padding: 5px 10px;
+}
+.menu li a {
+  color: #B1BCC0;
+  width: 123px;
+  height: 26px;
+
+
+}
+.menu li:hover {
+  background: linear-gradient(#1E6383, #092036);
+  border-radius: 20px;
+}
+
+.menu li:hover a {
+  color: #fff;
+}
+
+.basket {
+  display: inline-block;
+  float: right;
+  font: 11px Arial, sans-serif;
+  color: #B1BCC0;
+  padding-top: 5px;
+}
+
+.basket span {
+  color: #0d5a8f;
+}
+
+/*NAV*/
+
+/*FIGURE*/
+
+/*MAIN*/
+
+/*ASIDE*/
+
+/*FOOTER*/
