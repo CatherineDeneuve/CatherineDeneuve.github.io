@@ -24,7 +24,7 @@ section {
   /*vertical-align: bottom;*/
 }
 
-form {
+.registration {
   background: linear-gradient(#1D6181, #0C3357);
   width: 496px;
   height: 27px;
@@ -33,8 +33,6 @@ form {
   text-align: center;
   box-shadow: 5px 2px 12px 2px rgba(192,192,192,1);
   /*vertical-align: bottom;*/
-
-
 }
 
 .man {
@@ -47,6 +45,7 @@ form {
 .registration input {
   /*vertical-align: bottom;*/
   height: 17px;
+  width: 115px;
 }
 
 .reg {
@@ -64,14 +63,11 @@ form {
   color: #bfbfbf;
 }
 
-a {
+.registration a {
   text-decoration: none;
   color: #fff;
 }
 
-input {
-  width: 115px;
-}
 
 .navi {
   display: inline-block;
@@ -92,6 +88,7 @@ input {
 
 
 /*HEADER*/
+/*NAV*/
 .top_menu {
  background: linear-gradient(#2A2E32, #010101);
  height: 35px;
@@ -115,9 +112,9 @@ input {
   color: #B1BCC0;
   width: 123px;
   height: 26px;
-
-
+  text-decoration: none;
 }
+
 .menu li:hover {
   background: linear-gradient(#1E6383, #092036);
   border-radius: 20px;
@@ -139,9 +136,313 @@ input {
   color: #0d5a8f;
 }
 
-/*NAV*/
-
 /*FIGURE*/
+
+/*figure {
+  height: 135px;
+}*/
+.search_by_car,
+.search_tire,
+.search_disk {
+  height: 134px;
+  border-radius: 15px;
+  border: 1px solid #B0B0B1;
+  box-shadow: 2px 3px 5px -1px rgba(176,176,177,1);
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+}
+
+.form_head {
+  color: #154467;
+  font: 10px "Arial Black", sans-serif;
+  margin-left: 15px;
+}
+
+.form_head .by_car {
+  font-size: 12px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.search_by_car {
+  width: 415px;
+  display: inline-block;
+}
+
+.search_by_car label,
+.search_tire label {
+  font: 10px Arial, sans-serif;
+  color: #000;
+}
+
+.search_disk label {
+  font: 10px "Lucida Sans Unicode", sans-serif;
+  width: 87px;
+  display: inline-block;
+  line-height: 1;
+}
+
+.search_by_car label span {
+  color: #77858b;
+}
+
+.search_disk label span {
+  color: #77858b;
+  font-size: 9px;
+}
+
+.search_by_car select {
+  width: 100px;
+  border: 2px inset #a9a9a9;
+  border-bottom: none;
+}
+
+.search_tire select {
+  border: 2px inset #a9a9a9;
+  border-bottom: none;
+}
+
+.search_disk select {
+  border: 2px inset #a9a9a9;
+  border-bottom: none;
+
+}
+
+
+#year_production {
+  width: 57px;
+}
+
+option {
+  font: 10px Arial, sans-serif;
+}
+
+.search_by_car dl,
+.search_tire dl,
+.search_disk dl {
+  float: left;
+  /*margin-top: 5px;*/
+}
+
+.search_by_car dt {
+  line-height: 0;
+  width: 72px;
+  display: inline-block;
+  margin-left: 15px;
+  float: left;
+  clear: both;
+  margin-top: 2px;
+}
+
+.search_tire dt {
+  line-height: 0;
+  width: 40px;
+  display: inline-block;
+  margin-left: 15px;
+  float: left;
+  clear: both;
+  margin-top: 4px;
+  font: 10px "Lucida Sans Unicode", sans-serif;
+}
+
+.search_disk dt {
+  line-height: 0;
+  display: inline-block;
+  margin-left: 15px;
+  float: left;
+  clear: both;
+  margin-top: 4px;
+  font: 10px "Lucida Sans Unicode", sans-serif;
+}
+/*.search_tire .sezons {
+
+  clear: both;;
+}*/
+
+.search_by_car dd {
+  margin-left: 10px;
+  width: 100px;
+  display: inline-block;
+  font: 10px "Lucida Sans Unicode", sans-serif;
+  margin-top: 2px;
+}
+
+.search_tire dd {
+  padding-left: 4px;
+  display: inline-block;
+  font: 10px Arial, sans-serif;
+  margin-top: 2px;
+
+}
+
+.search_disk dd {
+  padding-left: 4px;
+  display: inline-block;
+  font: 10px Arial, sans-serif;
+  margin-top: 7px;
+
+}
+
+.search_tire {
+  width: 192px;
+  border: 1px solid #B0B0B1;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.search_tire .sezon input,
+ .search_tire .sezon label {
+  margin-top: 0;
+}
+
+
+/*.search_tire input {
+  border-style: inset;
+}*/
+
+.search_tire .left,
+.search_disk .left {
+  font-size: 12px;
+}
+
+.search_button {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.search_button a {
+  font: italic 14px Arial, sans-serif;
+  color: #154467;
+  line-height: 2;
+}
+
+
+
+#size1,
+#size2 {
+  width: 51px;
+  /*display: inline-block;*/
+}
+
+#radius {
+  width: 43px;
+}
+
+.right_R {
+  text-align: right;
+}
+
+/*.sezons label {
+  margin-top: 5px;
+
+}*/
+
+.sezon {
+  display: inline;
+  width: 120px;
+}
+.sezon #summer {
+  padding-left: 0;
+}
+
+.sezons:first-child {
+  margin-left: 0;
+}
+
+/*#summer,
+#winter,
+#both {
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 10%;
+}*/
+
+#winter,
+#both {
+  margin-left: 58px;
+}
+
+/*.sezon dd {
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 10%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}*/
+
+
+.search_tire dt {
+  width: 40px;
+}
+
+.line {
+  display: inline-block;
+}
+
+.search_tire .search_button a {
+  line-height: 0;
+}
+
+.search_disk {
+  width: 267px;
+  border: 1px solid #B0B0B1;
+  display: inline-block;
+}
+
+#disk_diameter {
+  width: 57px;
+}
+
+#number_hole {
+  width: 49px;
+}
+#hole_diameter {
+  margin-top: 10px;
+  width: 57px;
+}
+
+.right_part {
+  /*float: right;
+  clear: both;*/
+  width: 92px;
+  border-left: 1px solid #BDC6CA;
+  margin-top: -14px;
+}
+
+.right_part label {
+  font: 9px "Lucida Sans Unicode", sans-serif;
+  line-height: 1;
+}
+
+.right_part label span {
+  font-size: 8px;
+  color: #77858b;
+
+}
+
+.right_part dd {
+  width: 57px;
+  padding-left: 15px;
+}
+
+.form_head .disk {
+  display: inline-block;
+  margin-right: 10px;
+  width: 110px;
+}
+
+.right_border {
+  border-right: 1px solid #BDC6CA;
+}
+
+
+/*dd input[type="checkbox"],
+dd input[type="checkbox"] label {
+  float: left;
+  clear: both;
+}*/
 
 /*MAIN*/
 
