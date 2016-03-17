@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Homework 6</title>
 </head>
 <body>
 
-<div class="wrapper">
+<main class="wrapper">
 <!-- SECTION -->
   <section>
 <img src="img/phone_img.png" alt="handset" class="handset">
@@ -47,8 +47,8 @@
 </ul>
 </div>
 
-<!-- FIGURE -->
-<figure>
+<!-- SECTION -->
+<!-- <section class="top_forms"> -->
 
     <form action="#" class="search_by_car">
       <p class="form_head">
@@ -128,8 +128,7 @@
   </form>
 
 
-</figure>
-<figure>
+
   <form class="search_tire">
 
     <p class="form_head">
@@ -174,9 +173,7 @@
   </dl>
 <div class="search_button"><a href="#">поиск...</a></div>
   </form>
-</figure>
 
-<figure>
   <form class="search_disk">
 <div class="right_border">
     <p class="form_head">
@@ -229,15 +226,181 @@
 
   </dl>
 <div class="search_button"><a href="#">поиск...</a></div>
-
   </form>
+<!-- </section> -->
 
-</figure>
+<section class="section_left">
+<ul class="catalog">
+  <li class="catalog_production"> Каталог продукции:</li>
 
 
-<!-- MAIN -->
-<!-- ASIDE -->
+  <ul class="name_list">
+      <li>Шины</li>
+  </ul>
+  <ul class="tires">
+    <li>Наименование 1</li>
+    <li>Наименование 2</li>
+    <li>Наименование 3</li>
+    <li>Наименование 4</li>
+  </ul>
+
+  <ul class="name_list">
+      <li>Диски</li>
+  </ul>
+  <ul class="disks">
+    <li>Наименование 1</li>
+    <li>Наименование 2</li>
+    <li>Наименование 3</li>
+    <li>Наименование 4</li>
+  </ul>
+
+  <ul class="name_list">
+      <li>Болты</li>
+  </ul>
+  <ul class="bolts">
+    <li>Наименование 1</li>
+    <li>Наименование 2</li>
+    <li>Наименование 3</li>
+    <li>Наименование 4</li>
+  </ul>
+
+</ul>
+
+</section>
+<!-- конец section_left -->
+
+<section class="section_center">
+  <figure>
+    <figcaption>
+      <span class="name_tire">Goodyear</span> Ultra Grip Extreme
+      </figcaption>
+    <div class="tire_pic"><img src="img/tires/11.png" alt="изображение шины"></div>
+    <span class="price"> 90.00 <span class="currency">грн.</span></span>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <span class="name_tire">Nokian</span> Hakkapeliitta R
+      </figcaption>
+    <div class="tire_pic"><img src="img/tires/12.png" alt="изображение шины"></div>
+    <span class="price"> 115.00 <span class="currency">грн.</span></span>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <span class="name_tire">Hankook</span> K 708 155/65 R14
+      </figcaption>
+    <div class="tire_pic"><img src="img/tires/13.png" alt="изображение шины"></div>
+    <span class="price"> 393.00 <span class="currency">грн.</span></span>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <span class="name_tire">Goodyear</span> Ultra Grip Extreme
+      </figcaption>
+    <div class="tire_pic"><img src="img/tires/11.png" alt="изображение шины"></div>
+    <span class="price"> 90.00 <span class="currency">грн.</span></span>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <span class="name_tire">Nokian</span> Hakkapeliitta R
+      </figcaption>
+    <div class="tire_pic"><img src="img/tires/12.png" alt="изображение шины"></div>
+    <span class="price"> 115.00 <span class="currency">грн.</span></span>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <span class="name_tire">Hankook</span> K 708 155/65 R14
+      </figcaption>
+    <div class="tire_pic"><img src="img/tires/13.png" alt="изображение шины"></div>
+    <span class="price"> 393.00 <span class="currency">грн.</span></span>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <span class="name_tire">Goodyear</span> Ultra Grip Extreme
+      </figcaption>
+    <div class="tire_pic"><img src="img/tires/11.png" alt="изображение шины"></div>
+    <span class="price"> 90.00 <span class="currency">грн.</span></span>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <span class="name_tire">Nokian</span> Hakkapeliitta R
+      </figcaption>
+    <div class="tire_pic"><img src="img/tires/12.png" alt="изображение шины"></div>
+    <span class="price"> 115.00 <span class="currency">грн.</span></span>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <span class="name_tire">Hankook</span> K 708 155/65 R14
+      </figcaption>
+    <div class="tire_pic"><img src="img/tires/13.png" alt="изображение шины"></div>
+    <span class="price"> 393.00 <span class="currency">грн.</span></span>
+  </figure>
+</section>
+<!-- конец section_center -->
+
+<section class="section_right">
+  <ul class="catalog">
+      <li class="brands"> Бренды:</li>
+
+    <ul class="name_list_right">
+        <li>Шины</li>
+    </ul>
+    <ul class="tires_right">
+      <li><input type="checkbox" name="brend1" id="brend1">
+      <label for="brend1">Бренд 1</label></li>
+      <li><input type="checkbox" name="brend2" id="brend2">
+      <label for="brend2">Бренд 2</label></li>
+      <li><input type="checkbox" name="brend3" id="brend3">
+      <label for="brend3">Бренд 3</label></li>
+
+    </ul>
+
+    <ul class="name_list_right">
+        <li>Диски</li>
+    </ul>
+    <ul class="disks_right">
+      <li><input type="checkbox" name="brend1" id="brend1">
+      <label for="brend1">Бренд 1</label></li>
+      <li><input type="checkbox" name="brend2" id="brend2">
+      <label for="brend2">Бренд 2</label></li>
+      <li><input type="checkbox" name="brend3" id="brend3">
+      <label for="brend3">Бренд 3</label></li>
+    </ul>
+
+    <input type="button" value="Выбрать" class="button">
+
+
+    </ul>
+</section>
+
+
+
 <!-- FOOTER -->
+<div class="logo">
+  <img src="img/logo/logo1.png" alt="логотип">
+  <img src="img/logo/logo2.png" alt="логотип">
+  <img src="img/logo/logo3.png" alt="логотип">
+  <img src="img/logo/logo4.png" alt="логотип">
+  <img src="img/logo/logo5.png" alt="логотип">
+  <img src="img/logo/logo6.png" alt="логотип">
+  <img src="img/logo/logo7.png" alt="логотип">
+  <img src="img/logo/logo8.png" alt="логотип">
 </div>
+<footer>
+  <ul class="footer">
+    <li class="with_border"><a href="#">О компании</a></li>
+    <li class="with_border"><a href="#">Доставка</a></li>
+    <li class="with_border"><a href="#">Статьи</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+  <p class="copyright">Создание сайта &copy; Global Vision</p>
+</footer>
+</main>
 </body>
 </html>

@@ -255,10 +255,6 @@ option {
   margin-top: 4px;
   font: 10px "Lucida Sans Unicode", sans-serif;
 }
-/*.search_tire .sezons {
-
-  clear: both;;
-}*/
 
 .search_by_car dd {
   margin-left: 10px;
@@ -298,10 +294,6 @@ option {
 }
 
 
-/*.search_tire input {
-  border-style: inset;
-}*/
-
 .search_tire .left,
 .search_disk .left {
   font-size: 12px;
@@ -334,11 +326,6 @@ option {
   text-align: right;
 }
 
-/*.sezons label {
-  margin-top: 5px;
-
-}*/
-
 .sezon {
   display: inline;
   width: 120px;
@@ -351,27 +338,10 @@ option {
   margin-left: 0;
 }
 
-/*#summer,
-#winter,
-#both {
-  margin-top: 0;
-  padding-top: 0;
-  line-height: 10%;
-}*/
-
 #winter,
 #both {
   margin-left: 58px;
 }
-
-/*.sezon dd {
-  margin-top: 0;
-  padding-top: 0;
-  line-height: 10%;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}*/
-
 
 .search_tire dt {
   width: 40px;
@@ -437,6 +407,10 @@ option {
   border-right: 1px solid #BDC6CA;
 }
 
+/*.top_forms {
+  clear: both;
+}*/
+
 
 /*dd input[type="checkbox"],
 dd input[type="checkbox"] label {
@@ -444,8 +418,214 @@ dd input[type="checkbox"] label {
   clear: both;
 }*/
 
-/*MAIN*/
 
 /*ASIDE*/
+.catalog {
+  /*margin-top: 105px;*/
+  display: block;
+  height: 25px;
+  width: 181px;
+  border-radius: 15px;
+  border: 1px solid #79878D;
+  box-shadow: 2px 3px 5px -1px rgba(176,176,177,1);
+  /*text-align: center;*/
+  margin-bottom: 14px;
+}
+
+
+.catalog_production,
+.brands {
+  text-transform: uppercase;
+  display: block;
+  font: 13px "Lucida Sans Unicode", sans-serif;
+  color: #114165;
+  padding-left: 25px;
+  background: url("../img/catalog.png") left center no-repeat;
+  margin-top: 3px;
+}
+
+
+
+.tires,
+.disks,
+.bolts {
+  list-style-type: circle;
+  font: 13px "Lucida Sans Unicode", sans-serif;
+  color: #114165;
+
+}
+
+.tires li,
+.disks li,
+.bolts li {
+  list-style-position: inside;
+  /*padding-left: 20px;*/
+}
+
+.tires li:hover,
+.disks li:hover,
+.bolts li:hover {
+  font: bold italic 14px Arial, sans-serif;
+  color: #0c3256;
+  text-decoration: underline;
+  line-height: 200%;
+  cursor: pointer;
+}
+
+.name_list {
+  text-align: left;
+  /*display: block;*/
+}
+
+.name_list > li,
+.name_list_right > li{
+  text-transform: uppercase;
+  display: inline-block;
+  font: 14px "Lucida Sans Unicode", sans-serif;
+  color: #114165;
+  padding-left: 25px;
+  border-radius: 15px;
+  border: 1px solid #79878D;
+  width: 123px;
+  height: 28px;
+  margin-top: 15px;
+  text-align: left;
+  background: url("../img/circle.png") 0 30% no-repeat;
+  /*margin-top: 13px;*/
+}
+
+.section_left {
+  float: left;
+  clear: both;
+}
+
+.section_center {
+  /*float: left;
+  clear: both;*/
+  height: 628px;
+  width: 527px;
+  background: linear-gradient(#E4E7E8, #93A7B0);
+  margin: 170px auto;
+}
+
+.tire_pic {
+  display: block;
+  height: 128px;
+  width: 137px;
+  background: #fff;
+  border: 1px solid #C8CED0;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.tire_pic img {
+  display: block;
+  margin: 4px auto;
+}
+
+figure {
+  display: inline-block;
+  text-align: center;
+  height: 196px;
+  width: 170px;
+  margin-top: 15px;
+
+
+}
+.name_tire {
+  font: 15px "Lucida Sans Unicode", sans-serif;
+  color: #206988;
+  display: block;
+  line-height: 1;
+}
+
+figcaption {
+  font: 13px "Lucida Sans Unicode", sans-serif;
+  color: black;
+  display: block;
+  line-height: 1;
+}
+
+.price {
+  font: Bold Italic 16px Arial, sans-serif;
+  color: #114165;
+  display: block;
+  margin-top: 3px;
+}
+
+.currency {
+  font-size: 12px;
+}
+
+.section_right {
+  float: right;
+  clear: both;
+  margin-top: 0;
+}
+
+.name_list_right {
+  margin-left: 0;
+}
+
+.tires_right label,
+.disks_right label {
+  font: 13px "Lucida Sans Unicode", sans-serif;
+  color: #465961;
+}
+
+
+.button {
+  background: linear-gradient (#1C5E7E, #0D3458);
+  color: #fff;
+  border-radius: 15px;
+}
 
 /*FOOTER*/
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  margin-left: 10px;
+}
+
+
+footer {
+  height: 100px;
+  background-color: #213A4D;
+  display: block;
+  text-align: center;
+}
+
+.footer li {
+  margin-top: 10px;
+}
+
+.footer li {
+  display: inline-block;
+  width: 78px;
+  text-align: center;
+}
+
+.footer li a {
+  color: #fff;
+  text-decoration: none;
+  font: 12px Arial, sans-serif;
+  color: #bec6c9;
+}
+
+.footer li a:hover {
+  color: #52abcb;
+}
+
+.with_border {
+  border-right: 1px solid #bec6c9;
+}
+
+.copyright {
+  font: 10px Arial, sans-serif;
+  color: #7f4740;
+  margin-top: 10px;
+}
