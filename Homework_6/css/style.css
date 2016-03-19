@@ -44,11 +44,13 @@
 }
 
 .man {
-  position: absolute;
-  top: 5px;
-  left: 8px;
+  /*position: absolute;
+  top: -10px;
+  left: -10px;*/
   width: 14px;
   height: 18px;
+  margin-left: -23px;
+  margin-top: 5px;
 }
 
 .registration input {
@@ -56,13 +58,15 @@
   margin-top: 2px;
   height: 15px;
   width: 112px;
-
+  vertical-align: top;
 }
 
 .reg {
   display: inline-block;
   font: 11px "Lucida Sans Unicode", sans-serif;
   color: #fff;
+  vertical-align: top;
+  margin-top: 3px;
 }
 
 .reg span {
