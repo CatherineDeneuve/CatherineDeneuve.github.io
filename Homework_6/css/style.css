@@ -104,6 +104,11 @@ header {
   margin-left: -9px;
 }
 
+.logo_zazor {
+  position: absolute;
+  top: 104px;
+}
+
 /*МЕНЮ*/
 .top_menu {
  margin-top: 2px;
@@ -207,8 +212,41 @@ header {
   margin-right: 2px;
 }
 
-.search_by_car dl {
+/*.search_by_car dl {
   margin-top: 2px;
+}*/
+
+.search_by_car_right {
+  float: right;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.search_by_car_left {
+  float: left;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+.search_tire_div {
+  margin-top: 3px;
+  margin-left: 15px;
+}
+
+.search_tire_div label {
+  display: inline-block;
+  width: 40px;
+}
+
+.search_tire_div input [type=checkbox] {
+  float: left;
+
+}
+
+.search_by_car_left label,
+.search_by_car_right label {
+  display: inline-block;
+  width: 73px;
 }
 
 .search_by_car label,
@@ -237,6 +275,7 @@ header {
   width: 100px;
   border: 2px inset #a9a9a9;
   border-bottom: none;
+
 }
 
 .search_tire select {
@@ -252,74 +291,16 @@ header {
 #year_production,
 #year_production1 {
   width: 57px;
+  vertical-align: top;
+  margin-top: 1px;
 }
 
 option {
   font: 10px Arial, sans-serif;
 }
 
-.search_by_car dl,
-.search_tire dl,
-.search_disk dl {
-  float: left;
-  margin-top: 2px;
-}
 
-.search_by_car dt {
-  line-height: 0;
-  width: 72px;
-  display: inline-block;
-  margin-left: 15px;
-  float: left;
-  clear: both;
-  margin-top: 0;
-}
 
-.search_tire dt {
-  line-height: 0;
-  width: 40px;
-  display: inline-block;
-  margin-left: 15px;
-  float: left;
-  clear: both;
-  margin-top: 4px;
-  font: 10px "Lucida Sans Unicode", sans-serif;
-}
-
-.search_disk dt {
-  line-height: 0;
-  display: inline-block;
-  margin-left: 15px;
-  float: left;
-  clear: both;
-  /*margin-top: 4px;*/
-  font: 10px "Lucida Sans Unicode", sans-serif;
-}
-
-.search_by_car dd {
-  margin-left: 6px;
-  margin-right: 7px;
-  width: 100px;
-  display: inline-block;
-  font: 10px "Lucida Sans Unicode", sans-serif;
-  margin-top: 2px;
-}
-
-.search_tire dd {
-  padding-left: 4px;
-  display: inline-block;
-  font: 10px Arial, sans-serif;
-  margin-top: 2px;
-
-}
-
-.search_disk dd {
-  padding-left: 4px;
-  display: inline-block;
-  font: 10px Arial, sans-serif;
-  margin-top: 5px;
-
-}
 
 .search_tire {
   width: 192px;
@@ -329,10 +310,10 @@ option {
   margin-left: 10px;
 }
 
-.search_tire .sezon input,
+/*.search_tire .sezon input,
  .search_tire .sezon label {
   margin-top: 0;
-}
+}*/
 
 
 .search_tire .left,
@@ -366,7 +347,7 @@ option {
 }
 .search_disk .search_button a {
   margin-top: 5px;
-  line-height: 3;
+  line-height: 2;
 }
 
 .search_by_car .search_button a {
@@ -380,43 +361,55 @@ option {
 
 #radius {
   width: 43px;
+  vertical-align: top;
+  margin-top: 1px;
 }
 
 .right_R {
   text-align: right;
 }
 
-.sezon {
-  width: 120px;
-}
-.sezon #summer {
-  margin-top: 2px;
-}
-
 #winter,
 #both {
-  margin: 0 0 0 59px;
+  margin-left: 48px;
   margin-top: 0;
 }
 
-dd.sezon {
-  margin-top: 0;
-  padding-left: 0;
-}
-
-.search_tire dt {
-  width: 40px;
-}
-
-.line {
-  display: inline-block;
-}
 
 .search_disk {
   width: 267px;
   border: 1px solid #B0B0B1;
   display: inline-block;
 }
+
+.search_disk_right {
+  float: right;
+  margin-right: 5px;
+  margin-top: -12px;
+  margin-left: 3px;
+}
+
+.search_disk_right label {
+  display: block;
+}
+
+.search_disk_left {
+  float: left;
+  margin-left: 15px;
+  margin-top: 2px;
+  padding-right: 6px;
+  border-right: 1px solid #BDC6CA;
+}
+
+.search_disk_left label {
+  display: inline-block;
+  width: 84px;
+}
+
+.search_disk_left select {
+  margin-left: -5px;
+}
+
 
 #disk_diameter {
   width: 57px;
@@ -428,31 +421,6 @@ dd.sezon {
 #hole_diameter {
   margin-top: 10px;
   width: 57px;
-}
-
-.right_part {
-  width: 92px;
-  margin-left: 4px;
-  border-left: 1px solid #BDC6CA;
-}
-
-.right_part label {
-  font: 9px "Lucida Sans Unicode", sans-serif;
-  line-height: 1;
-  display: inline-block;
-  margin-top: -12px;
-}
-
-.right_part label span {
-  font-size: 8px;
-  color: #77858b;
-
-}
-
-.right_part dd {
-  width: 57px;
-  padding-left: 15px;
-  margin-top: 0;
 }
 
 .form_head .disk {
@@ -678,6 +646,15 @@ figure {
   margin-bottom: -10px;
   margin-right: -10px;;
   margin-left: 5px;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+}
+
+figure:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .name_tire {
@@ -756,6 +733,16 @@ figcaption {
 
 .logo img {
   margin: 4px 4px;
+  -moz-transition: all 1s 0.1s ease-in;
+  -o-transition: all 1s 0.1s ease-in;
+  -webkit-transition: all 1s 0.1s ease-in;
+}
+
+.logo img:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  cursor: pointer;
 }
 
 footer {
