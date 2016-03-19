@@ -556,18 +556,20 @@ dd.sezon {
   background: url("../img/circle.png") 4% 30% no-repeat;
 }
 
-
-
 .name_list_right_tires > li,
- .name_list_right_disks > li{
+.name_list_right_disks > li {
+    margin-top: 3px;
+}
+
+.name_list_right_tires,
+ .name_list_right_disks {
+   margin-top: 8px;
   margin-left: 15px;
   width: 105px;
-  display: inline-block;
-  margin-top: 10px;
-  padding-left: 30px;
   height: 26px;
-  text-transform: uppercase;
   display: inline-block;
+  padding-left: 30px;
+  text-transform: uppercase;
   font: 14px "Lucida Sans Unicode", sans-serif;
   color: #114165;
   border-radius: 14px 12px 11px 12px;
@@ -576,15 +578,9 @@ dd.sezon {
   background: url("../img/circle.png") 4% 30% no-repeat;
 }
 
-.name_list_right_tires {
-  margin-top: -2px;
-}
-
-.name_list_right_disks {
-  margin-top: -6px;
-}
-
-
+/*.name_list_right_disks {
+  margin-top:
+}*/
 .brands {
     display: block;
     height: 25px;
@@ -697,11 +693,12 @@ figcaption {
 .disks_right {
   margin-left: 20px;
   margin-top: 1px;
+  margin-bottom: 4px;
 }
 
 .tires_right li,
 .disks_right li {
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 .tires_right label,
@@ -712,7 +709,7 @@ figcaption {
 
 
 .button {
-  margin-top: 12px;
+  margin-top: 18px;
   margin-left: 25px;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#1D6081), to(#0D3458));
   background: -moz-linear-gradient(#1D6081, #0D3458);
