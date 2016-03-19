@@ -11,7 +11,6 @@
 }
 
 .handset {
-  /*display: inline-block;*/
   border-radius: 50%;
   background: linear-gradient(#0F3B60, #5E92A8);
   vertical-align: middle;
@@ -159,6 +158,11 @@ header {
   padding-top: 5px;
 }
 
+.basket img {
+  margin-top: 2px;
+  margin-right: -4px;
+}
+
 .basket span {
   color: #0d5a8f;
   font-size: 12px;
@@ -194,13 +198,17 @@ header {
 .form_head .by_car {
   font-size: 12px;
   margin-left: 70px;
-  margin-right: 70px;
+  margin-right: 75px;
 }
 
 .search_by_car {
   width: 413px;
   display: inline-block;
   margin-right: 2px;
+}
+
+.search_by_car dl {
+  margin-top: 2px;
 }
 
 .search_by_car label,
@@ -254,6 +262,7 @@ option {
 .search_tire dl,
 .search_disk dl {
   float: left;
+  margin-top: 2px;
 }
 
 .search_by_car dt {
@@ -263,7 +272,7 @@ option {
   margin-left: 15px;
   float: left;
   clear: both;
-  margin-top: 2px;
+  margin-top: 0;
 }
 
 .search_tire dt {
@@ -288,7 +297,8 @@ option {
 }
 
 .search_by_car dd {
-  margin-left: 10px;
+  margin-left: 6px;
+  margin-right: 7px;
   width: 100px;
   display: inline-block;
   font: 10px "Lucida Sans Unicode", sans-serif;
@@ -328,6 +338,15 @@ option {
 .search_tire .left,
 .search_disk .left {
   font-size: 12px;
+  margin-left: -5px;
+  display: inline-block;
+  width: 105px;
+  margin-right: 0;
+}
+
+.form_head {
+  display: inline-block;
+  margin-right: 0;
 }
 
 
@@ -339,6 +358,18 @@ option {
 .search_button a {
   font: italic 14px Arial, sans-serif;
   color: #154467;
+  line-height: 2;
+}
+
+.search_button a {
+  line-height: 1;
+}
+.search_disk .search_button a {
+  margin-top: 5px;
+  line-height: 3;
+}
+
+.search_by_car .search_button a {
   line-height: 2;
 }
 
@@ -370,7 +401,6 @@ option {
 
 dd.sezon {
   margin-top: 0;
-  /*line-height: 0;*/
   padding-left: 0;
 }
 
@@ -380,10 +410,6 @@ dd.sezon {
 
 .line {
   display: inline-block;
-}
-
-.search_tire .search_button a {
-  line-height: 0;
 }
 
 .search_disk {
@@ -406,14 +432,15 @@ dd.sezon {
 
 .right_part {
   width: 92px;
-  margin-top: -14px;
+  margin-left: 4px;
+  border-left: 1px solid #BDC6CA;
 }
 
 .right_part label {
   font: 9px "Lucida Sans Unicode", sans-serif;
   line-height: 1;
   display: inline-block;
-  margin-top: 2px;
+  margin-top: -12px;
 }
 
 .right_part label span {
@@ -433,12 +460,6 @@ dd.sezon {
   margin-right: 10px;
   width: 110px;
 }
-
-
-.form_head + dl {
-  border-right: 1px solid #BDC6CA;
-}
-
 
 /*SECTION_LEFT*/
 .catalog {
@@ -578,9 +599,7 @@ dd.sezon {
   background: url("../img/circle.png") 4% 30% no-repeat;
 }
 
-/*.name_list_right_disks {
-  margin-top:
-}*/
+
 .brands {
     display: block;
     height: 25px;
@@ -622,13 +641,11 @@ margin-left: -9px;
 }
 
 .section_center {
-  /*padding-left: 3px;*/
   height: 626px;
   width: 527px;
   background: linear-gradient(#E4E7E8, #93A7B0);
   margin-left: 6px;
   margin-top: 25px;
-  /*margin-right: 7px;*/
 }
 
 .sezon,
@@ -653,7 +670,6 @@ margin-left: -9px;
 }
 
 figure {
-
   display: inline-block;
   text-align: center;
   height: 196px;
@@ -663,6 +679,7 @@ figure {
   margin-right: -10px;;
   margin-left: 5px;
 }
+
 .name_tire {
   font: 15px "Lucida Sans Unicode", sans-serif;
   color: #206988;
@@ -741,7 +758,6 @@ figcaption {
   margin: 4px 4px;
 }
 
-
 footer {
   margin-bottom: 0;
   margin-left: -7px;
@@ -767,21 +783,14 @@ footer {
 
 .footer li a {
   color: #fff;
-  /*padding-left: 10px;*/
-  /*padding-right: 8px;*/
   text-decoration: none;
   font: 12px Arial, sans-serif;
   color: #bec6c9;
-
 }
 
 .footer li a:hover {
   color: #52abcb;
 }
-
-/*.with_border {
-  border-right: 1px solid #bec6c9;
-}*/
 
 .copyright {
   font: 10px Arial, sans-serif;
