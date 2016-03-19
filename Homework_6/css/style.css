@@ -1,51 +1,61 @@
 .wrapper {
   margin: 0 auto;
-  width: 909px;
+  width: 912px;
   padding-top: 18px;
 }
 
-/*SECTION*/
-section {
+/*SECTION_TOP - секция контактных данных*/
+.section_top {
   height: 53px;
   margin: 0 auto;
 }
+
 .handset {
   /*display: inline-block;*/
   border-radius: 50%;
   background: linear-gradient(#0F3B60, #5E92A8);
   vertical-align: middle;
-
+  line-height: 1;
+  position: absolute;
+  top: 23px;
 }
+
 
 .phone {
   display: inline-block;
   font: 18px Arial, sans-serif;
   color: #5e696d;
-  /*vertical-align: bottom;*/
+  line-height: 1.8;
+  margin-left: 25px;
 }
 
 .registration {
+  position: absolute;
+  left: 480px;
+  padding-left: 22px;
   background: linear-gradient(#1D6181, #0C3357);
-  width: 496px;
+  width: 474px;
   height: 27px;
   display: inline-block;
   border-radius: 5px;
   text-align: center;
   box-shadow: 5px 2px 12px 2px rgba(192,192,192,1);
-  /*vertical-align: bottom;*/
 }
 
 .man {
+  position: absolute;
+  top: 5px;
+  left: 8px;
   width: 14px;
   height: 18px;
-
-  /*vertical-align: top;*/
 }
 
 .registration input {
-  /*vertical-align: bottom;*/
-  height: 17px;
-  width: 115px;
+  display: inline-block;
+  margin-top: 2px;
+  height: 15px;
+  width: 112px;
+
 }
 
 .reg {
@@ -68,8 +78,8 @@ section {
   color: #fff;
 }
 
-
 .navi {
+  margin-right: 17px;
   display: inline-block;
   border-radius: 15px;
   border: 1px solid #BDC4C7;
@@ -78,7 +88,6 @@ section {
   text-align: center;
   float: right;
   box-shadow: 1px 3px 13px -2px rgba(189,196,199,1);
-  /*vertical-align: bottom;*/
   margin-top: 3px;
 }
 
@@ -86,33 +95,45 @@ section {
   margin: 0 3px;
 }
 
+header {
+  margin-top: -16px;
+  margin-left: -9px;
+}
 
-/*HEADER*/
-/*NAV*/
+/*МЕНЮ*/
 .top_menu {
+ margin-top: 2px;
  background: linear-gradient(#2A2E32, #010101);
  height: 35px;
  border-radius: 5px;
  box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.75);
+ margin-left: -9px;
+ width: 912px;
 }
 
 .menu {
-  padding-left: 50px;
-  padding-right: 20px;
+  padding-left: 140px;
+  margin-left: -3px;
+  /*padding-right: 20px;*/
 }
 
 .menu li {
   display: inline-block;
-  /*width: 123px;
-  height: 26px;*/
-  font: 14px "Lucida Sans Unicode", sans-serif;
-  padding: 5px 10px;
+  height: 24px;
+  font: 13.64px "Lucida Sans Unicode", sans-serif;
+  margin: 5px 0;
+  padding: 0 12px;
+  line-height: 2;
+  text-align: center;
+
 }
+
 .menu li a {
   color: #B1BCC0;
-  width: 123px;
-  height: 26px;
+  /*width: 123px;*/
+  height: 24px;
   text-decoration: none;
+  margin: 5px 0;
 }
 
 .menu li:hover {
@@ -127,6 +148,7 @@ section {
 .basket {
   display: inline-block;
   float: right;
+  margin-right: 15px;
   font: 11px Arial, sans-serif;
   color: #B1BCC0;
   padding-top: 5px;
@@ -134,18 +156,23 @@ section {
 
 .basket span {
   color: #0d5a8f;
+  font-size: 12px;
 }
 
-/*FIGURE*/
+/*Секция форм*/
+.section_forms {
+  height: 134px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: -3px;
+}
 
-/*figure {
-  height: 135px;
-}*/
+
 .search_by_car,
 .search_tire,
 .search_disk {
   height: 134px;
-  border-radius: 15px;
+  border-radius: 17px;
   border: 1px solid #B0B0B1;
   box-shadow: 2px 3px 5px -1px rgba(176,176,177,1);
   display: inline-block;
@@ -166,8 +193,9 @@ section {
 }
 
 .search_by_car {
-  width: 415px;
+  width: 413px;
   display: inline-block;
+  margin-right: 2px;
 }
 
 .search_by_car label,
@@ -206,11 +234,10 @@ section {
 .search_disk select {
   border: 2px inset #a9a9a9;
   border-bottom: none;
-
 }
 
-
-#year_production {
+#year_production,
+#year_production1 {
   width: 57px;
 }
 
@@ -222,7 +249,6 @@ option {
 .search_tire dl,
 .search_disk dl {
   float: left;
-  /*margin-top: 5px;*/
 }
 
 .search_by_car dt {
@@ -252,7 +278,7 @@ option {
   margin-left: 15px;
   float: left;
   clear: both;
-  margin-top: 4px;
+  /*margin-top: 4px;*/
   font: 10px "Lucida Sans Unicode", sans-serif;
 }
 
@@ -276,7 +302,7 @@ option {
   padding-left: 4px;
   display: inline-block;
   font: 10px Arial, sans-serif;
-  margin-top: 7px;
+  margin-top: 5px;
 
 }
 
@@ -299,6 +325,7 @@ option {
   font-size: 12px;
 }
 
+
 .search_button {
   text-align: right;
   margin-right: 20px;
@@ -310,12 +337,9 @@ option {
   line-height: 2;
 }
 
-
-
 #size1,
 #size2 {
   width: 51px;
-  /*display: inline-block;*/
 }
 
 #radius {
@@ -327,20 +351,22 @@ option {
 }
 
 .sezon {
-  display: inline;
   width: 120px;
 }
 .sezon #summer {
-  padding-left: 0;
-}
-
-.sezons:first-child {
-  margin-left: 0;
+  margin-top: 2px;
 }
 
 #winter,
 #both {
-  margin-left: 58px;
+  margin: 0 0 0 59px;
+  margin-top: 0;
+}
+
+dd.sezon {
+  margin-top: 0;
+  /*line-height: 0;*/
+  padding-left: 0;
 }
 
 .search_tire dt {
@@ -374,16 +400,15 @@ option {
 }
 
 .right_part {
-  /*float: right;
-  clear: both;*/
   width: 92px;
-  border-left: 1px solid #BDC6CA;
   margin-top: -14px;
 }
 
 .right_part label {
   font: 9px "Lucida Sans Unicode", sans-serif;
   line-height: 1;
+  display: inline-block;
+  margin-top: 2px;
 }
 
 .right_part label span {
@@ -395,6 +420,7 @@ option {
 .right_part dd {
   width: 57px;
   padding-left: 15px;
+  margin-top: 0;
 }
 
 .form_head .disk {
@@ -403,48 +429,34 @@ option {
   width: 110px;
 }
 
-.right_border {
+
+.form_head + dl {
   border-right: 1px solid #BDC6CA;
 }
 
-/*.top_forms {
-  clear: both;
-}*/
 
-
-/*dd input[type="checkbox"],
-dd input[type="checkbox"] label {
-  float: left;
-  clear: both;
-}*/
-
-
-/*ASIDE*/
+/*SECTION_LEFT*/
 .catalog {
-  /*margin-top: 105px;*/
   display: block;
   height: 25px;
   width: 181px;
-  border-radius: 15px;
+  border-radius: 20px;
   border: 1px solid #79878D;
   box-shadow: 2px 3px 5px -1px rgba(176,176,177,1);
-  /*text-align: center;*/
-  margin-bottom: 14px;
+  margin-left: -1px;
 }
 
 
-.catalog_production,
-.brands {
+.catalog_production {
   text-transform: uppercase;
   display: block;
   font: 13px "Lucida Sans Unicode", sans-serif;
   color: #114165;
-  padding-left: 25px;
-  background: url("../img/catalog.png") left center no-repeat;
+  padding-left: 26px;
+  background: url("../img/catalog.png") 1% 60% no-repeat;
   margin-top: 3px;
+  margin-bottom: 11px;
 }
-
-
 
 .tires,
 .disks,
@@ -452,6 +464,7 @@ dd input[type="checkbox"] label {
   list-style-type: circle;
   font: 13px "Lucida Sans Unicode", sans-serif;
   color: #114165;
+  margin-top: -2px;;
 
 }
 
@@ -459,6 +472,8 @@ dd input[type="checkbox"] label {
 .disks li,
 .bolts li {
   list-style-position: inside;
+  margin-left: 35px;
+  line-height: 2;
   /*padding-left: 20px;*/
 }
 
@@ -474,47 +489,142 @@ dd input[type="checkbox"] label {
 
 .name_list {
   text-align: left;
-  /*display: block;*/
+  margin-top: 0;
+  margin-bottom: 0;
+
 }
 
-.name_list > li,
-.name_list_right > li{
+.name_list_tires {
+  margin-top: 5px;
+  margin-left: 1px;
+  line-height: 3;
+  padding-left: 30px;
+  height: 26px;
   text-transform: uppercase;
   display: inline-block;
   font: 14px "Lucida Sans Unicode", sans-serif;
   color: #114165;
-  padding-left: 25px;
-  border-radius: 15px;
+  border-radius: 14px 11px 14px 14px;
   border: 1px solid #79878D;
-  width: 123px;
-  height: 28px;
-  margin-top: 15px;
+  width: 118px;
   text-align: left;
-  background: url("../img/circle.png") 0 30% no-repeat;
-  /*margin-top: 13px;*/
+  background: url("../img/circle.png") 4% 30% no-repeat;
+}
+
+.name_list_disks {
+  margin-top: -2px;
+  margin-left: 1px;
+  line-height: 3;
+  padding-left: 30px;
+  height: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  font: 14px "Lucida Sans Unicode", sans-serif;
+  color: #114165;
+  border-radius: 14px 11px 14px 14px;
+  border: 1px solid #79878D;
+  width: 118px;
+  text-align: left;
+  background: url("../img/circle.png") 4% 30% no-repeat;
+}
+
+.name_list_bolts {
+  margin-top: -3px;
+  margin-left: 1px;
+  line-height: 3;
+  padding-left: 30px;
+  height: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  font: 14px "Lucida Sans Unicode", sans-serif;
+  color: #114165;
+  border-radius: 14px 11px 14px 14px;
+  border: 1px solid #79878D;
+  width: 118px;
+  text-align: left;
+  background: url("../img/circle.png") 4% 30% no-repeat;
+}
+
+.name_list_right > li{
+  margin-left: 15px;
+  width: 105px;
+  display: inline-block;
+  margin-top: 5px;
+  line-height: 3;
+  padding-left: 30px;
+  height: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  font: 14px "Lucida Sans Unicode", sans-serif;
+  color: #114165;
+  border-radius: 14px 12px 11px 12px;
+  border: 1px solid #79878D;
+  text-align: left;
+  background: url("../img/circle.png") 4% 30% no-repeat;
+
+}
+
+.brands {
+    display: block;
+    height: 25px;
+    width: 181px;
+    border-radius: 20px;
+    border: 1px solid #79878D;
+    box-shadow: 2px 3px 5px -1px rgba(176,176,177,1);
+    margin-left: 4px;
+    margin-top: -3px;
+  }
+
+.brands > li {
+    text-transform: uppercase;
+    display: block;
+    font: 13px "Lucida Sans Unicode", sans-serif;
+    color: #114165;
+    padding-left: 32px;
+    background: url("../img/catalog.png") 1% 60% no-repeat;
+    margin-top: 3px;
+    margin-bottom: 11px;
+  }
+
+.section_left,
+.section_center,
+.section_right {
+  display: inline-block;
+  vertical-align: top;
+
 }
 
 .section_left {
-  float: left;
-  clear: both;
+margin-left: -9px;
+}
+
+.section_left,
+.section_right {
+  width: 181px;
+  margin-top: 28px;
 }
 
 .section_center {
-  /*float: left;
-  clear: both;*/
-  height: 628px;
+  height: 626px;
   width: 527px;
   background: linear-gradient(#E4E7E8, #93A7B0);
-  margin: 170px auto;
+  margin-left: 6px;
+  margin-top: 25px;
+  /*margin-right: 7px;*/
 }
 
-.tire_pic {
+.sezon,
+.sezon label {
+  margin: 0;
+}
+
+ .tire_pic {
   display: block;
   height: 128px;
   width: 137px;
   background: #fff;
   border: 1px solid #C8CED0;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   margin: 0 auto;
 }
@@ -530,8 +640,9 @@ figure {
   height: 196px;
   width: 170px;
   margin-top: 15px;
-
-
+  margin-bottom: -10px;
+  margin-right: -10px;;
+  margin-left: 5px;
 }
 .name_tire {
   font: 15px "Lucida Sans Unicode", sans-serif;
@@ -558,14 +669,15 @@ figcaption {
   font-size: 12px;
 }
 
-.section_right {
-  float: right;
-  clear: both;
-  margin-top: 0;
+.tires_right,
+.disks_right {
+  margin-left: 20px;
+  margin-top: 1px;
 }
 
-.name_list_right {
-  margin-left: 0;
+.tires_right li,
+.disks_right li {
+  line-height: 1.7;
 }
 
 .tires_right label,
@@ -576,56 +688,83 @@ figcaption {
 
 
 .button {
-  background: linear-gradient (#1C5E7E, #0D3458);
+  margin-top: 12px;
+  margin-left: 25px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1D6081), to(#0D3458));
+  background: -moz-linear-gradient(#1D6081, #0D3458);
+  border: none;
+  box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+  text-transform: uppercase;
   color: #fff;
+  outline: none;
   border-radius: 15px;
+  display: inline-block;
+  height: 23px;
+  width: 80px;
+}
+
+.button:hover {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#2887B5), to(#13528A));
+  background: -moz-linear-gradient(#2887B5, #13528A);
 }
 
 /*FOOTER*/
 .logo {
   text-align: center;
+  margin: 37px 115px 28px 100px;
   margin-bottom: 20px;
+  line-height: 0;
 }
 
 .logo img {
-  margin-left: 10px;
+  margin: 4px 4px;
 }
 
 
 footer {
+  margin-bottom: 0;
+  margin-left: -7px;
   height: 100px;
+  width: 909px;
   background-color: #213A4D;
   display: block;
   text-align: center;
 }
 
-.footer li {
-  margin-top: 10px;
+.footer {
+  margin-left: -16px;
+  padding-left: 0;
+
 }
 
 .footer li {
+  margin-top: 8px;
   display: inline-block;
-  width: 78px;
   text-align: center;
+  color: #fff;
 }
 
 .footer li a {
   color: #fff;
+  /*padding-left: 10px;*/
+  /*padding-right: 8px;*/
   text-decoration: none;
   font: 12px Arial, sans-serif;
   color: #bec6c9;
+
 }
 
 .footer li a:hover {
   color: #52abcb;
 }
 
-.with_border {
+/*.with_border {
   border-right: 1px solid #bec6c9;
-}
+}*/
 
 .copyright {
   font: 10px Arial, sans-serif;
   color: #7f4740;
-  margin-top: 10px;
+  margin-top: 14px;
+  margin-left: -1px;
 }

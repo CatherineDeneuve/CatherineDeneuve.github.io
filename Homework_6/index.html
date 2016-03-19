@@ -10,7 +10,7 @@
 
 <main class="wrapper">
 <!-- SECTION -->
-  <section>
+  <section class="section_top">
 <img src="img/phone_img.png" alt="handset" class="handset">
 <p class="phone">(044)123-45-67 (044)567-89-10&emsp;</p>
 
@@ -30,7 +30,9 @@
   </section>
 
 <!-- HEADER -->
+<header>
 <img src="img/shina_pic.png" alt="logo">
+</header>
 <!-- NAV -->
 <div class="top_menu">
 <ul class="menu">
@@ -40,16 +42,16 @@
   <li><a href="#">СТАТЬИ</a></li>
   <li><a href="#">КОНТАКТЫ</a></li>
 
-<p class="basket">
-  <img src="img/basket.png" alt="basket">
-  товаров: <span>0</span>&emsp;на сумму: <span>0.00 грн.</span>
-</p>
+<div class="basket">
+  <img src="img/basket.png" alt="basket">&emsp;
+  товаров:&nbsp; <span>0</span>	&emsp;на сумму:	&ensp; <span>0.00 грн.</span>
+</div>
 </ul>
 </div>
 
 <!-- SECTION -->
 <!-- <section class="top_forms"> -->
-
+<section class="section_forms">
     <form action="#" class="search_by_car">
       <p class="form_head">
                   <span class="left">Диски:</span>
@@ -60,7 +62,7 @@
 
         <dt><label for="car_brand">Марка <span>авто</span>:</label></dt>
         <dd><select name="car_brand" id="car_brand">
-        <option value="0"></option>
+        <option></option>
         <option value="1">Kia</option>
         <option value="2">Subaru</option>
         <option value="3">Suzuki</option>
@@ -68,7 +70,7 @@
 
         <dt><label for="car_model">Модель <span>автомобиля</span>:</label></dt>
         <dd><select name="car_model" id="car_model">
-        <option value="0"></option>
+        <option></option>
         <option value="1">Cerato</option>
         <option value="2">Rio</option>
         <option value="3">Soul</option>
@@ -76,7 +78,7 @@
 
         <dt><label for="year_production">Год выпуска <span>автомобиля</span>:</label></dt>
         <dd><select name="year_production" id="year_production">
-        <option value="0"></option>
+        <option></option>
         <option value="1">2014</option>
         <option value="2">2015</option>
         <option value="3">2016</option>
@@ -84,40 +86,40 @@
 
         <dt><label for="equipment">Комплектация</label></dt>
         <dd><select name="equipment" id="equipment">
-        <option value="0"></option>
+        <option></option>
         <option value="1">basic</option>
         <option value="2">middle</option>
         <option value="3">top</option>
         </select></dd>
 </dl>
 <dl>
-        <dt><label for="car_brand">Марка <span>авто</span>:</label></dt>
-        <dd><select name="car_brand" id="car_brand">
-        <option value="0"></option>
+        <dt><label for="car_brand1">Марка <span>авто</span>:</label></dt>
+        <dd><select name="car_brand1" id="car_brand1">
+        <option></option>
         <option value="1">Kia</option>
         <option value="2">Subaru</option>
         <option value="3">Suzuki</option>
         </select></dd>
 
-        <dt><label for="car_model">Модель <span>автомобиля</span>:</label></dt>
-        <dd><select name="car_model" id="car_model">
-        <option value="0"></option>
+        <dt><label for="car_model1">Модель <span>автомобиля</span>:</label></dt>
+        <dd><select name="car_model1" id="car_model1">
+        <option></option>
         <option value="1">Cerato</option>
         <option value="2">Rio</option>
         <option value="3">Soul</option>
         </select></dd>
 
-        <dt><label for="year_production">Год выпуска <span>автомобиля</span>:</label></dt>
-        <dd><select name="year_production" id="year_production">
-        <option value="0"></option>
+        <dt><label for="year_production1">Год выпуска <span>автомобиля</span>:</label></dt>
+        <dd><select name="year_production1" id="year_production1">
+        <option></option>
         <option value="1">2014</option>
         <option value="2">2015</option>
         <option value="3">2016</option>
         </select></dd>
 
-        <dt><label for="equipment">Комплектация</label></dt>
-        <dd><select name="equipment" id="equipment">
-        <option value="0"></option>
+        <dt><label for="equipment1">Комплектация</label></dt>
+        <dd><select name="equipment1" id="equipment1">
+        <option></option>
         <option value="1">basic</option>
         <option value="2">middle</option>
         <option value="3">top</option>
@@ -137,45 +139,45 @@
     </p>
     <dl>
 
-      <dt><label for="size">Размер:</label></dt>
-      <dd><select name="size" id="size1">
-      <option value="0"></option>
-      <option value="1">Kia</option>
-      <option value="2">Subaru</option>
-      <option value="3">Suzuki</option>
-      </select></dd>
-      /
-      <dd><select name="size" id="size2">
-      <option value="0"></option>
-      <option value="1">Kia</option>
-      <option value="2">Subaru</option>
-      <option value="3">Suzuki</option>
+      <dt><label for="size1">Размер:</label></dt>
+      <dd><select name="size1" id="size1">
+      <option></option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>&ensp;&#47;&ensp;</dd>
+
+      <dd><select name="size3" id="size2">
+      <option></option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
       </select></dd>
 
-      <dt class="right_R"><label for="radius">R</label></dt>
-      <dd><select name="radius" id="radius">
-      <option value="0"></option>
-      <option value="1">Cerato</option>
-      <option value="2">Rio</option>
-      <option value="3">Soul</option>
+      <dt class="right_R"><label for="radius1">R</label></dt>
+      <dd><select name="radius1" id="radius">
+      <option></option>
+      <option value="1">20</option>
+      <option value="2">30</option>
+      <option value="3">40</option>
       </select></dd>
 
 
       <dt class="sezons"><label>Сезон:</label></dt>
 
-      <dd class="sezon"><input type="checkbox" name="summer" id="summer">
-      <label for="summer">лето</label></dd>
-      <dd class="sezon"><input type="checkbox" name="winter" id="winter">
-      <label for="winter">зима</label></dd>
-      <dd class="sezon"><input type="checkbox" name="both" id="both">
-      <label for="both">всесез</label></dd>
+      <dd class="sezon"><input type="checkbox" name="summer1" id="summer">
+      <label for="summer1">лето</label></dd>
+      <dd class="sezon"><input type="checkbox" name="winter1" id="winter">
+      <label for="winter1">зима</label></dd>
+      <dd class="sezon"><input type="checkbox" name="both1" id="both">
+      <label for="both1">всесез</label></dd>
 
   </dl>
 <div class="search_button"><a href="#">поиск...</a></div>
   </form>
 
   <form class="search_disk">
-<div class="right_border">
+
     <p class="form_head">
                 <span class="left">поиск дисков</span>
 
@@ -184,7 +186,7 @@
 
       <dt><label for="disk_diameter">Диаметр <span>диска</span>:</label></dt>
       <dd><select name="disk_diameter" id="disk_diameter">
-      <option value="0"></option>
+      <option></option>
       <option value="1">14</option>
       <option value="2">15</option>
       <option value="3">16</option>
@@ -192,33 +194,33 @@
 
       <dt><label for="number_hole">Количество <span>крепёжных отверстий</span>:</label></dt>
       <dd><select name="number_hole" id="number_hole">
-      <option value="0"></option>
+      <option></option>
       <option value="1">3</option>
       <option value="2">4</option>
       <option value="3">5</option>
       </select></dd>
 
-      <dt><label for="hole_diameter">Диаметр <span>расположения крепёжных отверстий</span>:</label></dt>
-      <dd><select name="hole_diameter" id="hole_diameter">
-      <option value="0"></option>
+      <dt><label for="hole_diameter1">Диаметр <span>расположения крепёжных отверстий</span>:</label></dt>
+      <dd><select name="hole_diameter1" id="hole_diameter">
+      <option></option>
       <option value="1">12</option>
       <option value="2">13</option>
       <option value="3">14</option>
       </select></dd>
   </dl>
-  </div>
+
   <dl class="right_part">
-    <dt><label for="dco">ДЦО <span>(диаметр центрального отверстия)</span>:</label></dt>
+    <dt><label for="dco">ДЦО<br> <span>(диаметр центрального отверстия)</span>:</label></dt>
     <dd><select name="dco" id="dco">
-    <option value="0"></option>
+    <option></option>
     <option value="1">12</option>
     <option value="2">13</option>
     <option value="3">14</option>
     </select></dd>
 
-    <dt><label for="disk_fly">ЕТ<span>(вылет диска)</span>:</label></dt>
-    <dd><select name="disk_fly" id="disk_fly">
-    <option value="0"></option>
+    <dt><label for="disk_fly1">ЕТ<br><span>(вылет диска)</span>:</label></dt>
+    <dd><select name="disk_fly1" id="disk_fly">
+    <option></option>
     <option value="1">12</option>
     <option value="2">13</option>
     <option value="3">14</option>
@@ -227,14 +229,15 @@
   </dl>
 <div class="search_button"><a href="#">поиск...</a></div>
   </form>
-<!-- </section> -->
+</section>
+<!-- конец section_forms -->
 
 <section class="section_left">
 <ul class="catalog">
   <li class="catalog_production"> Каталог продукции:</li>
 
 
-  <ul class="name_list">
+  <ul class="name_list_tires">
       <li>Шины</li>
   </ul>
   <ul class="tires">
@@ -244,7 +247,7 @@
     <li>Наименование 4</li>
   </ul>
 
-  <ul class="name_list">
+  <ul class="name_list_disks">
       <li>Диски</li>
   </ul>
   <ul class="disks">
@@ -254,7 +257,7 @@
     <li>Наименование 4</li>
   </ul>
 
-  <ul class="name_list">
+  <ul class="name_list_bolts">
       <li>Болты</li>
   </ul>
   <ul class="bolts">
@@ -341,13 +344,13 @@
     <div class="tire_pic"><img src="img/tires/13.png" alt="изображение шины"></div>
     <span class="price"> 393.00 <span class="currency">грн.</span></span>
   </figure>
+
 </section>
 <!-- конец section_center -->
 
 <section class="section_right">
-  <ul class="catalog">
-      <li class="brands"> Бренды:</li>
-
+  <ul class="brands">
+      <li> Бренды:</li>
     <ul class="name_list_right">
         <li>Шины</li>
     </ul>
@@ -365,12 +368,12 @@
         <li>Диски</li>
     </ul>
     <ul class="disks_right">
-      <li><input type="checkbox" name="brend1" id="brend1">
-      <label for="brend1">Бренд 1</label></li>
-      <li><input type="checkbox" name="brend2" id="brend2">
-      <label for="brend2">Бренд 2</label></li>
-      <li><input type="checkbox" name="brend3" id="brend3">
-      <label for="brend3">Бренд 3</label></li>
+      <li><input type="checkbox" name="brend4" id="brend4">
+      <label for="brend4">Бренд 1</label></li>
+      <li><input type="checkbox" name="brend5" id="brend5">
+      <label for="brend5">Бренд 2</label></li>
+      <li><input type="checkbox" name="brend6" id="brend6">
+      <label for="brend6">Бренд 3</label></li>
     </ul>
 
     <input type="button" value="Выбрать" class="button">
@@ -394,9 +397,9 @@
 </div>
 <footer>
   <ul class="footer">
-    <li class="with_border"><a href="#">О компании</a></li>
-    <li class="with_border"><a href="#">Доставка</a></li>
-    <li class="with_border"><a href="#">Статьи</a></li>
+    <li class="with_border"><a href="#">О компании</a>&ensp;&#448;&ensp;</li>
+    <li class="with_border"><a href="#">Доставка</a>&ensp;&#448;&ensp;</li>
+    <li class="with_border"><a href="#">Статьи</a>&ensp;&#448;&ensp;</li>
     <li><a href="#">Контакты</a></li>
   </ul>
   <p class="copyright">Создание сайта &copy; Global Vision</p>
