@@ -70,11 +70,14 @@
 
 .reg span {
   font-size: 12px;
-  text-decoration: underline;
 }
 
 .reg span a {
   color: #bfbfbf;
+}
+
+.reg span a:hover {
+  text-decoration: underline;
 }
 
 .registration a {
@@ -97,6 +100,16 @@
 
 .navi a {
   margin: 0 3px;
+}
+
+.navi a img {
+  position: relative;
+  top: 0;
+  transition: 0.5s linear;
+}
+
+.navi a img:hover {
+  top: -10px;
 }
 
 header {
@@ -151,6 +164,12 @@ header {
 }
 
 .menu li:hover a {
+  color: #fff;
+}
+
+.active {
+  background: linear-gradient(#1E6383, #092036);
+  border-radius: 20px;
   color: #fff;
 }
 
