@@ -1,0 +1,31 @@
+/*@media (min-width: 960px) {
+	.logo {
+    display: inline-block;
+  }
+  .menu {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px){
+  .logo {
+    display: block;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+
+  @media (min-width: 480px) and (max-width: 767px){
+    .menu_item {
+      display: block;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .menu_link {
+    display: none;
+  }
+
+}*/
