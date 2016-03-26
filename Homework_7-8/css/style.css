@@ -18,6 +18,7 @@ header {
 .wrapper {
   width: 960px;
   margin: 0 auto;
+  z-index: 3;
 }
 
 .logo {
@@ -49,8 +50,8 @@ header {
   text-transform: uppercase;
 }
 
-.menu_item:hover {
-  border-bottom: 1px solid #EDBFFF;
+.menu_link:hover {
+  border-bottom: 2px solid #EDBFFF;
 }
 
 .menu_link {
@@ -85,6 +86,7 @@ header {
   top: 450px;
   left: 40px;
   cursor:pointer;
+  display: none;
 }
 
 .next {
@@ -92,6 +94,7 @@ header {
   top: 450px;
   right: 40px;
   cursor:pointer;
+  display: none;
 }
 
 .text_1line {
@@ -119,11 +122,42 @@ header {
 }
 
 .radiobuttons {
-  text-align: right;
-  padding-right: 158px;
+  text-align: center;
+}
+
+
+/*стилизация radiobutton*/
+
+.radiobuttons input + label span {
+    display:inline-block;
+    width: 11px;
+    height: 11px;
+    margin: 0;
+    margin: -5px 0 0 -21px;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(0, 0, 0, 0);
+  }
+
+
+
+.radiobuttons input:checked + label span {
+  background-color: #fff;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+}
+
+.radiobuttons input + label span,
+.radiobuttons input:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
 }
 
 .radiobuttons input {
+  opacity: 0;
   margin-top: 95px;
   margin-bottom: 60px;
 }
@@ -141,48 +175,77 @@ menu {
 }
 
 .navi_item {
-  margin-top: 60px;
+  margin-top: 72px;
   float: left;
-  width: 320px;
+  width: 310px;
+  margin-right: 10px;
 }
 
 
 .navi_link1 {
   display: inline-block;
-  width: 37px;
-  height: 40px;
-  /*position: absolute;*/
-  background: url(../img/sprite_menu.png) 12px 5px no-repeat;
+  vertical-align: top;
+  /*width: 37px;*/
+  width: 26px;
+  height: 37px;
+  float: left;
+  clear: both;
+  background: url(../img/sprite_menu.png) 0 12px no-repeat;
 }
 
 .navi_link2 {
   display: inline-block;
   width: 28px;
-  height: 35px;
-  background: url(../img/sprite_menu.png) -26px 10px no-repeat;
+  height: 37px;
+  vertical-align: top;
+  float: left;
+  clear: both;
+  background: url(../img/sprite_menu.png) -26px 12px no-repeat;
 }
 
 .navi_link3 {
   display: inline-block;
-
+  vertical-align: top;
+  float: left;
+  clear: both;
   width: 26px;
-  height: 37px;
-  background: url(../img/sprite_menu.png) -54px 12px no-repeat;
+  height: 39px;
+  /*margin-left: 25px;*/
+  background: url(../img/sprite_menu.png) -54px 14px no-repeat;
 }
 
 .navi_head {
   display: inline-block;
   font: 30px 'League Gothic Regular', 'Open Sans', sans-serif;
   color: #fff;
-  padding-left: 33px;
+  padding-left: 28px;
   text-transform: uppercase;
 }
 
 .navi_text {
   font: 16px 'Open Sans', 'League Gothic Regular', sans-serif;
   color: #fff;
-  padding-left: 62px;
+  padding-left: 50px;
+  /*margin-left: 62px;*/
   padding-top: 8px;
+  vertical-align: top;
+}
+
+/*.navi_text2 {
+  padding-left: 20px;
+}
+
+.navi_head3 {
+  padding-left: 15px;
+}
+
+.navi_text3 {
+  padding-left: 7px;
+}*/
+
+.navi_item3 {
+  float: right;
+  margin-right: 0;
 }
 
 .navi_more {
@@ -194,7 +257,7 @@ menu {
   width: 40%;
   float: right;
   cursor: pointer;
-  padding-right: 20px;
+  /*padding-right: 10px;*/
 
 }
 
@@ -219,7 +282,7 @@ menu .wrapper {
 
 .white {
   background: #F9F9F9;
-  height: 486px;
+  height: 480px;
 }
 
 .white_slider {
@@ -227,11 +290,13 @@ menu .wrapper {
   width: 410px;
 }
 
+
 .white_link {
   display: inline-block;
   width: 51px;
   height: 53px;
   background: url(../img/sprite_section.png) 0 0 no-repeat;
+    z-index: 10;
 }
 
 .white_updates {
@@ -243,6 +308,7 @@ menu .wrapper {
   text-transform: uppercase;
   display: inline-block;
   padding-left: 10px;
+    z-index: 10;
 }
 
 .pink {
@@ -253,12 +319,33 @@ menu .wrapper {
   font: 16px 'Open Sans', 'League Gothic Regular', sans-serif;
   padding-left: 63px;
   padding-top: 5px;
-
+    z-index: 10;
 }
 
 .radiobuttons--white {
-  margin-top: 50px;
-  margin-left: 193px;
+  text-align: center;
+}
+
+.radiobuttons--white input {
+  margin-top: 52px;
+  margin-bottom: 0;
+}
+
+.radiobuttons--white input + label span {
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.3);
+  box-sizing: border-box;
+}
+
+.radiobuttons--white input:checked + label span {
+  background-color: rgba(0,0,0,0.7);
+  width: 13px;
+  height: 13px;
+  border: none;
+  /*-webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgba(0,0,0,0.3);*/
+  box-sizing: border-box;
 }
 
 .white_updates {
@@ -423,6 +510,7 @@ menu .wrapper {
   padding-left: 0;
   color: #000;
   margin-bottom: 0;
+
 }
 
 .pingbuller {
@@ -437,7 +525,7 @@ menu .wrapper {
 }
 
 .navi_text--grey {
-
+  margin-left: 0;
   padding-left: 0;
   color: #000;
 }
