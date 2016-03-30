@@ -12,13 +12,15 @@
 /*HEADER*/
 header {
   background: url(../img/back1.jpg) center top no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  z-index: 3;
 }
 
 .logo {
@@ -171,7 +173,6 @@ menu {
   border-top: 1px solid black;
   background: linear-gradient(#745083, #322539);
   width: 100%;
-  z-index: 1;
 }
 
 .navi_item {
@@ -185,7 +186,6 @@ menu {
 .navi_link1 {
   display: inline-block;
   vertical-align: top;
-  /*width: 37px;*/
   width: 26px;
   height: 37px;
   float: left;
@@ -210,7 +210,6 @@ menu {
   clear: both;
   width: 26px;
   height: 39px;
-  /*margin-left: 25px;*/
   background: url(../img/sprite_menu.png) -54px 14px no-repeat;
 }
 
@@ -226,26 +225,8 @@ menu {
   font: 16px 'Open Sans', 'League Gothic Regular', sans-serif;
   color: #fff;
   padding-left: 50px;
-  /*margin-left: 62px;*/
   padding-top: 8px;
   vertical-align: top;
-}
-
-/*.navi_text2 {
-  padding-left: 20px;
-}
-
-.navi_head3 {
-  padding-left: 15px;
-}
-
-.navi_text3 {
-  padding-left: 7px;
-}*/
-
-.navi_item3 {
-  float: right;
-  margin-right: 0;
 }
 
 .navi_more {
@@ -257,8 +238,6 @@ menu {
   width: 40%;
   float: right;
   cursor: pointer;
-  /*padding-right: 10px;*/
-
 }
 
 .navi_more:hover {
@@ -319,7 +298,6 @@ menu .wrapper {
   font: 16px 'Open Sans', 'League Gothic Regular', sans-serif;
   padding-left: 63px;
   padding-top: 5px;
-    z-index: 10;
 }
 
 .radiobuttons--white {
@@ -361,7 +339,6 @@ menu .wrapper {
 .updates_head {
    font: 30px 'League Gothic Regular', 'Open Sans', sans-serif;
    text-transform: uppercase;
-
 }
 
 .updates_link1 {
@@ -547,7 +524,6 @@ footer {
   padding-left: 0;
   margin-right: 42px;
   font-size: 18px;
-  /*cursor: pointer;*/
 }
 
 .design {

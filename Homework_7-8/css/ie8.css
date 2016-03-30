@@ -1,0 +1,74 @@
+.header {
+  background: url(../img/back1.jpg) center top no-repeat;
+}
+
+.transparent {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)";
+
+}
+
+.slide {
+  margin-top: -10px;
+}
+
+.violet_menu {
+  clear: both;
+  overflow: hidden;
+  height: 344px;
+  border-top: 1px solid black;
+  background: linear-gradient(#745083, #322539);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#745083', endColorstr='#322539')";
+  width: 100%;
+}
+
+.navi_text,
+.white_text,
+.update_text {
+  display:inline-block;
+  zoom:1;
+}
+
+
+.navi_more:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#ffffff')";
+  zoom: 1;
+}
+
+.radiobuttons input + label span {
+    background-color: #000000;
+  }
+
+  .radiobuttons input:checked + label span {
+    background-color: #ffffff;
+  }
+
+
+.radiobuttons--white input + label span {
+  /*width: 13px;*/
+  /*height: 13px;*/
+  /*background-color: #000;*/
+  /*border-radius: 10px;*/
+  /*behavior: url('../PIE.htc');*/
+}
+
+.radiobuttons--white input:checked + label span {
+  background: #fff;
+}
+
+.radiobuttons input {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+}
+
+.update {
+  width: 455px;
+}
+
+.footer {
+  height: 115px;
+  background: url(../img/footer.jpg) center bottom no-repeat;
+}
+
+.design {
+    display: inline;
+}
