@@ -39,21 +39,24 @@
     background-color: #000000;
   }
 
-  .radiobuttons input:checked + label span {
+.radiobuttons input:checked + label span {
     background-color: #ffffff;
   }
 
-
 .radiobuttons--white input + label span {
-  /*width: 13px;*/
-  /*height: 13px;*/
+  width: 11px;
+  height: 11px;
+  box-sizing: border-box;
   /*background-color: #000;*/
   /*border-radius: 10px;*/
-  /*behavior: url('../PIE.htc');*/
+  behavior: url(../PIE.htc);
 }
 
 .radiobuttons--white input:checked + label span {
-  background: #fff;
+  background: #ffffff;
+  border: 1px solid #000;
+  width: 11px;
+  height: 11px;
 }
 
 .radiobuttons input {
