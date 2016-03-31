@@ -15,7 +15,7 @@
 		float: left;
 		margin-top: 39px;
 		padding-top: 0;
-		margin-bottom: 79px;
+		/*margin-bottom: 79px;*/
 	}
 
 	.menu_item {
@@ -49,11 +49,9 @@
 		font-size: 16px;
 	}
 
-	.prev {
-		left: 10px;
-	}
-	.next {
-	  right: 10px;
+	.radiobuttons {
+		text-align: right;
+		margin-right: 210px;
 	}
 
  /*фиолетовое меню*/
@@ -64,9 +62,15 @@
 
 /*светло-серый блок*/
 .white_slider {
+		background-size: 312px 250px;
 		width: 312px;
 		height: 300px;
 		overflow: hidden;
+}
+
+.radiobuttons--white {
+  text-align: center;
+  margin-right: 0;
 }
 
 .text_short {
@@ -114,6 +118,7 @@
 /*футер*/
 .menu--footer {
   margin-top: 24px;
+
 }
 
 .menu--footer li {
@@ -127,7 +132,6 @@
 	margin-bottom: 30px;
 	margin-left: 600px;
 }
-
 
 }
 
@@ -256,7 +260,7 @@
 
 		.radiobuttons {
 		  text-align: center;
-
+			margin-right: 0;
 		}
 
 		.radiobuttons input {
@@ -284,6 +288,10 @@
 		.white_slider,
 		.white_updates {
 		  float: none;
+		}
+
+		.white_slider {
+			background-size: 420px 270px;
 		}
 
 		.white_updates {
@@ -435,7 +443,7 @@
 	.submenu li:last-child {
 		border-radius: 0 0 10px 10px;
 	}
-	
+
 	.menu_down > li:hover {
 		background: rgba(37,6,57, 0.7);
 		border-top: 1px solid #523E5A;
@@ -485,17 +493,9 @@
 		display: none;
 	}
 
-	.prev {
-		left: 10px;
-		top: 280px;
-	}
-	.next {
-	  right: 10px;
-		top: 280px;
-	}
-
 	.radiobuttons {
 		text-align: center;
+		margin-right: 0;
 	}
 
 	.radiobuttons input {
@@ -523,8 +523,8 @@
 	.white_slider,
 	.white_updates {
 		float: none;
-
 	}
+
 .white_link {
 	float: left;
 	clear: both;
@@ -538,11 +538,13 @@
 	display: none;
 }
 
-	.white_slider {
-		width: 230px;
-		height: 285px;
-		overflow: hidden;
-	}
+.white_slider {
+	background-size: 250px 230px;
+	width: 230px;
+	padding-right: 20px;
+	height: 285px;
+	overflow: hidden;
+}
 
 	.radiobuttons--white {
 		display: block;

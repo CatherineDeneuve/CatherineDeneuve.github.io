@@ -124,7 +124,8 @@ header {
 }
 
 .radiobuttons {
-  text-align: center;
+  text-align: right;
+  margin-right: 150px;
 }
 
 
@@ -231,6 +232,8 @@ menu {
 }
 
 .navi_more {
+  display: block;
+  text-decoration: none;
   padding-top: 25px;
   text-transform: uppercase;
   font: 18px 'League Gothic Regular', 'Open Sans', sans-serif;
@@ -251,23 +254,33 @@ menu .wrapper {
 }
 
 /*светло-серый блок*/
-.white_updates,
-.white_slider {
+/*.white_updates,*/
+/*.white_slider {
   margin-top: 98px;
-}
+}*/
 
 .white_updates {
-  margin-top: 120px;
+  margin-top: 60px;
+}
+
+.white_slider {
+  margin-top: 40px;
 }
 
 .white {
+  padding-top: 98px;
   background: #F9F9F9;
+  -webkit-box-shadow: inset 0px 6px 7px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 6px 7px -5px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 6px 7px -5px rgba(0,0,0,0.75);
   height: 480px;
 }
 
 .white_slider {
+  background: url(../img/comics_window.png) 20px 0 no-repeat;
   float: left;
   width: 410px;
+  padding-right: 20px;
 }
 
 
@@ -276,7 +289,7 @@ menu .wrapper {
   width: 51px;
   height: 53px;
   background: url(../img/sprite_section.png) 0 0 no-repeat;
-    z-index: 10;
+
 }
 
 .white_updates {
@@ -288,7 +301,7 @@ menu .wrapper {
   text-transform: uppercase;
   display: inline-block;
   padding-left: 10px;
-    z-index: 10;
+
 }
 
 .pink {
@@ -303,6 +316,7 @@ menu .wrapper {
 
 .radiobuttons--white {
   text-align: center;
+  margin-right: 0;
 }
 
 .radiobuttons--white input {
@@ -497,7 +511,12 @@ menu .wrapper {
 
 .copyright {
   font: italic 16px Georgia, 'Open Sans', sans-serif;
-  color: #c5c5c5;
+  background-color: #c5c5c5;
+  color: transparent;
+  text-shadow: 0px 3px 4px rgba(255,255,255,0.2);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
   margin-bottom: 3px;
   margin-top: 10px;
 }
@@ -511,8 +530,9 @@ menu .wrapper {
 /*футер*/
 
 footer {
-  height: 115px;
+  height: 114px;
   background: url(../img/footer.jpg) 50% 0 no-repeat;
+
 }
 
 .menu--footer {

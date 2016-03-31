@@ -67,11 +67,16 @@
   width: 455px;
 }
 
+.copyright {
+  color: #c5c5c5;
+  background-color: transparent;
+}
+
 .footer {
   height: 115px;
   background: url(../img/footer.jpg) center bottom no-repeat;
 }
 
-.design {
-    margin-right: 50px;
+.design span{
+    margin-right: 60px;
 }
