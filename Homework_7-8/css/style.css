@@ -172,6 +172,7 @@ menu {
   height: 344px;
   border-top: 1px solid black;
   background: linear-gradient(#745083, #322539);
+  background: -moz-linear-gradient(#745083, #322539);
   width: 100%;
 }
 
