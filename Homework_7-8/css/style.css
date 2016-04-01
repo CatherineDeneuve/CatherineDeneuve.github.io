@@ -184,6 +184,24 @@ menu {
   margin-right: 10px;
 }
 
+.icon {
+  color: #fff;
+  font-size: 25px;
+}
+
+.icon-comment {
+  display: block;
+  float: left;
+  padding-top: 8px;
+  
+  -moz-transform: scaleX(-1);
+     -o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
 
 .navi_link1 {
   display: inline-block;
@@ -219,7 +237,8 @@ menu {
   display: inline-block;
   font: 30px 'League Gothic Regular', 'Open Sans', sans-serif;
   color: #fff;
-  padding-left: 28px;
+  /*padding-left: 28px;*/
+  padding-left: 12px;
   text-transform: uppercase;
 }
 
@@ -254,10 +273,6 @@ menu .wrapper {
 }
 
 /*светло-серый блок*/
-/*.white_updates,*/
-/*.white_slider {
-  margin-top: 98px;
-}*/
 
 .white_updates {
   margin-top: 60px;
