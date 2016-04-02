@@ -1,5 +1,6 @@
 @font-face {
     font-family: 'League Gothic Regular';
+    src: url('../fonts/league_gothic-webfont.svg#league_gothicregular') format('svg');
     src: url('../fonts/leaguegothic-regular-webfont.eot');
     src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
@@ -28,7 +29,7 @@ header {
   display: inline-block;
   clear: right;
   margin-bottom: 3%;
-  font: 48px 'League Gothic Regular', 'Open Sans', sans-serif;
+  font: 48px 'League Gothic Regular', Arial, Helvetica, sans-serif;
   color: #fff;
   text-transform: uppercase;
   text-align: left;
@@ -48,7 +49,7 @@ header {
   display: inline-block;
   margin-left: 0;
   padding-left: 48px;
-  font: 24px 'League Gothic Regular', 'Open Sans', sans-serif;
+  font: 24px 'League Gothic Regular', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
@@ -83,37 +84,21 @@ header {
   vertical-align: top;
 }
 
-.prev {
-  position: absolute;
-  top: 450px;
-  left: 40px;
-  cursor:pointer;
-  display: none;
-}
-
-.next {
-  position: absolute;
-  top: 450px;
-  right: 40px;
-  cursor:pointer;
-  display: none;
-}
-
 .text_1line {
-  font: 56px 'League Gothic Regular', 'Open Sans', sans-serif;
+  font: 56px 'League Gothic Regular', Arial, Helvetica, sans-serif;
   font-weight: 500;
   line-height: 1.2;
 }
 
 .text_2line {
-  font: 32px 'League Gothic Regular', 'Open Sans', sans-serif;
+  font: 32px 'League Gothic Regular', Arial, Helvetica, sans-serif;
   color: #EDBFFF;
   line-height: 0.7;
 }
 
 .text_3line {
   margin-top: 10px;
-  font: 18px 'Open Sans', 'League Gothic Regular', sans-serif;
+  font: 18px 'Open Sans', Arial, Helvetica, sans-serif;
   line-height: 1.4;
 }
 
@@ -166,14 +151,16 @@ header {
 }
 
 
-/*MENU*/
-menu {
+/*фиолетовый градиент*/
+.violet_menu {
   clear: both;
   overflow: hidden;
   height: 344px;
   border-top: 1px solid black;
-  background: linear-gradient(#745083, #322539);
+  background: -webkit-linear-gradient(#745083, #322539);
+  background: -o-linear-gradient(#745083, #322539);
   background: -moz-linear-gradient(#745083, #322539);
+  background: linear-gradient(#745083, #322539);
   width: 100%;
 }
 
@@ -193,7 +180,7 @@ menu {
   display: block;
   float: left;
   padding-top: 8px;
-  
+
   -moz-transform: scaleX(-1);
      -o-transform: scaleX(-1);
 -webkit-transform: scaleX(-1);
@@ -235,15 +222,14 @@ menu {
 
 .navi_head {
   display: inline-block;
-  font: 30px 'League Gothic Regular', 'Open Sans', sans-serif;
+  font: 30px 'League Gothic Regular', Arial, Helvetica, sans-serif;
   color: #fff;
-  /*padding-left: 28px;*/
   padding-left: 12px;
   text-transform: uppercase;
 }
 
 .navi_text {
-  font: 16px 'Open Sans', 'League Gothic Regular', sans-serif;
+  font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
   color: #fff;
   padding-left: 50px;
   padding-top: 8px;
@@ -255,7 +241,7 @@ menu {
   text-decoration: none;
   padding-top: 25px;
   text-transform: uppercase;
-  font: 18px 'League Gothic Regular', 'Open Sans', sans-serif;
+  font: 18px 'League Gothic Regular', Arial, Helvetica, sans-serif;
   color: #fff;
   text-align: right;
   width: 40%;
@@ -265,11 +251,6 @@ menu {
 
 .navi_more:hover {
   text-shadow: 0 0 5px #fff;
-}
-
-menu .wrapper {
-  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
-
 }
 
 /*светло-серый блок*/
@@ -312,7 +293,7 @@ menu .wrapper {
 }
 
 .white_head {
-  font: 30px 'League Gothic Regular', 'Open Sans', sans-serif;
+  font: 30px 'League Gothic Regular', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   display: inline-block;
   padding-left: 10px;
@@ -324,7 +305,7 @@ menu .wrapper {
 }
 
 .white_text {
-  font: 16px 'Open Sans', 'League Gothic Regular', sans-serif;
+  font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
   padding-left: 63px;
   padding-top: 5px;
 }
@@ -352,7 +333,6 @@ menu .wrapper {
   width: 13px;
   height: 13px;
   border: none;
-  /*-webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgba(0,0,0,0.3);*/
   box-sizing: border-box;
 }
 
@@ -367,7 +347,7 @@ menu .wrapper {
 }
 
 .updates_head {
-   font: 30px 'League Gothic Regular', 'Open Sans', sans-serif;
+   font: 30px 'League Gothic Regular', Arial, Helvetica, sans-serif;
    text-transform: uppercase;
 }
 
@@ -399,7 +379,7 @@ menu .wrapper {
 }
 
 .update_head {
-  font: 16px 'Open Sans', 'League Gothic Regular', sans-serif;
+  font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 800;
   display: inline-block;
   margin-left: 18px;
@@ -407,14 +387,14 @@ menu .wrapper {
 }
 
 .update_text {
-  font: 16px 'Open Sans', 'League Gothic Regular', sans-serif;
+  font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
   display: inline-block;
   margin-left: 18px;
 }
 
 
 .updates_more {
-  font: 18px 'League Gothic Regular', 'Open Sans', sans-serif;
+  font: 18px 'League Gothic Regular', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   margin-top: 5px;
   margin-right: 20px;
@@ -448,42 +428,48 @@ menu .wrapper {
   display: inline-block;
   height: 66px;
   width: 67.6px;
-  background: url(../img/sprite_logotypes.png) 0 0 no-repeat;
+  background: url(../img/sprite_logotypes.svg) 0 0 no-repeat;
+  /*background: url(../img/sprite_logotypes.png) 0 0 no-repeat;*/
 }
 
 .logo2 {
   display: inline-block;
   height: 66px;
   width: 70.6px;
-  background: url(../img/sprite_logotypes.png) -70px 0 no-repeat;
+  background: url(../img/sprite_logotypes.svg) -70px 0 no-repeat;
+  /*background: url(../img/sprite_logotypes.png) -70px 0 no-repeat;*/
 }
 
 .logo3 {
   display: inline-block;
   height: 66px;
   width: 65px;
-  background: url(../img/sprite_logotypes.png) -142.6px 0 no-repeat;
+  background: url(../img/sprite_logotypes.svg) -142.6px 0 no-repeat;
+  /*background: url(../img/sprite_logotypes.png) -142.6px 0 no-repeat;*/
 }
 
 .logo4 {
   display: inline-block;
   height: 66px;
   width: 50.7px;
-  background: url(../img/sprite_logotypes.png) -209.6px 0 no-repeat;
+  background: url(../img/sprite_logotypes.svg) -209.6px 0 no-repeat;
+  /*background: url(../img/sprite_logotypes.png) -209.6px 0 no-repeat;*/
 }
 
 .logo5 {
   display: inline-block;
   height: 66px;
   width: 102.7px;
-  background: url(../img/sprite_logotypes.png) -262.3px 0 no-repeat;
+  background: url(../img/sprite_logotypes.svg) -262.3px 0 no-repeat;
+  /*background: url(../img/sprite_logotypes.png) -262.3px 0 no-repeat;*/
 }
 
 .logo6 {
   display: inline-block;
   height: 66px;
   width: 78.3px;
-  background: url(../img/sprite_logotypes.png) -367px 0 no-repeat;
+  background: url(../img/sprite_logotypes.svg) -367px 0 no-repeat;
+  /*background: url(../img/sprite_logotypes.png) -367px 0 no-repeat;*/
 }
 
 
@@ -564,9 +550,8 @@ footer {
 
 .design {
   float: right;
-
   margin-top: 50px;
-  font: 12px 'Open Sans', 'League Gothic Regular', sans-serif;
+  font: 12px 'Open Sans', Arial, Helvetica, sans-serif;
   color: #fff;
 }
 
