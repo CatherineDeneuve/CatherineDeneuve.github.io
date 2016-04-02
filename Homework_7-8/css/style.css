@@ -150,6 +150,30 @@ header {
   margin-bottom: 60px;
 }
 
+.transparent .wrapper {
+  position: relative;
+}
+
+.left {
+  display: block;
+  position: absolute;
+  top: 150px;
+  left: -100px;
+  background: url(../img/arrow_left.png) no-repeat;
+  width: 22px;
+  height: 35px;
+}
+
+.right {
+  display: block;
+  position: absolute;
+  top: 150px;
+  right: -100px;
+  background: url(../img/arrow_right.png) no-repeat;
+  width: 22px;
+  height: 35px;
+}
+
 
 /*фиолетовый градиент*/
 .violet_menu {

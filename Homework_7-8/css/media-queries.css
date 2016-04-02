@@ -15,7 +15,6 @@
 		float: left;
 		margin-top: 39px;
 		padding-top: 0;
-		/*margin-bottom: 79px;*/
 	}
 
 	.menu_item {
@@ -52,6 +51,18 @@
 	.radiobuttons {
 		text-align: right;
 		margin-right: 210px;
+	}
+
+	.radiobuttons input {
+		margin-bottom: 100px;
+	}
+
+	.left {
+	  left: 0;
+	}
+
+	.right {
+	  right: 0;
 	}
 
  /*фиолетовое меню*/
@@ -230,14 +241,16 @@
 		}
 
 		.slider_text {
-			width: 208px;
+			width: 238px;
 		}
 
 		.text_1line {
+			padding-left: 30px;
 			font-size: 34px;
 		}
 
 		.text_2line {
+			padding-left: 30px;
 			font-size: 16px;
 		}
 
@@ -248,14 +261,19 @@
 		.phones {
 			width: 40%;
 			height: 40%;
-			margin-left: 20px;
+			float: right;
+			padding-right: 50px;
+			margin-left: 0;
 		}
 
-		.prev {
-			left: 10px;
+		.left {
+			top: 90px;
+		  left: 0;
 		}
-		.next {
-		  right: 10px;
+
+		.right {
+			top: 90px;
+		  right: 0;
 		}
 
 		.radiobuttons {
@@ -268,7 +286,7 @@
 		  margin-bottom: 40px;
 		}
 
-		menu {
+		.violet_menu {
 			display: block;
 			height: 750px;
 		}
@@ -493,6 +511,16 @@
 		display: none;
 	}
 
+	.left {
+		top: 90px;
+		left: 0;
+	}
+
+	.right {
+		top: 90px;
+		right: 0;
+	}
+
 	.radiobuttons {
 		text-align: center;
 		margin-right: 0;
@@ -500,17 +528,17 @@
 
 	.radiobuttons input {
 		margin-top: 25px;
-		margin-bottom: 30px;
+		margin-bottom: 65px;
 	}
 
-	menu {
+	.violet_menu {
 		display: block;
 		height: 790px;
 	}
 
 	.navi_item {
 		display: block;
-		width: 310px;
+		width: 270px;
 		height: 150px;
 		margin-bottom: 20px;
 	}
