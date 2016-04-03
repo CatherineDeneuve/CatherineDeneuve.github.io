@@ -288,14 +288,18 @@
 
 		.violet_menu {
 			display: block;
-			height: 750px;
+			height: 595px;
 		}
 
 		.navi_item {
 			display: block;
-			width: 424px;
+			width: 435px;
 			height: 130px;
-			margin-bottom: 20px;
+			margin-top: 40px;
+		}
+
+		.navi_head {
+			font-size: 24px;
 		}
 
 			/*светло-серый блок*/
@@ -306,6 +310,7 @@
 		.white_slider,
 		.white_updates {
 		  float: none;
+			margin-left: 65px;
 		}
 
 		.white_slider {
@@ -314,7 +319,6 @@
 
 		.white_updates {
 		  margin-top: 45px;
-			margin-left: 65px;
 			width: 330px;
 		}
 
@@ -532,16 +536,26 @@
 	}
 
 	.violet_menu {
-		display: block;
-		height: 790px;
+		height: 550px;
 	}
 
 	.navi_item {
 		display: block;
 		width: 270px;
-		height: 150px;
-		margin-bottom: 20px;
+		height: 130px;
+		margin-top: 40px;
+		/*margin-bottom: 20px;*/
 	}
+
+	.navi_head {
+		font-size: 24px;
+	}
+
+.navi_text {
+	height: 65px;
+	display: block;
+}
+
 
 	/*светло-серый блок*/
 	.white {

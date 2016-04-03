@@ -18,7 +18,7 @@
 .violet_menu {
   clear: both;
   overflow: hidden;
-  height: 344px;
+  /*height: 344px;*/
   border-top: 1px solid black;
   background: linear-gradient(#745083, #322539);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#745083', endColorstr='#322539')";

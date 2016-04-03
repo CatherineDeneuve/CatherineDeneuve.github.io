@@ -179,6 +179,7 @@ header {
 .violet_menu {
   clear: both;
   overflow: hidden;
+  display: block;
   height: 344px;
   border-top: 1px solid black;
   background: -webkit-linear-gradient(#745083, #322539);
