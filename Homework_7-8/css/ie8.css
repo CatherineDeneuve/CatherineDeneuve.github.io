@@ -65,16 +65,13 @@
   background: url(../img/sprite_logotypes.png) -367px 0 no-repeat;
 }
 
-.copyright_ie {
+/*.copyright_ie {
   font: italic 16px Georgia, 'Open Sans', sans-serif;
   color: #c5c5c5;
   margin-bottom: 3px;
   margin-top: 10px;
-}
+}*/
 
-.copyright {
-  display: none;
-}
 
 .footer {
   height: 115px;

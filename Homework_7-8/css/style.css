@@ -537,12 +537,12 @@ header {
 
 .copyright {
   font: italic 16px Georgia, 'Open Sans', sans-serif;
-  background-color: #c5c5c5;
-  color: transparent;
+  color: #c5c5c5;
+  /*color: transparent;*/
   text-shadow: 0px 3px 4px rgba(255,255,255,0.2);
-  -webkit-background-clip: text;
+  /*-webkit-background-clip: text;
      -moz-background-clip: text;
-          background-clip: text;
+          background-clip: text;*/
   margin-bottom: 3px;
   margin-top: 10px;
 }
