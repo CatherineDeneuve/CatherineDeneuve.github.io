@@ -1,0 +1,24 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .contacts {
+      text-indent: 0;
+      padding-top: 16.8%;
+  }
+
+.tibet {
+  clear: both;
+}
+}
+
+@media (max-width: 767px) {
+  li {
+    text-align: center;
+  }
+
+  .container {
+    width: 500px;
+  }
+
+  .contacts {
+      text-indent: 0;
+  }
+}

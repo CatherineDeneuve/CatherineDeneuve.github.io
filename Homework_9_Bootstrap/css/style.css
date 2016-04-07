@@ -1,0 +1,40 @@
+body {
+  background: url(../img/back.png) no-repeat;
+  background-size: cover;
+  margin: 0 17.5%;
+}
+
+/*HEADER*/
+.logo {
+    padding-top: 2%;
+}
+
+.contacts {
+    padding-top: 13.8%;
+    text-indent: 30%;
+}
+
+.contact_us {
+    font: 12px/150% Tahoma, sans-serif;
+    color: white;
+
+}
+
+.contact {
+    font: 11px/150% Tahoma, sans-serif;
+    color: white;
+
+}
+
+/*CONTENT*/
+
+
+/*FOOTER*/
+.copyright {
+    text-align: center;
+    font: 12px Tahoma, sans-serif;
+    color: white;
+    margin-top: 30%;
+    margin-bottom: 3%;
+
+}
