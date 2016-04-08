@@ -2,11 +2,14 @@ var a = prompt('Укажите, пожалуйста, число');
 var n = prompt ('Укажите, пожалуйста, степень для этого числа');
 
 function pow (a, n) {
-  if (a==0 && n!=0) {
-    console.log('0');
+  if (a==0 && n==-1 ) {
+    console.log('∞ Бесконечность');
     return;
   } else if (a!=0 && n==0) {
     console.log ('1');
+    return;
+  } else if (a==0 && n!=0) {
+    console.log ('0');
     return;
   } else if (a==0 && n==0) {
     console.log('Неопределенность');
