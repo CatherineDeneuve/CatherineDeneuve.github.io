@@ -215,7 +215,7 @@ header {
 }
 
 
-.navi_link1 {
+/*.navi_link1 {
   display: inline-block;
   vertical-align: top;
   width: 26px;
@@ -243,7 +243,7 @@ header {
   width: 26px;
   height: 39px;
   background: url(../img/sprite_menu.png) -54px 14px no-repeat;
-}
+}*/
 
 .navi_head {
   display: inline-block;

@@ -1,8 +1,9 @@
-
+"use strict";
 var arr = [];
 for(var i = 1; i<= 5; i++) {
   var a = prompt ('Напишите любое имя, пожалуйста', '');
   arr.push(a);
+  console.log(arr);
 }
 
 var userName = prompt ('Как Вас зовут?', '');

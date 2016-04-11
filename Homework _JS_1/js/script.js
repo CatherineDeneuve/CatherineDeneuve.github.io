@@ -1,3 +1,4 @@
+"use strict";
 var a = prompt('Укажите, пожалуйста, число', '');
 var n = prompt('Укажите, пожалуйста, степень для этого числа', '');
 myPow(a, n);
@@ -23,7 +24,7 @@ function myPow(a, n) {
     }
 
     var b = a;
-    for (i = 1; i < n; i++) {
+    for (var i = 1; i < n; i++) {
         b *= a;
     }
 }

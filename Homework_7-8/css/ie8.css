@@ -25,6 +25,7 @@
   width: 100%;
 }
 
+
 .navi_text,
 .white_text,
 .update_text {
@@ -40,6 +41,7 @@
 .update {
   width: 455px;
 }
+
 
 /*.logo1 {
   background: url(../img/sprite_logotypes.png) 0 0 no-repeat;
