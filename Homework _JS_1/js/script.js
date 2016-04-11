@@ -1,18 +1,18 @@
 var a = prompt('Укажите, пожалуйста, число', '');
 var n = prompt('Укажите, пожалуйста, степень для этого числа', '');
-pow(a, n);
+myPow(a, n);
 
-function pow(a, n) {
-  if (a === 0 && n === -1 ) {
+function myPow(a, n) {
+  if (a == 0 && n == -1 ) {
     console.log('Бесконечность');
     return;
-  } else if (a !== 0 && n === 0) {
+  } else if (a != 0 && n == 0) {
     console.log ('1');
     return;
-  } else if (a === 0 && n !== 0) {
+  } else if (a == 0 && n != 0) {
     console.log ('0');
     return;
-  } else if (a === 0 && n === 0) {
+  } else if (a == 0 && n == 0) {
     console.log('Неопределенность');
     return;
 
