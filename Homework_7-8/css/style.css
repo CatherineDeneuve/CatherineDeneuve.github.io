@@ -453,48 +453,72 @@ header {
   display: inline-block;
   height: 66px;
   width: 67.6px;
+  /*background: url(../img/sprite_logotypes.svg) 0 0 no-repeat;*/
+  background: url(../img/sprite_logotypes.png) 0 0 no-repeat;
+}
+
+.logo1--svg {
   background: url(../img/sprite_logotypes.svg) 0 0 no-repeat;
-  /*background: url(../img/sprite_logotypes.png) 0 0 no-repeat;*/
 }
 
 .logo2 {
   display: inline-block;
   height: 66px;
   width: 70.6px;
+  /*background: url(../img/sprite_logotypes.svg) -70px 0 no-repeat;*/
+  background: url(../img/sprite_logotypes.png) -70px 0 no-repeat;
+}
+
+.logo2--svg {
   background: url(../img/sprite_logotypes.svg) -70px 0 no-repeat;
-  /*background: url(../img/sprite_logotypes.png) -70px 0 no-repeat;*/
 }
 
 .logo3 {
   display: inline-block;
   height: 66px;
   width: 65px;
+  /*background: url(../img/sprite_logotypes.svg) -142.6px 0 no-repeat;*/
+  background: url(../img/sprite_logotypes.png) -142.6px 0 no-repeat;
+}
+
+.logo3--svg {
   background: url(../img/sprite_logotypes.svg) -142.6px 0 no-repeat;
-  /*background: url(../img/sprite_logotypes.png) -142.6px 0 no-repeat;*/
 }
 
 .logo4 {
   display: inline-block;
   height: 66px;
   width: 50.7px;
+  /*background: url(../img/sprite_logotypes.svg) -209.6px 0 no-repeat;*/
+  background: url(../img/sprite_logotypes.png) -209.6px 0 no-repeat;
+}
+
+.logo4--svg {
   background: url(../img/sprite_logotypes.svg) -209.6px 0 no-repeat;
-  /*background: url(../img/sprite_logotypes.png) -209.6px 0 no-repeat;*/
 }
 
 .logo5 {
   display: inline-block;
   height: 66px;
   width: 102.7px;
+  /*background: url(../img/sprite_logotypes.svg) -262.3px 0 no-repeat;*/
+  background: url(../img/sprite_logotypes.png) -262.3px 0 no-repeat;
+}
+
+.logo5--svg {
   background: url(../img/sprite_logotypes.svg) -262.3px 0 no-repeat;
-  /*background: url(../img/sprite_logotypes.png) -262.3px 0 no-repeat;*/
 }
 
 .logo6 {
   display: inline-block;
   height: 66px;
   width: 78.3px;
+  /*background: url(../img/sprite_logotypes.svg) -367px 0 no-repeat;*/
+  background: url(../img/sprite_logotypes.png) -367px 0 no-repeat;
+}
+
+.logo6--svg {
   background: url(../img/sprite_logotypes.svg) -367px 0 no-repeat;
-  /*background: url(../img/sprite_logotypes.png) -367px 0 no-repeat;*/
 }
 
 
