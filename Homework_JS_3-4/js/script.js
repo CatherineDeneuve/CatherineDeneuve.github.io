@@ -4,6 +4,8 @@ var li;
 var label;
 var elems;
 var button;
+var input;
+var textnode;
 
 var test = {
         form: document.body,
@@ -27,7 +29,7 @@ var test = {
             myVar.classList.add('col-xs-offset-2');
             myVar.classList.add('col-sm-4');
             myVar.classList.add('col-sm-offset-2');
-            myVar.classList.add('col-md-4');
+            myVar.classList.add('col-md-3');
             myVar.classList.add('col-md-offset-2');
             myVar.classList.add('col-lg-3');
             myVar.classList.add('col-lg-offset-1');
@@ -52,6 +54,7 @@ var test = {
 
           createInput: function (textLabel) {
             label = document.createElement('label');
+            input = document.createElement('input');
             label.innerHTML = '<input>' + textLabel;
             ol.appendChild(label);
             this.getGrid(label);
@@ -69,8 +72,8 @@ var test = {
               button.innerHTML = 'Проверить мои результаты';
               button.classList.add('button');
               button.style.marginTop = '50px';
-              button.style.paddingTop = '20px';
-              button.style.paddingBottom = '20px';
+              button.style.paddingTop = '10px';
+              button.style.paddingBottom = '10px';
               this.form.appendChild(button);
               this.getGrid(button);
           }
@@ -89,15 +92,15 @@ test.createInput('Вариант ответа №3');
 
 test.createLi('Вопрос №2');
 
-test.createInput('Вариант ответа №1');
-test.createInput('Вариант ответа №2');
-test.createInput('Вариант ответа №3');
+test.createInput('Вариант ответа №1', 2);
+test.createInput('Вариант ответа №2', 2);
+test.createInput('Вариант ответа №3', 2);
 
 test.createLi('Вопрос №3');
 
-test.createInput('Вариант ответа №1');
-test.createInput('Вариант ответа №2');
-test.createInput('Вариант ответа №3');
+test.createInput('Вариант ответа №1', 3);
+test.createInput('Вариант ответа №2', 3);
+test.createInput('Вариант ответа №3', 3);
 
 test.changeTypeForInput();
 
