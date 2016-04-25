@@ -87,7 +87,7 @@ var wrapper = {
       if (buttonSwitch.innerHTML == 'Pause'){
         buttonSwitch.innerHTML = 'Continue';
         clearInterval(intervalMs);
-        colorButtonSwitch();
+        wrapper.colorButtonSwitch();
       } else {
         buttonSwitch.innerHTML = 'Pause';
         wrapper.colorButtonSwitch();
