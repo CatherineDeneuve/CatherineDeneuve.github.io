@@ -105,7 +105,7 @@ a.pure-button-selected {
 }
 
 
-        .button-clear,        
+        .button-clear,
         .button-start {
             color: #000;
             border-radius: 20px;
@@ -137,8 +137,7 @@ a.pure-button-selected {
 
 
         .button-clear {
-            background: linear-gradient(#FFF, #FBC6A7);
-
+            background: linear-gradient(#FFF, #58FAF4);
             margin-left: 200px;
         }
 
