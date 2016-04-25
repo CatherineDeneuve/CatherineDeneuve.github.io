@@ -22,8 +22,10 @@ var wrapper = {
     compareMs: function () {
       if(ms < 10) {
         span.innerHTML = '00' + ms;
-      } else if (10 <= ms < 100) {
+      } else if (ms >= 10 && ms < 100) {
         span.innerHTML = '0' + ms;
+      } else {
+        span.innerHTML = ms;
       }
     },
 
@@ -69,6 +71,7 @@ var wrapper = {
       buttonSwitch.innerHTML = 'Start';
       buttonSwitch.classList.add('button-start');
       buttonSwitch.classList.add('pure-button');
+      
       wrapper.colorButtonSwitch();
 
       this.timer.appendChild(buttonSwitch);
