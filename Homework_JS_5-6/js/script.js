@@ -22,6 +22,8 @@ var wrapper = {
     compareMs: function () {
       if(ms < 10) {
         span.innerHTML = '00' + ms;
+      } else if (10 <= ms < 100) {
+        span.innerHTML = '0' + ms;
       }
     },
 
