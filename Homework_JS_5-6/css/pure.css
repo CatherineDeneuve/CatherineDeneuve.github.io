@@ -104,7 +104,7 @@ a.pure-button-selected {
     color: #fff;
 }
 
-
+        .button-split,
         .button-clear,
         .button-start {
             color: #000;
@@ -115,9 +115,7 @@ a.pure-button-selected {
 
         }
 
-        .wrapper {
-          width: 500px;
-        }
+
 
         .time {
           color: #585858;
@@ -138,9 +136,14 @@ a.pure-button-selected {
 
         .button-clear {
             background: linear-gradient(#FFF, #58FAF4);
-            margin-left: 200px;
+            margin-left: 100px;
         }
 
         .button-start {
             background: linear-gradient(#FFF, #BFFF00);
+        }
+
+        .button-split {
+          background: linear-gradient(#FFF, violet);
+          margin-left: 100px;
         }

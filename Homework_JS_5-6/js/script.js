@@ -71,7 +71,7 @@ var wrapper = {
       buttonSwitch.innerHTML = 'Start';
       buttonSwitch.classList.add('button-start');
       buttonSwitch.classList.add('pure-button');
-      
+
       wrapper.colorButtonSwitch();
 
       this.timer.appendChild(buttonSwitch);
