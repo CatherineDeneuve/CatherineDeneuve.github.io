@@ -41,11 +41,12 @@ function msGo() {
   if (buttonStart.innerHTML == 'Start'){
     buttonStart.innerHTML = 'Stop';
     intervalMs = setInterval(plusOneMs, 5);
+    buttonSplit.disabled = false;
 
   } else {
     buttonStart.innerHTML = 'Start';
-
     clearInterval(intervalMs);
+    buttonSplit.disabled = true;
     li = document.createElement('li');
     compareS();
     li.classList.add('liStyle');
@@ -58,12 +59,12 @@ function msGo() {
 
 
 function showSplit() {
-    li = document.createElement('li');
-
-    li.classList.add('liStyle');
-    compareS();
-    li.innerHTML = 'Split: ' + h + ':' + m + ':' + s + '.' + ms;
-    ol.appendChild(li);
+    if (buttonStart.innerHTML == 'Stop')
+      li = document.createElement('li');
+      li.classList.add('liStyle');
+      compareS();
+      li.innerHTML = 'Split: ' + h + ':' + m + ':' + s + '.' + ms;
+      ol.appendChild(li);
 }
 
 var ol = document.createElement('ol');
@@ -158,7 +159,7 @@ function clearTimer() {
 function deleteOl() {
   var array = ol.getElementsByTagName('*');
   var arrayLength = array.length;
-  for (var i = 0; i <= arrayLength; i=0) {    
+  for (var i = 0; i <= arrayLength; i=0) {
       ol.removeChild(array[i]);
   }
 }
