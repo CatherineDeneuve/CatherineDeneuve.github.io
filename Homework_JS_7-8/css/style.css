@@ -1,0 +1,63 @@
+body {
+  background-color: #B24926;
+}
+.menu {
+  margin: 40px 0 0 50px;
+}
+
+.menu li  {
+  display: inline-block;
+  padding: 10px 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+li.hover {
+  border: 2px solid brown;
+}
+
+.highlighted {
+  border: 2px solid brown;
+  background-color: brown;
+  -webkit-box-shadow: inset 0px 0px 14px -158px rgba(0,0,NaN,1);
+  -moz-box-shadow: inset 0px 0px 14px -158px rgba(0,0,NaN,1);
+  box-shadow: inset 0px 0px 14px -158px rgba(0,0,NaN,1);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+
+.menu li a {
+  text-decoration: none;
+  font: bold 14px Tahoma;
+  color: #fff;
+}
+
+.tabsContent {
+  display: none; /* по умолчанию прячем все блоки */
+  margin: 20px 50px 20px 50px;
+  background-color: #fff;
+  height: 400px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 50px;
+}
+.tabsContent.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+
+input {
+  display: inline-block;
+  margin: 10px;
+}
+
+form {
+  border: 1px solid grey;
+  padding: 10px 20px;
+}
+
+em {
+  display: none;
+  margin-top: 10px;
+  color: #444444;
+}
