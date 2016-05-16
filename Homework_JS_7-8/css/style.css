@@ -12,10 +12,6 @@ body {
   border-radius: 10px;
 }
 
-li.hover {
-  border: 2px solid brown;
-}
-
 .highlighted {
   border: 2px solid brown;
   background-color: brown;
@@ -34,7 +30,7 @@ li.hover {
 }
 
 .tabsContent {
-  display: none; /* по умолчанию прячем все блоки */
+  display: none;
   margin: 20px 50px 20px 50px;
   background-color: #fff;
   height: 400px;
@@ -43,8 +39,9 @@ li.hover {
   padding: 50px;
 }
 .tabsContent.active {
-  display: block; /* по умолчанию показываем нужный блок */
+  display: block;
 }
+
 
 input {
   display: inline-block;
