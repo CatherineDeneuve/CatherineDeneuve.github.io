@@ -16,7 +16,7 @@ $(function(){
           $(this).css({
               borderColor: "rgba(0,0,0,0.25)",
               boxShadow: "inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0",
-              textShadow: "rgba(0, 0, 0, 0.796875) 0 -1px 0, rgba(255, 255, 255, 0.296875) 0 0 10px"
+              textShadow: "rgba(255, 255, 255, 0.296875) 0 0 10px"
           });
       }, function(){
           $(this).css({
