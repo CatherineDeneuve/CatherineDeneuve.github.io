@@ -1,27 +1,24 @@
 body {
   background-color: #B24926;
 }
+
 .menu {
-  margin: 40px 0 0 50px;
+  margin: 40px 0 10px 50px;
 }
 
 .menu li  {
-  display: inline-block;
+  float: left;
+  margin: 0 5px 10px 5px;
   padding: 10px 10px;
-  border: 2px solid transparent;
-  border-radius: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .highlighted {
-  border: 2px solid brown;
+  border-color: transparent;
   background-color: brown;
-  -webkit-box-shadow: inset 0px 0px 14px -158px rgba(0,0,NaN,1);
-  -moz-box-shadow: inset 0px 0px 14px -158px rgba(0,0,NaN,1);
-  box-shadow: inset 0px 0px 14px -158px rgba(0,0,NaN,1);
-    padding: 10px 10px;
-    border-radius: 10px;
+  box-shadow: rgba(255,255,255,0.1) 0 1px 0;
 }
-
 
 .menu li a {
   text-decoration: none;
@@ -30,9 +27,10 @@ body {
 }
 
 .tabsContent {
+  clear: both;
   display: none;
   margin: 20px 50px 20px 50px;
-  background-color: #fff;
+  background: url("../img/pattern.png");
   height: 400px;
   border: 1px solid transparent;
   border-radius: 20px;
@@ -41,7 +39,6 @@ body {
 .tabsContent.active {
   display: block;
 }
-
 
 input {
   display: inline-block;
@@ -56,5 +53,5 @@ form {
 em {
   display: none;
   margin-top: 10px;
-  color: #444444;
+  color: #B24926;
 }
