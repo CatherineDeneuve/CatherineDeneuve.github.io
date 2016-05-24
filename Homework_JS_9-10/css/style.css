@@ -249,11 +249,11 @@ background-position: 0 -51px;
   /*  PAGINATION  */
 .jcarousel-pagination {
   background-color: transparent;
-  position: relative;;
+  position: absolute;
   bottom: 10px;
   left: 10px;
   text-align: center;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 .jcarousel-pagination a {
@@ -275,5 +275,5 @@ background-position: 0 -51px;
 }
 
 .active {
-  opacity: .7;
+  opacity: .5;
 }
