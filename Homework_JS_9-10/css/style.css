@@ -250,6 +250,7 @@ background-position: 0 -51px;
 .jcarousel-pagination {
   background-color: transparent;
   position: absolute;
+  width: 150px;
   bottom: 10px;
   left: 10px;
   text-align: center;
