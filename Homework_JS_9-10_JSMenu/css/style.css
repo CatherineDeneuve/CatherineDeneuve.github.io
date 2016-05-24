@@ -1,6 +1,8 @@
 body {
   background: linear-gradient(#FFFFA6, #FFDD00);
   width: 1200px;
+  height: 1200px;
+  margin: 0 auto;
   font: 16px 'Lobster', cursive;
 }
 
@@ -249,11 +251,11 @@ background-position: 0 -51px;
   /*  PAGINATION  */
 .jcarousel-pagination {
   background-color: transparent;
-  position: relative;;
-  bottom: 10px;
-  left: 10px;
+  position: relative;
+  /*bottom: 10px;
+  left: 10px;*/
   text-align: center;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
 .jcarousel-pagination a {
