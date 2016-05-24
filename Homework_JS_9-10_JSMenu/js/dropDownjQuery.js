@@ -97,7 +97,7 @@ $('.jcarousel-next')
 });
 
 // Пагинация слайдера
-$(window).load(function() {
+
   $('.jcarousel-pagination')
 
   // Триггер класса active
@@ -114,9 +114,10 @@ $(window).load(function() {
   .jcarouselPagination({
     item: function(page) {
       return '<a href="#' + page + '">' + page + '</a>';
+      console.log('Зашли в пагинацию');
     }
   });
-});
+
 
 
 // Автопрокрутка слайдера
