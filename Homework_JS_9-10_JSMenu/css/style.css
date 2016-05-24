@@ -1,7 +1,5 @@
 body {
   background: linear-gradient(#FFFFA6, #FFDD00);
-  width: 1200px;
-  height: 1200px;
   font: 16px 'Lobster', cursive;
 }
 
@@ -95,29 +93,31 @@ body {
 
 /*Форма*/
 .wrapper {
-  margin-left: 300px;
-  margin-top: 50px;
+  width: 620px;
+  margin: 50px auto;
 }
-section {
-  width: 350px;
+.column {
+  width: 300px;
   height: 500px;
-  float: left;
+  display: inline-block;
+  /*text-align: right;*/
+  /*clear: both;*/
+  /*float: left;*/
+  /*margin: 0 auto;*/
+  /*background: linear-gradient(#FFFFA6, #FFDD00);*/
 }
 
 .selects label {
-  float: left;
+  /*float: left;*/
   margin-top: 5px;
-}
-
-label {
   display: block;
   line-height: 2;
-
 }
 
 .checkboxes label {
   display: inline-block;
   clear: both;
+  line-height: 2;
 }
 
 /*Чекбокс на чистом css*/
@@ -193,6 +193,7 @@ background-position: 0 -51px;
 
 /*Карусель*/
 .wrap_jcarousel {
+  /*clear: both;*/
   width: 600px;
   margin: 10px auto;
   position: relative;

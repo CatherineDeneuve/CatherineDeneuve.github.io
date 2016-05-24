@@ -60,9 +60,9 @@
   </ul>
 
 
-  <form class="wrapper">
+  <div class="wrapper">
 
-  <section class="selects">
+  <div class="selects column">
   <p>
       <label for="tool">Чем Вам нравится рисовать?</label>
       <select id="tool">
@@ -71,7 +71,7 @@
           <option value="3" class="test-class-3">Акварелью</option>
           <option value="4" class="test-class-4">Мелом</option>
           <option value="5" disabled="disabled">Фломастером на парте</option>
-      </select>
+      </select><br><br>
   </p>
 
   <p>
@@ -81,7 +81,7 @@
           <option value="2" class="test-class-2">Портрет</option>
           <option value="3" class="test-class-3">Натюрморт</option>
           <option value="4" class="test-class-4">Карикатура</option>
-      </select>
+      </select><br><br>
   </p>
 
 
@@ -98,23 +98,24 @@
               <option value="10">Сейчас поставлю 0 баллов</option>
       </select>
   </p>
-</section>
+</div>
 
-<section class="checkboxes">
+<div class="checkboxes column">
   <div class="checkboxesJS">
     <div>
       <label for="ch1">Label 1</label>
       <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" />
     </div>
-  <div>
-    <label for="ch2">Label 2</label>
-    <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+    <div>
+      <label for="ch2">Label 2</label>
+      <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+    </div>
+    <div>
+      <label for="ch3">Label 3</label>
+      <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" />
+    </div>
   </div>
-  <div>
-    <label for="ch3">Label 3</label>
-    <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" />
-  </div>
-</div>
+  <!-- end of checkboxesJS -->
 
 <div class="checkboxesCSS">
   <div>
@@ -126,11 +127,11 @@
     <label class="cssCheck" for="test-check2">Чекбокс 2:</label>
   </div>
 </div>
-</section>
+<!-- end of checkboxesCSS -->
+</div>
+<!-- end of checkboxes -->
 
-
-  </form>
-  
+  </div>
 <script src="js/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
 
