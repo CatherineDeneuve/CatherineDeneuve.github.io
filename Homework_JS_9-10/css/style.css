@@ -249,12 +249,12 @@ background-position: 0 -51px;
   /*  PAGINATION  */
 .jcarousel-pagination {
   background-color: transparent;
-  position: relative;
+  position: absolute;
   width: 150px;
-  /*bottom: 10px;
-  left: 10px;*/
+  bottom: 10px;
+  left: 10px;
   /*text-align: center;*/
-  margin: 20px auto;
+  /*margin: 20px auto;*/
 }
 
 .jcarousel-pagination a {
