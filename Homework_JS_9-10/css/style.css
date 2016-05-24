@@ -251,10 +251,10 @@ background-position: 0 -51px;
   background-color: transparent;
   position: relative;
   width: 150px;
-  bottom: 10px;
-  left: 10px;
+  /*bottom: 10px;
+  left: 10px;*/
   text-align: center;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
 .jcarousel-pagination a {
