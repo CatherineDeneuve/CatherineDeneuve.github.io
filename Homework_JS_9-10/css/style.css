@@ -103,13 +103,19 @@ section {
   float: left;
 }
 
+.selects label {
+  float: left;
+}
+
 label {
   display: block;
   line-height: 2;
+
 }
 
 .checkboxes label {
   display: inline-block;
+  clear: both;
 }
 
 /*Чекбокс на чистом css*/

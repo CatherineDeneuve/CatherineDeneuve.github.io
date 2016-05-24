@@ -156,9 +156,13 @@ $('.jcarousel-pagination')
 });
 
 // Стилизируем селекты
-$(function () {
-  $('select').selectBox();
+// $(function () {
+//   $('select').selectBox();
+//
+// });
 
+$(document).ready(function() {
+  $('select').niceSelect();
 });
 
 // Стилизируем чекбоксы
