@@ -111,11 +111,11 @@ $('.jcarousel-pagination')
 
 // Инициализация пагинации
 
-.jcarouselPagination({
-  item: function(page) {
-    return '<a href="#' + page + '">' + page + '</a>';
-  }
-});
+// .jcarouselPagination({
+//   item: function(page) {
+//     return '<a href="#' + page + '">' + page + '</a>';
+//   }
+// });
 
 $('.jcarousel-pagination').jcarouselPagination({
     'perPage': 6
