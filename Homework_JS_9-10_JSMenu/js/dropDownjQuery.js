@@ -111,14 +111,14 @@ $('.jcarousel-next')
 
   // Инициализация пагинации
 
-  $(window).load(function(){
-    $('.jcarousel-pagination').jcarouselPagination({
-    item: function(page) {
-      console.log('Зашли в пагинацию');
-      return '<a href="#' + page + '">' + page + '</a>';
-    }
-  });
-});
+//   $(window).load(function(){
+//     $('.jcarousel-pagination').jcarouselPagination({
+//     item: function(page) {
+//       console.log('Зашли в пагинацию');
+//       return '<a href="#' + page + '">' + page + '</a>';
+//     }
+//   });
+// });
 
 
 
