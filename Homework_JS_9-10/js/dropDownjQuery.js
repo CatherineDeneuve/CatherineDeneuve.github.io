@@ -110,16 +110,27 @@ $('.jcarousel-pagination')
 })
 
 // Инициализация пагинации
+.jcarouselPagination({
+  item: function(page) {
+    return '<a href="#' + page + '">' + page + '</a>';
+  }
+});
 
-// .jcarouselPagination({
-//   item: function(page) {
-//     return '<a href="#' + page + '">' + page + '</a>';
-//   }
+// $('.jcarousel-pagination').jcarouselPagination({
+//     'item': function(page, carouselItems) {
+//         return '<li><a href="#' + page + '">Page ' + page + '</a></li>';
+//     }
+// });
+
+// $('.jcarousel-pagination').jcarouselPagination({
+//     'carousel': $('.jcarousel')
 // });
 
 $('.jcarousel-pagination').jcarouselPagination({
     'perPage': 6
 });
+
+
 
 // Автопрокрутка слайдера
 
