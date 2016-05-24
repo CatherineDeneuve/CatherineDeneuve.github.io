@@ -107,16 +107,18 @@ $('.jcarousel-next')
   })
   .on('jcarouselpagination:inactive', 'a', function() {
     $(this).removeClass('active');
-  })
+  });
 
   // Инициализация пагинации
 
-  .jcarouselPagination({
+  $(window).load(function(){
+    $('.jcarousel-pagination').jcarouselPagination({
     item: function(page) {
       console.log('Зашли в пагинацию');
-      return '<a href="#' + page + '">' + page + '</a>';      
+      return '<a href="#' + page + '">' + page + '</a>';
     }
   });
+});
 
 
 
