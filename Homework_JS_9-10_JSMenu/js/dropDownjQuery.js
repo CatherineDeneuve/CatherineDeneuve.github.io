@@ -113,8 +113,8 @@ $('.jcarousel-next')
 
   .jcarouselPagination({
     item: function(page) {
-      return '<a href="#' + page + '">' + page + '</a>';
       console.log('Зашли в пагинацию');
+      return '<a href="#' + page + '">' + page + '</a>';      
     }
   });
 
