@@ -117,6 +117,10 @@ $('.jcarousel-pagination')
   }
 });
 
+$('.jcarousel-pagination').jcarouselPagination({
+    'perPage': 6
+});
+
 // Автопрокрутка слайдера
 
 // $('.jcarousel').jcarouselAutoscroll({
