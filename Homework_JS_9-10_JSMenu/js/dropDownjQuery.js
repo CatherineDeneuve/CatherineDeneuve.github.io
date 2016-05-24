@@ -97,25 +97,27 @@ $('.jcarousel-next')
 });
 
 // Пагинация слайдера
+$(window).load(function() {
+  $('.jcarousel-pagination')
 
-$('.jcarousel-pagination')
+  // Триггер класса active
 
-// Триггер класса active
+  .on('jcarouselpagination:active', 'a', function() {
+    $(this).addClass('active');
+  })
+  .on('jcarouselpagination:inactive', 'a', function() {
+    $(this).removeClass('active');
+  })
 
-.on('jcarouselpagination:active', 'a', function() {
-  $(this).addClass('active');
-})
-.on('jcarouselpagination:inactive', 'a', function() {
-  $(this).removeClass('active');
-})
+  // Инициализация пагинации
 
-// Инициализация пагинации
-
-.jcarouselPagination({
-  item: function(page) {
-    return '<a href="#' + page + '">' + page + '</a>';
-  }
+  .jcarouselPagination({
+    item: function(page) {
+      return '<a href="#' + page + '">' + page + '</a>';
+    }
+  });
 });
+
 
 // Автопрокрутка слайдера
 
