@@ -3,18 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Homework_JS_9-10</title>
-
-
-  <link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-
-
-
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/nice-select.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.jcarousel.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
   <script src="js/jquery.nice-select.js"></script>
+  <script src="js/dropDownjQuery.js"></script>
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
@@ -39,7 +37,7 @@
     <a class="jcarousel-prev" href="#">&#9668;</a>
     <a class="jcarousel-next" href="#">&#9658;</a>
 
-    </div><!--  end wrap_jcarousel  -->
+  </div><!--  end wrap_jcarousel  -->
 
 
   <!-- Выпадающее меню -->
@@ -68,79 +66,75 @@
   <div class="wrapper">
 
   <div class="selects column">
-  <p>
-      <label for="tool">Чем Вам нравится рисовать?</label>
-      <select id="tool">
-          <option value="1" class="test-class-1" selected="selected">Карандашом</option>
-          <option value="2" class="test-class-2" >Гуашью</option>
-          <option value="3" class="test-class-3">Акварелью</option>
-          <option value="4" class="test-class-4">Мелом</option>
-          <option value="5" disabled="disabled">Фломастером на парте</option>
-      </select><br><br>
-  </p>
+    <p>
+        <label for="tool">Чем Вам нравится рисовать?</label>
+        <select id="tool">
+            <option value="1" class="test-class-1" selected="selected">Карандашом</option>
+            <option value="2" class="test-class-2" >Гуашью</option>
+            <option value="3" class="test-class-3">Акварелью</option>
+            <option value="4" class="test-class-4">Мелом</option>
+            <option value="5" disabled="disabled">Фломастером на парте</option>
+        </select><br><br>
+    </p>
 
-  <p>
-      <label for="namePictures">Как бы Вы назвали рисунки на слайдах?</label>
-      <select id="namePictures">
-          <option value="1" class="test-class-1">Пейзаж</option>
-          <option value="2" class="test-class-2">Портрет</option>
-          <option value="3" class="test-class-3">Натюрморт</option>
-          <option value="4" class="test-class-4">Карикатура</option>
-      </select><br><br>
-  </p>
+    <p>
+        <label for="namePictures">Как бы Вы назвали рисунки на слайдах?</label>
+        <select id="namePictures">
+            <option value="1" class="test-class-1">Пейзаж</option>
+            <option value="2" class="test-class-2">Портрет</option>
+            <option value="3" class="test-class-3">Натюрморт</option>
+            <option value="4" class="test-class-4">Карикатура</option>
+        </select><br><br>
+    </p>
 
 
-  <p>
-      <label for="emotions">Какую эмоцию вызывают у Вас слайды?</label>
-      <select id="emotions">
-              <option value="1">Умиротворение</option>
-              <option value="2">Восторг</option>
-              <option value="3">Радость</option>
-              <option value="5">Раздражение</option>
-              <option value="6">Зависть</option>
-              <option value="7">Печаль</option>
-              <option value="9">Сейчас поставлю 100 баллов</option>
-              <option value="10">Сейчас поставлю 0 баллов</option>
-      </select>
-  </p>
-</div>
+    <p>
+        <label for="emotions">Какую эмоцию вызывают у Вас слайды?</label>
+        <select id="emotions">
+                <option value="1">Умиротворение</option>
+                <option value="2">Восторг</option>
+                <option value="3">Радость</option>
+                <option value="5">Раздражение</option>
+                <option value="6">Зависть</option>
+                <option value="7">Печаль</option>
+                <option value="9">Сейчас поставлю 100 баллов</option>
+                <option value="10">Сейчас поставлю 0 баллов</option>
+        </select>
+    </p>
+  </div>
 
-<div class="checkboxes column">
-  <div class="checkboxesJS">
-    <div>
-      <label for="ch1">Label 1</label>
-      <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" />
+  <div class="checkboxes column">
+    <div class="checkboxesJS">
+      <div>
+        <label for="ch1">Label 1</label>
+        <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" />
+      </div>
+      <div>
+        <label for="ch2">Label 2</label>
+        <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+      </div>
+      <div>
+        <label for="ch3">Label 3</label>
+        <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" />
+      </div>
     </div>
-    <div>
-      <label for="ch2">Label 2</label>
-      <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+    <!-- end of checkboxesJS -->
+
+    <div class="checkboxesCSS">
+      <div>
+        <input type="checkbox" id="test-check1">
+        <label class="cssCheck" for="test-check1">Чекбокс 1:</label>
+      </div>
+      <div>
+        <input type="checkbox" id="test-check2">
+        <label class="cssCheck" for="test-check2">Чекбокс 2:</label>
+      </div>
     </div>
-    <div>
-      <label for="ch3">Label 3</label>
-      <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" />
-    </div>
+    <!-- end of checkboxesCSS -->
   </div>
-  <!-- end of checkboxesJS -->
+  <!-- end of checkboxes -->
 
-<div class="checkboxesCSS">
-  <div>
-    <input type="checkbox" id="test-check1">
-    <label class="cssCheck" for="test-check1">Чекбокс 1:</label>
-  </div>
-  <div>
-    <input type="checkbox" id="test-check2">
-    <label class="cssCheck" for="test-check2">Чекбокс 2:</label>
-  </div>
 </div>
-<!-- end of checkboxesCSS -->
-</div>
-<!-- end of checkboxes -->
-
-  </div>
-
-<script src="js/dropDownjQuery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
-
 
 </body>
 </html>
