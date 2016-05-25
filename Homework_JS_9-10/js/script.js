@@ -1,76 +1,48 @@
-// JS animation
-function heightIncrease(el, duration, slideLength) {
-    var heightOfElement = 0;
-    var time = 0;
-    var fps = 50;
-    list.style.overflow = "hidden";
-    list.style.display = "inline-block";
 
-    var interval = setInterval(function () {
+// Выпадающее меню на jQuery
+$(function () {
+  var menu = $('.dropDownMenu');
+  var portrait = $('.portrait');
 
-        if(time > duration){
-          clearInterval(interval);
-        }
+  $('.withArrow').mouseenter(
+    function () {
+      menu.show().animate({
+        height: '132px'
+      }, 500, 'easeOutCubic');
+    });
+  $('.withArrow').mouseleave(
+   function () {
+      menu.animate({
+        height: '0'
+      }, 500).hide();
+  });
 
-        time += duration/fps;
-        heightOfElement += slideLength/(duration/fps);
-        list.style.height = heightOfElement + 'px';
-    }, duration/fps);
-}
+  $('.dropDownMenu, .portrait').hover(
+    function () {
+      $(this).animate({
+        backgroundColor: '#2A2A2A'
+      }, 500);
+    },
+    function () {
+      $(this).animate({
+        backgroundColor: '#444444'
+      }, 500);
+    }
+  );
 
-function heightIncrease2(el, duration, slideLength) {
-    list.style.overflow = 'visible';
-    portraitMenu.style.overflow = 'hidden';
-    var heightOfElement = 0;
-    var time = 0;
-    var fps = 50;
-    portraitMenu.style.display = "inline-block";
+  $('.dropDownList:eq(1)').mouseenter(
+    function () {
+      portrait.css('display', 'inline-block').animate({
+        height: '66px'
+      }, 500, 'easeOutCubic');
+    }).mouseleave(
+   function () {
+      portrait.animate({
+        height: '0'
+      }).hide();
 
-    var interval = setInterval(function () {
-
-        if(time > duration){
-          clearInterval(interval);
-        }
-
-        time += duration/fps;
-        heightOfElement += slideLength/(duration/fps);
-        portraitMenu.style.height = heightOfElement + 'px';
-    }, duration/fps);
-}
-
-
-var genres = document.querySelector('.withArrow');
-var list = document.querySelector('.dropDownMenu');
-
-var portrait = document.querySelector('.portraitWithArrow');
-var portraitMenu = document.querySelector('.portrait');
-
-
-
-genres.addEventListener('mouseenter', function () {
-    heightIncrease(list, 500, 26);
+  });
 });
-
-genres.addEventListener('mouseleave', hideList);
-
-portrait.addEventListener('mouseenter', function () {
-    heightIncrease2(portraitMenu, 500, 13);
-});
-
-portrait.addEventListener('mouseleave', hidePortrait);
-
-function hideList() {
-  list.style.overflow = 'hidden';
-  list.style.display = "none";
-  list.style.height = '0';
-}
-
-function hidePortrait() {
-  portraitMenu.style.display = "none";
-  list.style.overflow = 'hidden';
-  portraitMenu.style.height = '0';
-}
-
 
 // Карусель
 
@@ -138,12 +110,13 @@ $('.jcarousel-pagination')
 })
 
 // Инициализация пагинации
-
 .jcarouselPagination({
   item: function(page) {
     return '<a href="#' + page + '">' + page + '</a>';
   }
 });
+
+
 
 // Автопрокрутка слайдера
 
