@@ -209,12 +209,12 @@ background-position: 0 -51px;
   height: 410px;
 }
 
-.jcarousel-list {
+.jcarousel ul {
   width: 3600px;
   position: relative;
 }
 
-.jcarousel-item {
+.jcarousel ul li {
   float: left;
 }
 
