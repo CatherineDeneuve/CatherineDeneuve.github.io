@@ -1,62 +1,12 @@
-
-// Выпадающее меню на jQuery
-$(function () {
-  var menu = $('.dropDownMenu');
-  var portrait = $('.portrait');
-
-  $('.withArrow').mouseenter(
-    function () {
-      menu.show().animate({
-        height: '132px'
-      }, 500, 'easeOutCubic');
-    });
-  $('.withArrow').mouseleave(
-   function () {
-      menu.animate({
-        height: '0'
-      }, 500).hide();
-  });
-
-  $('.dropDownMenu, .portrait').hover(
-    function () {
-      $(this).animate({
-        backgroundColor: '#2A2A2A'
-      }, 500);
-    },
-    function () {
-      $(this).animate({
-        backgroundColor: '#444444'
-      }, 500);
-    }
-  );
-
-  $('.dropDownList:eq(1)').mouseenter(
-    function () {
-      portrait.css('display', 'inline-block').animate({
-        height: '66px'
-      }, 500, 'easeOutCubic');
-    }).mouseleave(
-   function () {
-      portrait.animate({
-        height: '0'
-      }).hide();
-
-  });
-});
-
 // Карусель
 
 $(function() {
 
 // Инициализация слайдера
 
-// $('.jcarousel').jcarousel({
-//   // Базовые настройки скрипта пишутся здесь
-//
-// });
+$('.jcarousel').jcarousel();
 
 // Прокрутка слайдера
-
 
 // Кнопка PREV
 
@@ -107,20 +57,15 @@ $('.jcarousel-next')
   })
   .on('jcarouselpagination:inactive', 'a', function() {
     $(this).removeClass('active');
-  });
+  })
 
   // Инициализация пагинации
 
-//   $(window).load(function(){
-//     $('.jcarousel-pagination').jcarouselPagination({
-//     item: function(page) {
-//       console.log('Зашли в пагинацию');
-//       return '<a href="#' + page + '">' + page + '</a>';
-//     }
-//   });
-// });
-
-
+  .jcarouselPagination({
+    item: function(page) {
+      return '<a href="#' + page + '">' + page + '</a>';
+    }
+  });
 
 // Автопрокрутка слайдера
 
@@ -132,7 +77,53 @@ $('.jcarousel-next')
 
 });
 
-// Стилизируем селекты
+// Выпадающее меню на jQuery
+$(function () {
+  var menu = $('.dropDownMenu');
+  var portrait = $('.portrait');
+
+  $('.withArrow').mouseenter(
+    function () {
+      menu.show().animate({
+        height: '132px'
+      }, 500, 'easeOutCubic');
+    });
+  $('.withArrow').mouseleave(
+   function () {
+      menu.animate({
+        height: '0'
+      }, 500).hide();
+  });
+
+  $('.dropDownMenu, .portrait').hover(
+    function () {
+      $(this).animate({
+        backgroundColor: '#2A2A2A'
+      }, 500);
+    },
+    function () {
+      $(this).animate({
+        backgroundColor: '#444444'
+      }, 500);
+    }
+  );
+
+  $('.dropDownList:eq(1)').mouseenter(
+    function () {
+      portrait.css('display', 'inline-block').animate({
+        height: '66px'
+      }, 500, 'easeOutCubic');
+    }).mouseleave(
+   function () {
+      portrait.animate({
+        height: '0'
+      }).hide();
+
+  });
+});
+
+
+// Стилизация селектов
 
 $(document).ready(function() {
   $('select').niceSelect();
