@@ -1,0 +1,132 @@
+body {
+    background: #F9F9F9;
+
+  }
+
+.wrapper {
+    background: #FFFFFF;
+    width: 78%;
+    height: 100%;
+    margin: 0 auto;
+    border-right: 1px  solid #DBDBDB;
+    border-left: 1px  solid #DBDBDB;
+    -webkit-box-shadow: 1px 0px 15px -1px rgba(219,219,219,1);
+    -moz-box-shadow: 1px 0px 15px -1px rgba(219,219,219,1);
+    box-shadow: 1px 0px 15px -1px rgba(219,219,219,1);
+}
+
+/*HEADER*/
+
+.logo{
+    margin: 5% 4%;
+  }
+
+/*MENU*/
+
+.top_menu {
+    margin-left: 4%;
+
+    /*background-image: radial-gradient(#545454, #565555);*/
+    background-image: linear-gradient(#5D5D5D, #454444);
+    /*background-image: radial-gradient(#ff0000, #ffff00);*/
+
+    width: 92%;
+}
+
+.top_menu li {
+    display: inline-block;
+    padding: 10px 20px;
+    font: 15px "Open Sans", sans-serif;
+    color: white;
+}
+
+.top_menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.top_menu li:hover,
+.top_menu li:active {
+    background-image: linear-gradient(#484848, #2E2E2E);
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+/*CONTAINER*/
+
+.left_menu {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 4%;
+    width: 17.6%;
+    border: 1px solid #cccccc;
+    border-top: none;
+    float: left;
+
+}
+
+.left_menu li {
+    padding: 10px 20px;
+    font: 13.33px "Open Sans", sans-serif;
+    border-top: 1px solid #cccccc;
+}
+
+.left_menu li a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.left_menu li a:hover {
+    color: black;
+}
+
+.left_menu li:hover {
+    background: #F9F9F9;
+    color: black;
+    border: 1px solid black;
+    padding-left: 40px;
+}
+
+/*CONTENT*/
+
+.bike {
+    float: right;
+    margin: 5% 4%;
+    display: inline-block;
+    width: 67%;
+}
+
+p {
+    clear: both;
+    font: 13.3px "Open Sans", sans-serif;
+    line-height: 170%;
+    margin: 5% 4% 5% 30%;
+    width: 65%;
+}
+
+/*FOOTER*/
+.footer {
+    margin: 5% 4%;
+    background: #E1E1E1;
+    width: 92%;
+}
+
+.footer li {
+    display: inline-block;
+    padding: 10px 20px;
+    font: 13.3px "Open Sans", sans-serif;
+    color: black;
+}
+
+.footer li:last-child{
+    float:right;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,53 @@
+body {
+  background: url(../img/back.png) no-repeat;
+  background-size: cover;
+  margin: 0 17.5%;
+}
+
+/*HEADER*/
+.logo {
+    padding-top: 2%;
+}
+
+.contacts {
+    float: right;
+    padding: 13.8% 1% 0 0;
+}
+
+.contact_us {
+    font: 12px/150% Tahoma, sans-serif;
+    color: white;
+}
+
+.contact {
+    font: 11px/150% Tahoma, sans-serif;
+    color: white;
+
+}
+
+/*CONTENT*/
+.content li {
+    display: inline-block;
+    width: 33%;
+    margin: 0 0 3% 0;
+    vertical-align: top;
+}
+
+.photo2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    clear:left;
+}
+
+.photo3 {
+    text-align: right;
+}
+
+/*FOOTER*/
+.copyright {
+    text-align: center;
+    font: 12px Tahoma, sans-serif;
+    color: white;
+    padding: 25% 17.5% 2%;
+}
