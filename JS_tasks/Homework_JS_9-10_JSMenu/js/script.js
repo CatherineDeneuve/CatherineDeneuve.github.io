@@ -49,13 +49,13 @@ var portraitMenu = document.querySelector('.portrait');
 
 
 genres.addEventListener('mouseenter', function () {
-    heightIncrease(list, 500, 26);
+    heightIncrease(list, 20, 1.02);
 });
 
 genres.addEventListener('mouseleave', hideList);
 
 portrait.addEventListener('mouseenter', function () {
-    heightIncrease2(portraitMenu, 500, 13);
+    heightIncrease2(portraitMenu, 20, 0.52);
 });
 
 portrait.addEventListener('mouseleave', hidePortrait);
@@ -75,7 +75,10 @@ function hidePortrait() {
 $(window).load(function(){
     $(function() {
           // Карусель
-          $('.jcarousel').jcarousel();
+          $('.jcarousel').jcarousel({
+            wrap:"circular"
+          });
+
           $('.jcarousel-prev')
           // Триггер класса inactive
           .on('jcarouselcontrol:active', function() {
