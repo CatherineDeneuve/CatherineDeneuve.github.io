@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework_JS_11-12</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+  <script src="js/jquery.slider.js"></script>
+  <!-- <script src="js/template.js"></script> -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="carousel-arrow-left"><span><img src="img/arrow-left.png" /></span></div>
+    <div class="carousel-hider">
+      <ul class="carousel-list">
+        <li class="carousel-element"><img src="img/1.jpg"><p>Бурундук</p></li>
+        <li class="carousel-element"><img src="img/2.jpg"><p>Обезьяна</p></li>
+        <li class="carousel-element"><img src="img/3.jpg"><p>Сайгак</p></li>
+        <li class="carousel-element"><img src="img/4.jpg"><p>Белка</p></li>
+        <li class="carousel-element"><img src="img/5.jpg"><p>Петух</p></li>
+        <li class="carousel-element"><img src="img/6.jpg"><p>Грызун 1</p></li>
+        <li class="carousel-element"><img src="img/7.jpg"><p>Грызун 2</p></li>
+        <li class="carousel-element"><img src="img/8.jpg"><p>Собака</p></li>
+        <li class="carousel-element"><img src="img/9.jpg"><p>Лошадь</p></li>
+        <li class="carousel-element"><img src="img/10.jpg"><p>Панголин</p></li>
+        <li class="carousel-element"><img src="img/11.jpg"><p>Коала</p></li>
+        <li class="carousel-element"><img src="img/12.jpg"><p>Собака и кот</p></li>
+        <li class="carousel-element"><img src="img/13.jpg"><p>Скопа</p></li>
+        <li class="carousel-element"><img src="img/14.jpg"><p>Слон</p></li>
+        <li class="carousel-element"><img src="img/15.jpg"><p>Собака</p></li>
+      </ul>
+    </div>
+    <div class="carousel-arrow-right"><span><img src="img/arrow-right.png" /></span></div>
+  </div><br />
+
+
+<div id="grid-holder"></div>
+
+  <script type="text/template" id="grid-template">
+    <table>
+      <thead>
+        <tr>
+          <th>Имя</th>
+          <th>Статус</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i = 0; i < list.length; i++) { %>
+          <tr>
+            <td>
+              <%=list[i].title%>
+            </td>
+            <td>
+              <%=list[i].content%>
+            </td>
+          </tr>
+          <% } %>
+      </tbody>
+    </table>
+  </script>
+</div>
+
+</body>
+</html>

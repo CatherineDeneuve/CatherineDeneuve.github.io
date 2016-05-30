@@ -1,0 +1,120 @@
+body {
+  background: #EFEFEF;
+}
+
+.carousel-hider {
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+
+.carousel-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0;
+    position: relative;
+}
+
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+
+.carousel-element img {
+    max-width: 100px;
+    border-radius: 15px;
+}
+
+.carousel-element p {
+  text-align: center;
+  height: 20px;
+}
+
+.carousel-arrow-left,
+.carousel-arrow-right {
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    /*border: 1px solid grey;
+    background-color: lightgrey;*/
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.carousel-arrow-left:hover,
+.carousel-arrow-right:hover {
+    cursor: pointer;
+
+}
+
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+.wrapper {
+  width: 780px;
+  margin: 50px auto;
+  font-family: 'Comfortaa', cursive;
+  display: block;
+}
+
+.template {
+  margin-top: 200px;
+}
+
+
+.content {
+    margin: 1% auto;
+    /*width: 33.98%;*/
+    width: 500px;
+    border: 1px solid #D6D6D6;
+    -webkit-box-shadow: 0 0 10px 3px rgba(214,214,214,1);
+    -moz-box-shadow: 0 0 10px 3px rgba(214,214,214,1);
+    box-shadow: 0 0 10px 3px rgba(214,214,214,1);
+    background: #FFFFFF;
+}
+/*HEADER*/
+header {
+    text-align: center;
+    font: bold 19px "Times New Roman", serif;
+    margin-top: 5%;
+}
+
+/*CONTENT*/
+.photo {
+    width: 25.28%;
+    margin: 3% auto;
+}
+
+.profileDiv {
+    margin: 2% 12%;
+    padding: 1.5% 2%;
+}
+
+p,
+li {
+    font: 16px/150%;
+}
+
+.content li {
+  list-style: disc;
+}
+
+.profileList {
+    margin-left: 40px;
+}
+
+.with_border {
+    border-top: 1.5px solid #AFAFAF;
+    padding-top: 3.5%;
+}
+
+.distance {
+    margin-bottom: 1.5%;
+}

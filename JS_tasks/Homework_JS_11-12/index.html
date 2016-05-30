@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework_JS_11-12</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+  <script src="js/jquery.slider.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="carousel-arrow-left"><span><img src="img/arrow-left.png" /></span></div>
+    <div class="carousel-hider">
+      <ul class="carousel-list">
+        <li class="carousel-element"><img src="img/1.jpg"><p>Бурундук</p></li>
+        <li class="carousel-element"><img src="img/2.jpg"><p>Обезьяна</p></li>
+        <li class="carousel-element"><img src="img/3.jpg"><p>Сайгак</p></li>
+        <li class="carousel-element"><img src="img/4.jpg"><p>Белка</p></li>
+        <li class="carousel-element"><img src="img/5.jpg"><p>Петух</p></li>
+        <li class="carousel-element"><img src="img/6.jpg"><p>Грызун 1</p></li>
+        <li class="carousel-element"><img src="img/7.jpg"><p>Грызун 2</p></li>
+        <li class="carousel-element"><img src="img/8.jpg"><p>Собака</p></li>
+        <li class="carousel-element"><img src="img/9.jpg"><p>Лошадь</p></li>
+        <li class="carousel-element"><img src="img/10.jpg"><p>Панголин</p></li>
+        <li class="carousel-element"><img src="img/11.jpg"><p>Коала</p></li>
+        <li class="carousel-element"><img src="img/12.jpg"><p>Собака и кот</p></li>
+        <li class="carousel-element"><img src="img/13.jpg"><p>Скопа</p></li>
+        <li class="carousel-element"><img src="img/14.jpg"><p>Слон</p></li>
+        <li class="carousel-element"><img src="img/15.jpg"><p>Собака</p></li>
+      </ul>
+    </div>
+    <div class="carousel-arrow-right"><span><img src="img/arrow-right.png" /></span></div>
+  </div><br />
+<div class="template">
+<script type=text/template id="test">
+  <% for(var i = 0; i < 1; i++) {%>
+
+    <div class="content">
+    <header><%= data[i].title %></header>
+    <div class="photo"><img src="img/my_photo2.png" alt="Мое фото"></div>
+    <div class="profileDiv"><p><%= data[i].content %></p></div>
+    <div class="with_border profileDiv">
+			<p class="distance"><%= data[i].whyFrontend %></p>
+    <ul>
+      <% for(var b = 0; b < 3; b++) { %>
+      <li class="profileList"><%= data[i].items[b] %></li>
+      <% }; %>
+    </ul>
+  </div>
+    <div class="with_border profileDiv">
+			<p><%= data[i].myPhone %></p>
+			<p class="distance"><%= data[i].number %></p>
+
+			<p><%= data[i].myFB %></p>
+			<p><a href="https://www.facebook.com/katarina.serg"><%= data[i].profile %></a></p>
+
+		</div>
+    <div class="with_border profileDiv">
+			<p><%= data[i].myFeedback %></p>
+			<p><%= data[i].feedback %></p>
+		</div>
+  </div>
+
+  <% }; %>
+
+</script>
+
+
+</div>
+
+</body>
+</html>
