@@ -49,7 +49,7 @@ var portraitMenu = document.querySelector('.portrait');
 
 
 genres.addEventListener('mouseenter', function () {
-    heightIncrease(list, 20, 1.02);
+    heightIncrease(list, 20, 1.045);
 });
 
 genres.addEventListener('mouseleave', hideList);
