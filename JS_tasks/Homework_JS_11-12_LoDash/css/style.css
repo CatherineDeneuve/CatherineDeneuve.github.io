@@ -23,7 +23,7 @@ body {
 }
 
 .carousel-element img {
-    max-width: 100px;
+    width: 100px;
     border-radius: 15px;
 }
 
