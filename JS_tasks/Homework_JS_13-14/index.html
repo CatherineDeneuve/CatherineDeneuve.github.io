@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/bootstrap-grid-3.3.2.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="js/template.js"></script>
+  <title>Homewor_JS_3-4</title>
+</head>
+<body>
+  <script type="text/template" id="questions">
+  <% test.createHeader('Тест по программированию');
+    test.createOl();
+
+    for(var i = 0; i < data.length; i++){
+      test.createLi(data[i].text);
+      var answers = data[i].answers;
+      for(var j = 0; j < answers.length; j++){
+        test.createInput(answers[j].text);
+      }
+    }
+
+    test.changeTypeForInput();
+    test.createButton();
+     %>
+
+</script>
+<!-- <script src="js/init.localstorage.js"></script> -->
+<script src="js/script.js"></script>
+</body>
+</html>

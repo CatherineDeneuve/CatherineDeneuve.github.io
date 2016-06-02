@@ -1,0 +1,58 @@
+html {
+  background: url('../img/pattern2.png');
+  height: 1500px;
+}
+
+.head {
+  height: 100px;
+}
+
+.header1 {
+  background: linear-gradient(#FF6464, #FFBBBB);
+}
+
+.text1 {
+  background:#FFBBBB;
+}
+
+.header2 {
+  background: linear-gradient(#FFDD00, #FBFF88);
+}
+
+.text2 {
+  background: #FBFF88;
+}
+
+.header3 {
+  background: linear-gradient(#65C67D, #9AFF97);
+}
+
+.text3 {
+  background: #9AFF97;
+}
+
+.header2 {
+  background: linear-gradient(#FFEB6B, #FFF9D5);
+}
+
+.text2 {
+  background: #FFF9D5;
+}
+
+
+.text {
+  padding-top: 55px;
+  height: 300px;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+
+h3 {
+  height: 55px;
+  background: linear-gradient(#2C2C2C, #0C0C0C);
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
