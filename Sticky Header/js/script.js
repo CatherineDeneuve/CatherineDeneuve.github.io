@@ -29,7 +29,7 @@ window.onscroll = function(e) {
   // var distance2 = getDistance2() - offset;
 
 
-  if ((offset >= 100) && (offset < 455)) {
+  if ((offset >= 100) && (offset < 400)) {
     headers.style.position = 'fixed';
     headers.style.top = '0px';
   } else {
@@ -37,14 +37,14 @@ window.onscroll = function(e) {
     headers.style.top = '100px';
   }
 
-  if ((offset >= 455) && (offset < 855)) {
+  if ((offset >= 400) && (offset < 755)) {
     headers1.style.position = 'fixed';
     headers1.style.top = '0px';
   } else {
     headers1.style.position = 'static';
   }
 
-  if (offset >= 855) {
+  if (offset >= 755) {
     headers2.style.position = 'fixed';
     headers2.style.top = '0px';
 

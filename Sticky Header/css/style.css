@@ -43,16 +43,16 @@ html {
 .text {
   padding-top: 55px;
   height: 300px;
-  font-size: 25px;
+  font-size: 16px;
   overflow: hidden;
+  padding: 0 10% 0 10%;
 }
 
 
-h3 {
+.header {
   height: 55px;
-  background: linear-gradient(#2C2C2C, #0C0C0C);
   width: 100%;
-  font-size: 30px;
+
   text-align: center;
-  border-radius: 5px;
+
 }
