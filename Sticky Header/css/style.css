@@ -8,7 +8,7 @@ html {
 }
 
 .header1 {
-  background: linear-gradient(#FF6464, #FFBBBB);
+  background: #FF6464;
 }
 
 .text1 {
@@ -16,7 +16,7 @@ html {
 }
 
 .header2 {
-  background: linear-gradient(#FFDD00, #FBFF88);
+  background: #FFDD00;
 }
 
 .text2 {
@@ -24,28 +24,19 @@ html {
 }
 
 .header3 {
-  background: linear-gradient(#65C67D, #9AFF97);
+  background: #65C67D;
 }
 
 .text3 {
   background: #9AFF97;
 }
 
-.header2 {
-  background: linear-gradient(#FFEB6B, #FFF9D5);
-}
-
-.text2 {
-  background: #FFF9D5;
-}
-
 
 .text {
-  padding-top: 38px;
   height: 200px;
   font-size: 16px;
   overflow: hidden;
-  padding: 0 10% 0 10%;
+  padding: 25px 20px 0;
 }
 
 
