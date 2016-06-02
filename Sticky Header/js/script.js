@@ -29,22 +29,22 @@ window.onscroll = function(e) {
   // var distance2 = getDistance2() - offset;
 
 
-  if ((offset >= 100) && (offset < 400)) {
+  if ((offset >= 50) && (offset < 248)) {
     headers.style.position = 'fixed';
     headers.style.top = '0px';
   } else {
     headers.style.position = 'static';
-    headers.style.top = '100px';
+    // headers.style.top = '50px';
   }
 
-  if ((offset >= 400) && (offset < 755)) {
+  if ((offset >= 248) && (offset < 489)) {
     headers1.style.position = 'fixed';
     headers1.style.top = '0px';
   } else {
     headers1.style.position = 'static';
   }
 
-  if (offset >= 755) {
+  if ((offset >= 489) && (offset < 750)){
     headers2.style.position = 'fixed';
     headers2.style.top = '0px';
 
