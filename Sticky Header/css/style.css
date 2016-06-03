@@ -45,5 +45,6 @@ html {
   width: 100%;
   padding: 10px 0;
   text-align: center;
-  position: sticky;
+  position: -moz-sticky;
+  top: 0;
 }
