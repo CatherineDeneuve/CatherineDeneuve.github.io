@@ -1,14 +1,12 @@
 var browser;
-function browserDetectJS() {
+(function browserDetectJS() {
   if (window.sidebar) {
     browser = "Firefox";
-    console.log("Хидеры не работают");
     return browser;
   } else {
     console.log("Хидеры должны работать");
   }
-}
-browserDetectJS();
+}());
 
 var headers = document.querySelectorAll('.header');
 var texts = document.querySelectorAll('.text');
