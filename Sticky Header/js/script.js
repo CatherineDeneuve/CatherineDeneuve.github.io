@@ -7,7 +7,7 @@ var headerHeight = headers[0].clientHeight;
 var delta = headerHeight + texts[0].clientHeight;
 
 var normalPaddingTop = getComputedStyle(texts[0]).paddingTop;
-function ready() {
+
   window.onscroll = function(e) {
     var offset = window.pageYOffset;
 
@@ -26,6 +26,3 @@ function ready() {
 
     }
   };
-}
-
-document.addEventListener("DOMContentLoaded", ready);
