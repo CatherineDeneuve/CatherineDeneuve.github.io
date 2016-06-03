@@ -25,6 +25,6 @@ setInterval (function down() {
       stepOffset += delta;
 
     }
-  }, 20);
+  }, 4);
 
 window.addEventListener('scroll', down);
