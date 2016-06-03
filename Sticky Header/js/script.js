@@ -1,3 +1,14 @@
+var browser;
+function browserDetectJS() {
+  if (window.sidebar) {
+    browser = "Firefox";
+    console.log("Хидеры не работают");
+    return browser;
+  } else {
+    console.log("Хидеры должны работать");
+  }
+}
+browserDetectJS();
 
 var headers = document.querySelectorAll('.header');
 var texts = document.querySelectorAll('.text');
@@ -8,7 +19,8 @@ var delta = headerHeight + texts[0].clientHeight;
 
 var normalPaddingTop = getComputedStyle(texts[0]).paddingTop;
 
-function down() {
+if (browser !== "Firefox") {
+window.onscroll = function(e) {
     var offset = window.pageYOffset;
 
     var stepOffset = headHeight;
@@ -25,6 +37,5 @@ function down() {
       stepOffset += delta;
 
     }
-  }
-
-window.addEventListener('scroll', down);
+  };
+}
