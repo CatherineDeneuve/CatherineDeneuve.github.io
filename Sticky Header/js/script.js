@@ -8,7 +8,7 @@ var delta = headerHeight + texts[0].clientHeight;
 
 var normalPaddingTop = getComputedStyle(texts[0]).paddingTop;
 
-  function down() {
+  setInterval (function down() {
     var offset = window.pageYOffset;
 
     var stepOffset = headHeight;
@@ -25,7 +25,6 @@ var normalPaddingTop = getComputedStyle(texts[0]).paddingTop;
       stepOffset += delta;
 
     }
-  }
+  }, 20);
 
-window.addEventListener('touchmove', down);
 window.addEventListener('scroll', down);
