@@ -27,4 +27,5 @@ var normalPaddingTop = getComputedStyle(texts[0]).paddingTop;
     }
   }
 
+window.addEventListener('ontouchmove', down);
 window.addEventListener('scroll', down);
