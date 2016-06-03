@@ -8,7 +8,7 @@ var delta = headerHeight + texts[0].clientHeight;
 
 var normalPaddingTop = getComputedStyle(texts[0]).paddingTop;
 
-  setInterval (function down() {
+setInterval (function down() {
     var offset = window.pageYOffset;
 
     var stepOffset = headHeight;
