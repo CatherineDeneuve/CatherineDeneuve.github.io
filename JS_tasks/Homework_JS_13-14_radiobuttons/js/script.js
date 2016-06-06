@@ -1,16 +1,31 @@
 // 'use strict';
 
-var ol;
-var h3;
-var li;
-var label;
-var elems;
-var button;
-var input;
-var y = 0;
-var textnode;
+var ol,
+    h3,
+    li,
+    label,
+    elems,
+    button,
+    input,
+    count,
+    array,
+    arrayLength,
+    question,
+    answer,
+    textResult,
+    wrong,
+    right,
+    a = 0,
+    result = 0;
+// var textnode;
 var inputs = document.getElementsByTagName('input');
 var labels = document.getElementsByTagName('label');
+var modalWindow = document.querySelector('.overlay');
+var modal = document.querySelector('.modal');
+var resume = document.createElement('div');
+var paragraph = document.querySelector('.questionRepeat');
+var textWithResults = document.querySelector('.results');
+var ok = document.querySelector('.btn');
 
 var test = {
         form: document.body,
@@ -68,28 +83,26 @@ var test = {
 
           changeTypeForInput: function () {
               elems = document.querySelectorAll('input:not([type=button])');
-              for (var i = 0; i < elems.length; i++){
-                elems[i].setAttribute('type', 'radio');
-                // for ( var g = 0; g < myObj[0].answers[0].length; g++)
-                // elems[i].setAttribute('name', y);
-                // console.log(myObj[0].answers[0].length);
-              }
-          },
+              count = 0;
+              for (var i = 0; i < myObj.length; i++){
 
-          // setNameToRadio: function (input, nameInput) {
-          //     input.setAttribute('name', nameInput);
-          //
-          // },
+                for (var j = 0; j < myObj[i].answers.length; j++){
+                  elems[count].setAttribute('type', 'radio');
+                  elems[count++].setAttribute('name', i);
+                }
+              }
+              // for (var i = 0; i < elems.length; i++){
+              //   elems[i].setAttribute('type', 'radio');
+
+
+          },
 
           createButton: function () {
               button = document.createElement('button');
-              button.addEventListener('click', handler);
+              button.addEventListener('click', check);
               button.addEventListener('click', showModal);
               button.innerHTML = 'Проверить мои результаты';
               button.classList.add('button');
-              button.style.marginTop = '50px';
-              button.style.paddingTop = '10px';
-              button.style.paddingBottom = '10px';
               this.form.appendChild(button);
               this.getGrid(button);
           }
@@ -98,7 +111,6 @@ var test = {
 
 
 var questionary = localStorage.getItem('quiz');
-
 var myObj = JSON.parse(questionary);
 
 
@@ -111,92 +123,66 @@ $(function () {
 });
 
 
-var z;
-var a = 0;
-var result = 0;
-var answerCorrect;
-var answerWrong;
-var question;
-var answer;
+function check() {
 
-function handler() {
+  for (var i = 0; i < myObj.length; i++) {
+    count = 0;
 
+    for (var j = 0; j < myObj[i].answers.length; j++) {
 
-  for (var k = 0; k < myObj.length; k++) {
-    z = 0;
-
-    for (var b = 0; b < myObj[k].answers.length; b++) {
-
-        if (inputs[a].checked == myObj[k].answers[b].correct){
-          z++;
+        if (inputs[a].checked == myObj[i].answers[j].correct){
+          count++;
               if (inputs[a].checked === true) {
-                textResult = myObj[k].answers[b].text + 'правильный!';
+                textResult = myObj[i].answers[j].text;
               }
         } else {
-          if (myObj[k].answers[b].correct === true)
-          textResult = 'неправильный';
+          if (myObj[i].answers[j].correct === false)
+          textResult = myObj[i].answers[j].text ;
         }
         a++;
     }
-    if(z < myObj[k].answers.length){
+    if(count < myObj[i].answers.length){
 
       wrong = document.createElement('ol');
       question = document.createElement('li');
       answer = document.createElement('li');
       answer.classList.add('wrong');
-      question.innerHTML = myObj[k].text;
+      question.innerHTML = myObj[i].text;
       answer.innerHTML = "Ваш ответ: " + textResult;
-      textBam.appendChild(wrong);
+      textWithResults.appendChild(wrong);
       wrong.appendChild(question);
       wrong.appendChild(answer);
 
-
-      // wrong = document.createElement('li');
-      // wrong.classList.add('wrong');
-      // wrong.innerHTML = myObj[k].text + '\n' + "Ваш ответ: " + textResult;
-      // textBam.appendChild(wrong);
     } else {
 
       right = document.createElement('ol');
       question = document.createElement('li');
       answer = document.createElement('li');
       answer.classList.add('right');
-      question.innerHTML = myObj[k].text;
+      question.innerHTML = myObj[i].text;
       answer.innerHTML = "Ваш ответ: " + textResult;
-      textBam.appendChild(right);
+      textWithResults.appendChild(right);
       right.appendChild(question);
       right.appendChild(answer);
-
-      // right = document.createElement('li');
-      // right.classList.add('right');
-      // right.innerHTML = myObj[k].text + '\n' + "Ваш ответ: " + textResult;
-      // textBam.appendChild(right);
 
       result++;
     }
   }
 
   if (result <= (myObj.length - 2)) {
-      resume.innerHTML = '<p>Вы допустили несколько ошибок, к сожалению</p>';
+      resume.innerHTML = '<p>Человечеству свойственно ошибаться</p>';
   } else if (result == myObj.length) {
-      resume.innerHTML = 'Вы прошли тест без единой ошибки!';
+      resume.innerHTML = 'Алексей, хорошего дня!';
   } else {
-    resume.innerHTML = 'Вы допустили всего одну ошибку!';
+    resume.innerHTML = 'Вы можете лучше :)';
   }
 }
 
 
-    var modalWindow = document.querySelector('.overlay');
-    var modal = document.querySelector('.modal');
-    var resume = document.createElement('div');
-    resume.classList.add('resume');
-    var paragraph = document.querySelector('.questionRepeat');
-    var textBam = document.querySelector('.results');
-    var textResult;
-    var wrong;
-    var right;
 
-    modal.insertBefore(resume, textBam);
+
+    modal.insertBefore(resume, textWithResults);
+    resume.classList.add('resume');
 
 
     function showModal() {
@@ -207,26 +193,20 @@ function handler() {
 
 
     function resetAnswers(){
-      for (var c = 0; c < inputs.length; c++){
-        inputs[c].checked = false;
-
+      for (var i = 0; i < inputs.length; i++){
+        inputs[i].checked = false;
       }
 
       result = 0;
-      z = 0;
+      count = 0;
       a = 0;
-
     }
 
-    var array;
-    var arrayLength;
-
-
     function resetText() {
-      array = textBam.getElementsByTagName('*');
+      array = textWithResults.getElementsByTagName('*');
       arrayLength = array.length;
-      for (var e = 0; e <= arrayLength; e = 0) {
-          textBam.removeChild(array[e]);
+      for (var i = 0; i <= arrayLength; i = 0) {
+          textWithResults.removeChild(array[i]);
       }
     }
 
@@ -234,8 +214,8 @@ function handler() {
       modalWindow.style.display = 'none';
     }
 
-    var ok = document.querySelector('.btn');
 
-    ok.addEventListener('click', resetText);
-    ok.addEventListener('click', resetAnswers);
-    ok.addEventListener('click', hideModal);
+
+ok.addEventListener('click', resetText);
+ok.addEventListener('click', resetAnswers);
+ok.addEventListener('click', hideModal);

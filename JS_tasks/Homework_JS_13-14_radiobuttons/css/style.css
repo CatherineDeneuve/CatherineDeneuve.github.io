@@ -5,9 +5,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 300px;
+    height: 340px;
     width: 500px;
-    margin: -150px 0 0 -250px;
+    margin: -170px 0 0 -250px;
     text-align: center;
     z-index: 101;
     background: white;
@@ -29,7 +29,8 @@ body {
 .results ol {
   margin: 0 auto;
   padding: 0;
-  width: 350px;
+  width: 300px;
+  text-align: left;
 
 }
 .results li {
@@ -39,19 +40,27 @@ body {
 
 }
 
+.button {
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 10px 0;
+  width: 250px;
+  outline: none;
+}
+
 .resume {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .results {
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .right {
-  background-color: #80DDAF;
+  background: url(../img/right.png) 98% 50% no-repeat #8EFF8E;
 }
 
 .wrong {
-  background-color: #FFC7C7;
+  background: url(../img/wrong.png) 98% 50% no-repeat #FFC7C7;
 }

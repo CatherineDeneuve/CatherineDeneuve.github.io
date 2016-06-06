@@ -13,19 +13,19 @@
 </head>
 <body>
   <script type="text/template" id="questions">
-  <% test.createHeader('Тест по программированию');%>
-  <%  test.createOl();%>
+  <% test.createHeader('Тест по программированию');
+    test.createOl();
 
-  <%  for(var i = 0; i < data.length; i++){%>
-  <%    test.createLi(data[i].text);%>
-  <%    var answers = data[i].answers;%>
-  <%    for(var j = 0; j < answers.length; j++){%>
-  <%      test.createInput(answers[j].text);%>
-  <%    }%>
-  <%  }%>
+    for(var i = 0; i < data.length; i++){
+      test.createLi(data[i].text);
+      var answers = data[i].answers;
+      for(var j = 0; j < answers.length; j++){
+        test.createInput(answers[j].text);
+      }
+    }
 
-  <%  test.changeTypeForInput();%>
-  <%  test.createButton(); %>
+    test.changeTypeForInput();
+    test.createButton(); %>
 
 </script>
 
