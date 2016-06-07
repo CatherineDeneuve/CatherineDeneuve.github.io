@@ -1,14 +1,31 @@
-'use strict';
+// 'use strict';
 
-var ol;
-var h3;
-var li;
-var label;
-var elems;
-var button;
-var input;
-var textnode;
+var ol,
+    h3,
+    li,
+    label,
+    elems,
+    button,
+    input,
+    count,
+    array,
+    arrayLength,
+    question,
+    answer,
+    textResult,
+    wrong,
+    right,
+    a = 0,
+    result = 0;
+
 var inputs = document.getElementsByTagName('input');
+var labels = document.getElementsByTagName('label');
+var modalWindow = document.querySelector('.overlay');
+var modal = document.querySelector('.modal');
+var resume = document.createElement('div');
+var paragraph = document.querySelector('.questionRepeat');
+var textWithResults = document.querySelector('.results');
+var ok = document.querySelector('.btn');
 
 var test = {
         form: document.body,
@@ -57,7 +74,7 @@ var test = {
 
           createInput: function (textLabel) {
             label = document.createElement('label');
-            input = document.createElement('input');
+            // input = document.createElement('input');
             label.innerHTML = '<input>' + textLabel;
             ol.appendChild(label);
             this.getGrid(label);
@@ -66,21 +83,27 @@ var test = {
 
           changeTypeForInput: function () {
               elems = document.querySelectorAll('input:not([type=button])');
+              // count = 0;
+              // for (var i = 0; i < myObj.length; i++){
+              //
+              //   for (var j = 0; j < myObj[i].answers.length; j++){
+              //     elems[count].setAttribute('type', 'radio');
+              //     elems[count++].setAttribute('name', i);
+              //   }
+              // }
               for (var i = 0; i < elems.length; i++){
                 elems[i].setAttribute('type', 'checkbox');
               }
+
 
           },
 
           createButton: function () {
               button = document.createElement('button');
-              button.addEventListener('click', handler);
+              button.addEventListener('click', check);
               button.addEventListener('click', showModal);
               button.innerHTML = 'Проверить мои результаты';
               button.classList.add('button');
-              button.style.marginTop = '50px';
-              button.style.paddingTop = '10px';
-              button.style.paddingBottom = '10px';
               this.form.appendChild(button);
               this.getGrid(button);
           }
@@ -89,7 +112,6 @@ var test = {
 
 
 var questionary = localStorage.getItem('quiz');
-
 var myObj = JSON.parse(questionary);
 
 
@@ -102,52 +124,67 @@ $(function () {
 });
 
 
+function check() {
 
+  for (var i = 0; i < myObj.length; i++) {
+    count = 0;
 
+    for (var j = 0; j < myObj[i].answers.length; j++) {
 
-
-var z;
-var a = 0;
-var result = 0;
-function handler() {
-
-
-  for (var k = 0; k < myObj.length; k++) {
-    z = 0;
-
-    for (var b = 0; b < myObj[k].answers.length; b++) {
-
-        if (inputs[a++].checked == myObj[k].answers[b].correct){
-          z++;
+        if (inputs[a].checked == myObj[i].answers[j].correct){
+          count++;
+              if (inputs[a].checked === true) {
+                textResult = myObj[i].answers[j].text;
+              }
+        } else {
+          if (myObj[i].answers[j].correct === false)
+          textResult = myObj[i].answers[j].text ;
         }
+        a++;
     }
-    if(z < myObj[k].answers.length){
-      console.log("Неправильно");
+    if(count < myObj[i].answers.length){
+
+      wrong = document.createElement('ol');
+      question = document.createElement('li');
+      answer = document.createElement('li');
+      answer.classList.add('wrong');
+      question.innerHTML = myObj[i].text;
+      answer.innerHTML = "Ваш ответ: " + textResult;
+      textWithResults.appendChild(wrong);
+      wrong.appendChild(question);
+      wrong.appendChild(answer);
 
     } else {
-      console.log("Правильно");
+
+      right = document.createElement('ol');
+      question = document.createElement('li');
+      answer = document.createElement('li');
+      answer.classList.add('right');
+      question.innerHTML = myObj[i].text;
+      answer.innerHTML = "Ваш ответ: " + textResult;
+      textWithResults.appendChild(right);
+      right.appendChild(question);
+      right.appendChild(answer);
+
       result++;
     }
   }
 
-  if (result < (myObj.length - 2)) {
-
-    resume.innerHTML = '<p>Вы допустили несколько ошибок</p>';
+  if (result <= (myObj.length - 2)) {
+      resume.innerHTML = '<p>Человечеству свойственно ошибаться</p>';
   } else if (result == myObj.length) {
-
-    resume.innerHTML = 'Вы прошли тест без единой ошибки!';
+      resume.innerHTML = 'Алексей, хорошего дня!';
   } else {
-
-    resume.innerHTML = 'Вы допустили всего одну ошибку!';
+    resume.innerHTML = 'Вы можете лучше :)';
   }
 }
 
 
-    var modalWindow = document.querySelector('.overlay');
-    var modal = document.querySelector('.modal');
-    var resume = document.createElement('div');
-    var paragraph = document.querySelector('.questionRepeat');
-    modal.insertBefore(resume, paragraph);
+
+
+    modal.insertBefore(resume, textWithResults);
+    resume.classList.add('resume');
+
 
     function showModal() {
       modalWindow.style.display = 'block';
@@ -157,19 +194,29 @@ function handler() {
 
 
     function resetAnswers(){
-      for (var c = 0; c < inputs.length; c++){
-        inputs[c].checked = false;
-        console.log(inputs[c]);
+      for (var i = 0; i < inputs.length; i++){
+        inputs[i].checked = false;
       }
+
       result = 0;
-      z = 0;
+      count = 0;
       a = 0;
+    }
+
+    function resetText() {
+      array = textWithResults.getElementsByTagName('*');
+      arrayLength = array.length;
+      for (var i = 0; i <= arrayLength; i = 0) {
+          textWithResults.removeChild(array[i]);
+      }
     }
 
     function hideModal(){
       modalWindow.style.display = 'none';
     }
 
-    var ok = document.querySelector('.btn');
-    ok.addEventListener('click', resetAnswers);
-    ok.addEventListener('click', hideModal);
+
+
+ok.addEventListener('click', resetText);
+ok.addEventListener('click', resetAnswers);
+ok.addEventListener('click', hideModal);

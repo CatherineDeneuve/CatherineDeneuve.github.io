@@ -56,4 +56,3 @@ var myObj = [
 
 localStorage.setItem('quiz', JSON.stringify(myObj));
 var questionary = localStorage.getItem('quiz');
-// console.log(questionary);

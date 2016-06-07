@@ -1,16 +1,19 @@
+body {
+    font-family: 'Andika', sans-serif;
+}
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 250px;
+    height: 340px;
     width: 500px;
-    margin: -125px 0 0 -250px;
+    margin: -170px 0 0 -250px;
     text-align: center;
     z-index: 101;
     background: white;
     border-radius: 10px;
-
 }
+
 
 .overlay {
   position: fixed;
@@ -21,4 +24,44 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 100;
   display: none;
+}
+
+.results ol {
+  margin: 0 auto;
+  padding: 0;
+  width: 300px;
+  text-align: left;
+
+}
+.results li {
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+  border-radius: 5px;
+
+}
+
+.button {
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 10px 0;
+  width: 250px;
+  outline: none;
+}
+
+.resume {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.results {
+  margin: 30px auto;
+}
+
+.right {
+  background: url(../img/right.png) 98% 50% no-repeat #8EFF8E;
+}
+
+.wrong {
+  background: url(../img/wrong.png) 98% 50% no-repeat #FFC7C7;
 }
