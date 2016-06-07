@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 var ol,
     h3,
@@ -13,8 +13,7 @@ var ol,
     question,
     answer,
     textResult,
-    wrong,
-    right,
+    wrongRight,
     a = 0,
     result = 0;
 
@@ -123,24 +122,23 @@ function check() {
 
   for (var i = 0; i < myObj.length; i++) {
     count = 0;
-
+    textResult = '';
     for (var j = 0; j < myObj[i].answers.length; j++) {
 
         if (inputs[a].checked == myObj[i].answers[j].correct){
           count++;
               if (inputs[a].checked === true) {
-                textResult = myObj[i].answers[j].text;
+                textResult += myObj[i].answers[j].text;
               }
         } else {
           if (myObj[i].answers[j].correct === false)
-          textResult = myObj[i].answers[j].text ;
+          textResult += myObj[i].answers[j].text;
         }
         a++;
     }
     wrongRight = document.createElement('ol');
     question = document.createElement('li');
     answer = document.createElement('li');
-    // answer.classList.add('wrong');
     question.innerHTML = myObj[i].text;
     answer.innerHTML = "Ваш ответ: " + textResult;
     textWithResults.appendChild(wrongRight);
@@ -148,29 +146,9 @@ function check() {
     wrongRight.appendChild(answer);
 
     if(count < myObj[i].answers.length){
-
-      // wrongRight = document.createElement('ol');
-      // question = document.createElement('li');
-      // answer = document.createElement('li');
       answer.classList.add('wrong');
-      // question.innerHTML = myObj[i].text;
-      // answer.innerHTML = "Ваш ответ: " + textResult;
-      // textWithResults.appendChild(wrongRight);
-      // wrongRight.appendChild(question);
-      // wrongRight.appendChild(answer);
-
     } else {
-
-      // wrongRight = document.createElement('ol');
-      // question = document.createElement('li');
-      // answer = document.createElement('li');
       answer.classList.add('right');
-      // question.innerHTML = myObj[i].text;
-      // answer.innerHTML = "Ваш ответ: " + textResult;
-      // textWithResults.appendChild(wrongRight);
-      // wrongRight.appendChild(question);
-      // wrongRight.appendChild(answer);
-
       result++;
     }
   }
@@ -178,15 +156,11 @@ function check() {
   if (result <= (myObj.length - 2)) {
       resume.innerHTML = '<p>Человечеству свойственно ошибаться</p>';
   } else if (result == myObj.length) {
-      resume.innerHTML = 'Алексей, хорошего дня!';
+      resume.innerHTML = 'Вы прошли тест более, чем успешно!';
   } else {
     resume.innerHTML = 'Вы можете лучше :)';
   }
 }
-
-
-
-
     modal.insertBefore(resume, textWithResults);
     resume.classList.add('resume');
 
@@ -194,8 +168,6 @@ function check() {
     function showModal() {
       modalWindow.style.display = 'block';
     }
-
-
 
 
     function resetAnswers(){
@@ -209,18 +181,15 @@ function check() {
     }
 
     function resetText() {
-      array = textWithResults.getElementsByTagName('*');
-      arrayLength = array.length;
-      for (var i = 0; i <= arrayLength; i = 0) {
-          textWithResults.removeChild(array[i]);
+      array = textWithResults.getElementsByTagName('ol');      
+      for (var i = 0; i < array.length; i = 0) {
+          array[i].remove();
       }
     }
 
     function hideModal(){
       modalWindow.style.display = 'none';
     }
-
-
 
 ok.addEventListener('click', resetText);
 ok.addEventListener('click', resetAnswers);
