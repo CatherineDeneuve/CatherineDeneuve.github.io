@@ -83,19 +83,9 @@ var test = {
 
           changeTypeForInput: function () {
               elems = document.querySelectorAll('input:not([type=button])');
-              // count = 0;
-              // for (var i = 0; i < myObj.length; i++){
-              //
-              //   for (var j = 0; j < myObj[i].answers.length; j++){
-              //     elems[count].setAttribute('type', 'radio');
-              //     elems[count++].setAttribute('name', i);
-              //   }
-              // }
               for (var i = 0; i < elems.length; i++){
                 elems[i].setAttribute('type', 'checkbox');
               }
-
-
           },
 
           createButton: function () {
@@ -173,9 +163,9 @@ function check() {
   if (result <= (myObj.length - 2)) {
       resume.innerHTML = '<p>Человечеству свойственно ошибаться</p>';
   } else if (result == myObj.length) {
-      resume.innerHTML = 'Алексей, хорошего дня!';
+      resume.innerHTML = '<p>Вы прошли тест более, чем успешно!</p>';
   } else {
-    resume.innerHTML = 'Вы можете лучше :)';
+    resume.innerHTML = '<p>Вы можете лучше :)</p>';
   }
 }
 
@@ -189,8 +179,6 @@ function check() {
     function showModal() {
       modalWindow.style.display = 'block';
     }
-
-
 
 
     function resetAnswers(){

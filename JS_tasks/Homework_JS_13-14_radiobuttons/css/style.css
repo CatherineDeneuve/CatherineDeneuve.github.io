@@ -36,8 +36,8 @@ body {
 .results li {
   list-style: none;
   margin: 0;
+  padding-left: 10px;
   border-radius: 5px;
-
 }
 
 .button {

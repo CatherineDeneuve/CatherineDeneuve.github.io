@@ -17,7 +17,7 @@ var ol,
     right,
     a = 0,
     result = 0;
-// var textnode;
+
 var inputs = document.getElementsByTagName('input');
 var labels = document.getElementsByTagName('label');
 var modalWindow = document.querySelector('.overlay');
@@ -74,7 +74,6 @@ var test = {
 
           createInput: function (textLabel) {
             label = document.createElement('label');
-            // input = document.createElement('input');
             label.innerHTML = '<input>' + textLabel;
             ol.appendChild(label);
             this.getGrid(label);
@@ -91,9 +90,6 @@ var test = {
                   elems[count++].setAttribute('name', i);
                 }
               }
-              // for (var i = 0; i < elems.length; i++){
-              //   elems[i].setAttribute('type', 'radio');
-
 
           },
 
@@ -141,29 +137,39 @@ function check() {
         }
         a++;
     }
+    wrongRight = document.createElement('ol');
+    question = document.createElement('li');
+    answer = document.createElement('li');
+    // answer.classList.add('wrong');
+    question.innerHTML = myObj[i].text;
+    answer.innerHTML = "Ваш ответ: " + textResult;
+    textWithResults.appendChild(wrongRight);
+    wrongRight.appendChild(question);
+    wrongRight.appendChild(answer);
+
     if(count < myObj[i].answers.length){
 
-      wrong = document.createElement('ol');
-      question = document.createElement('li');
-      answer = document.createElement('li');
+      // wrongRight = document.createElement('ol');
+      // question = document.createElement('li');
+      // answer = document.createElement('li');
       answer.classList.add('wrong');
-      question.innerHTML = myObj[i].text;
-      answer.innerHTML = "Ваш ответ: " + textResult;
-      textWithResults.appendChild(wrong);
-      wrong.appendChild(question);
-      wrong.appendChild(answer);
+      // question.innerHTML = myObj[i].text;
+      // answer.innerHTML = "Ваш ответ: " + textResult;
+      // textWithResults.appendChild(wrongRight);
+      // wrongRight.appendChild(question);
+      // wrongRight.appendChild(answer);
 
     } else {
 
-      right = document.createElement('ol');
-      question = document.createElement('li');
-      answer = document.createElement('li');
+      // wrongRight = document.createElement('ol');
+      // question = document.createElement('li');
+      // answer = document.createElement('li');
       answer.classList.add('right');
-      question.innerHTML = myObj[i].text;
-      answer.innerHTML = "Ваш ответ: " + textResult;
-      textWithResults.appendChild(right);
-      right.appendChild(question);
-      right.appendChild(answer);
+      // question.innerHTML = myObj[i].text;
+      // answer.innerHTML = "Ваш ответ: " + textResult;
+      // textWithResults.appendChild(wrongRight);
+      // wrongRight.appendChild(question);
+      // wrongRight.appendChild(answer);
 
       result++;
     }
