@@ -7,15 +7,21 @@ html {
   height: 50px;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 .header1 {
   background: #FF6464;
+
 }
 
 .text1 {
   background:#FFBBBB;
 }
 
-.header2 { 
+.header2 {
   background: #FFDD00;
 }
 
@@ -45,10 +51,5 @@ html {
   width: 100%;
   padding: 10px 0;
   text-align: center;
-
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
+  
 }

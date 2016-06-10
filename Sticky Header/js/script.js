@@ -29,7 +29,7 @@ window.onscroll = function(e) {
         headers[i].style.top = '0px';
         texts[i].style.paddingTop = parseInt(normalPaddingTop, 10) + headerHeight + 'px';
       } else {
-        headers[i].style.position = 'static';
+        headers[i].style.position = 'relative';
         texts[i].style.paddingTop = normalPaddingTop;
       }
       stepOffset += delta;
