@@ -1,12 +1,10 @@
-var browser;
-(function browserDetectJS() {
-  if (window.sidebar) {
-    browser = "Firefox";
-    return browser;
-  } else {
-    console.log("Хидеры должны работать");
-  }
-}());
+// var browser;
+// (function browserDetectJS() {
+//   if (window.sidebar) {
+//     browser = "Firefox";
+//     return browser;
+//   }
+// }());
 
 var headers = document.querySelectorAll('.header');
 var texts = document.querySelectorAll('.text');
@@ -16,8 +14,9 @@ var headerHeight = headers[0].clientHeight;
 var delta = headerHeight + texts[0].clientHeight;
 
 var normalPaddingTop = getComputedStyle(texts[0]).paddingTop;
+console.log(normalPaddingTop);
 
-if (browser !== "Firefox") {
+// if (browser !== "Firefox") {
 window.onscroll = function(e) {
     var offset = window.pageYOffset;
 
@@ -36,4 +35,4 @@ window.onscroll = function(e) {
 
     }
   };
-}
+// }

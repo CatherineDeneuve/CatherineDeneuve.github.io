@@ -7,10 +7,10 @@ html {
   height: 50px;
 }
 
-.sticky {
+/*.sticky {
   position: sticky;
   top: 0;
-}
+}*/
 
 .header1 {
   background: #FF6464;
@@ -51,5 +51,5 @@ html {
   width: 100%;
   padding: 10px 0;
   text-align: center;
-  
+
 }
