@@ -34,13 +34,13 @@ if (browser == "Firefox"){
       firstHeader.style.position = 'fixed';
       firstHeader.style.top = '0px';
     }
-  }, 500);
+  }, 4);
     // else if ((coordsTop > -40) || (coordsTop < -465)){
     //   firstHeader.style.position = 'static';
     //   firstHeader.style.top = '50px';
     // }
   // }
-};
+}
 
 
 // })();
