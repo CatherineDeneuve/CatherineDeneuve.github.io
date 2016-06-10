@@ -21,7 +21,7 @@ console.log(normalPaddingTop);
 // console.log(coordsTop);
 
 if (browser == "Firefox"){
-  setInterval (function scrollFirefoxScroll() {
+  setInterval (window.onscroll = function scrollFirefoxScroll() {
     var firstHeader = document.querySelector('.header1');
     console.log(firstHeader);
     var coords = firstHeader.getBoundingClientRect();
@@ -46,22 +46,22 @@ if (browser == "Firefox"){
 // })();
 
 // if (browser !== "Firefox") {
-// window.onscroll = function(e) {
-//     var offset = window.pageYOffset;
-//
-//     var stepOffset = headHeight;
-//
-//     for (var i = 0; i < headers.length; i++){
-//       if ((offset >= stepOffset) && (offset < (stepOffset + delta))) {
-//         headers[i].style.position = 'fixed';
-//         headers[i].style.top = '0px';
-//         texts[i].style.paddingTop = parseInt(normalPaddingTop, 10) + headerHeight + 'px';
-//       } else {
-//         headers[i].style.position = 'static';
-//         texts[i].style.paddingTop = normalPaddingTop;
-//       }
-//       stepOffset += delta;
-//
-//     }
-//   };
+window.onscroll = function(e) {
+    var offset = window.pageYOffset;
+
+    var stepOffset = headHeight;
+
+    for (var i = 0; i < headers.length; i++){
+      if ((offset >= stepOffset) && (offset < (stepOffset + delta))) {
+        headers[i].style.position = 'fixed';
+        headers[i].style.top = '0px';
+        texts[i].style.paddingTop = parseInt(normalPaddingTop, 10) + headerHeight + 'px';
+      } else {
+        headers[i].style.position = 'static';
+        texts[i].style.paddingTop = normalPaddingTop;
+      }
+      stepOffset += delta;
+
+    }
+  };
 // }
