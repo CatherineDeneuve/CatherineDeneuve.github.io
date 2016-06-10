@@ -17,7 +17,7 @@ var normalPaddingTop = getComputedStyle(texts[0]).paddingTop;
 console.log(normalPaddingTop);
 
 // if (browser !== "Firefox") {
-window.onscroll = function(e) {
+window.onscroll = setInterval(function(e) {
     var offset = window.pageYOffset;
 
     var stepOffset = headHeight;
@@ -28,11 +28,11 @@ window.onscroll = function(e) {
         headers[i].style.top = '0px';
         texts[i].style.paddingTop = parseInt(normalPaddingTop, 10) + headerHeight + 'px';
       } else {
-        headers[i].style.position = 'relative';
+        headers[i].style.position = 'static';
         texts[i].style.paddingTop = normalPaddingTop;
       }
       stepOffset += delta;
 
     }
-  };
+  }, 4);
 // }
