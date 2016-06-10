@@ -7,10 +7,10 @@ html {
   height: 50px;
 }
 
-/*.sticky {
+.sticky {
   position: sticky;
   top: 0;
-}*/
+}
 
 .header1 {
   background: #FF6464;
