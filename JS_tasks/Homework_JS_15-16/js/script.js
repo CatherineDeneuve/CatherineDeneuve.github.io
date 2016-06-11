@@ -1,15 +1,9 @@
 
+
 $(function () {
 
 // AJAX-запросы
     $('button').on('click', search);
-
-    $('.text').keypress(function () {
-        if (event.keyCode == 13) {
-            search;
-        } else return;
-    });
-
 
     function search(e) {
         e.preventDefault();
@@ -17,8 +11,9 @@ $(function () {
         var $searchKey = $('.text').val();
 
         $.ajax({
-            url: 'https://pixabay.com/api/?key=2650584-e8feab9b11ed644dcec728ac9&q=' + $searchKey + '&image_type=photo',
+            url: 'https://pixabay.com/api/?key=2716174-89a9b125a63640e63bc918f65&q=' + $searchKey + '&image_type=photo' + '&per_page=200',
             dataType: 'jsonp',
+
             success: function (data) {
                 var $results = data.hits;
                 for (var i = 0; i < data.hits.length; i++) {
