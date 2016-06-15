@@ -5,26 +5,62 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     concat: {
       options: {
-        separator: ';'
+        stripBanners: {
+                      block : false,
+                      line : true
+                  },
+              separator: ';\n\r',
+              banner: '/*\nConcatinated CSS file \n' +
+                          'Author: Kate \n' +
+                          'Created Date: <%= grunt.template.today("yyyy-mm-dd") %>' +
+                          '\n */ \n'
+
       },
-      build: {
+      dist: {
         src: 'js/src/*.js',
         dest: 'js/dist/script.min.js'
       }
     },
     uglify: {
-      build: {
+      dist: {
         src: 'js/dist/script.min.js',
         dest: 'js/dist/script.min.js'
+      }
+    },
+    cssmin: {
+        options: {
+            shorthandCompacting: false,
+            roundingPrecision: -1
+        },
+        target: {
+          files: {
+            'css/dist/style.min.css': ['css/src/*.css']
+          }
+        }
+    },
+    imagemin: {
+      options: {
+        cache: false
+      },
+
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'img/',
+          src: ['src/*.{png,jpg,gif}'],
+          dest: 'dist/'
+        }]
       }
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
+
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-  // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify']);
+
+  grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'imagemin']);
 
 };

@@ -60,9 +60,9 @@ body {
 }
 
 .right {
-  background: url(../img/right.png) 98% 50% no-repeat #8EFF8E;
+  background: url(../../img/src/right.png) 98% 50% no-repeat #8EFF8E;
 }
 
 .wrong {
-  background: url(../img/wrong.png) 98% 50% no-repeat #FFC7C7;
+  background: url(../../img/src/wrong.png) 98% 50% no-repeat #FFC7C7;
 }
