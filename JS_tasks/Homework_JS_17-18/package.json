@@ -1,7 +1,6 @@
 {
   "name": "first_item",
   "version": "1.0.0",
-  "description": "",
   "main": "index.html",
   "dependencies": {
     "grunt": "^1.0.1"
@@ -15,6 +14,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Kateryna Aleshchenko <katerynaaleshchenko@gmail.com> (https://github.com/CatherineDeneuve)",
+  "license": "ISC",
+  "description": ""
 }

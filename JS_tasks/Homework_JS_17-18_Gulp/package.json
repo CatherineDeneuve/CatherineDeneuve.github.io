@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kateryna Aleshchenko <katerynaaleshchenko@gmail.com> (https://github.com/CatherineDeneuve)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-clean-css": "^2.0.10",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "imagemin-pngquant": "^5.0.0"
+  }
+}
