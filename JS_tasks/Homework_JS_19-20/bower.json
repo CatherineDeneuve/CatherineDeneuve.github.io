@@ -1,0 +1,20 @@
+{
+  "name": "hw_19-20",
+  "authors": [
+    "Kateryna Aleshchenko <katerynaaleshchenko@gmail.com> (https://github.com/CatherineDeneuve)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CatherineDeneuve/CatherineDeneuve.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "lodash": "^4.13.1",
+    "jquery": "2.*"
+  }
+}
