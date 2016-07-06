@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Andika&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Homework_JS_17-18_Gulp</title>
+</head>
+<body>
+  <script type="text/template" id="questions">
+  <% test.createHeader('Тест по программированию');
+    test.createOl();
+
+    for(var i = 0; i < data.length; i++){
+      test.createLi(data[i].text);
+      var answers = data[i].answers;
+      for(var j = 0; j < answers.length; j++){
+        test.createInput(answers[j].text);
+      }
+    }
+
+    test.changeTypeForInput();
+    test.createButton(); %>
+
+</script>
+
+
+
+  <div class="overlay">
+    <div class="modal">
+        <div class="results"></div>
+        <p class='questionRepeat'>Этот тест можно проходить бесконечно</p>
+        <button class="btn">Ok</button>
+    </div>
+  </div>
+
+<!-- <script src="js/init.localstorage.js"></script>
+<script src="js/script.js"></script> -->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
