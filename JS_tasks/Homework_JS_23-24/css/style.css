@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #9AFFA9;
+  font-family: 'Bad Script', cursive;
+}
+
+.wrapper {
+  width: 250px;
+  margin: 50px auto;
+}
+
+h3 {
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+.item-list {
+  list-style: decimal inside;
+  width: 250px;
+
+}
+
+
+.item-delete {
+  float: right;
+  color: #FF0000;
+  font-size: 18px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.controlls {
+  margin-top: 50px;
+
+}
+
+.item-value {
+  width: 190px;
+  font-family: 'Bad Script', cursive;
+}
+
+.item-add {
+  width: 40px;
+  text-align: center;
+  border-radius: 5px;
+  border: 3px solid #252525;
+  background: #252525;
+  color: white;
+
+}
+
+.edit {
+  font-family: 'Bad Script', cursive;
+}
+
+input:focus {
+  border: 1px solid #9AFFA9;
+}
