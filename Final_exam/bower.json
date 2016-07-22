@@ -1,0 +1,22 @@
+{
+  "name": "final_exam",
+  "description": "final exam in GoIT frontend course",
+  "main": "",
+  "authors": [
+    "Kateryna Aleshchenko <katerynaaleshchenko@gmail.com> (https://github.com/CatherineDeneuve)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CatherineDeneuve/CatherineDeneuve.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "masonry": "^4.1.0"
+  }
+}

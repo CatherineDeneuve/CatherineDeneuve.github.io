@@ -1,0 +1,341 @@
+//= reset.scss
+//= media-queries.scss
+
+$fontRoboto: 'Roboto', sans-serif;
+$fontMontserrat: 'Montserrat', sans-serif;
+$pink: #FF4E50;
+
+@mixin portrait-after($sprite, $background) {
+  img {
+    border-radius: 50%;
+  }
+  position: relative;
+  width: 120px;
+  margin: 0 auto;
+  &:after {
+    position: absolute;
+    right: -8px;
+    bottom: -2px;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background: $sprite $background;
+  }
+}
+
+@mixin button {
+  font-family: $fontMontserrat;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  background: $pink;
+  width: 280px;
+  margin: 0 auto;
+  padding: 15px 0;
+  border-radius: 25px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin medium-text {
+  font-family: $fontMontserrat;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+
+
+header {
+  background: url('../img/header.jpg') no-repeat;
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  .big-text {
+    font-family: $fontMontserrat;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.1;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .medium-text {
+    @include medium-text;
+    line-height: 1.1;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 37px;
+  }
+
+  .small-text {
+    @extend .big-text;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: $fontRoboto;
+    text-transform: none;
+    line-height: 1.3;
+    width: 220px;
+    margin: 20px auto;
+  }
+
+  .reg {
+    @extend .big-text;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: none;
+    margin-top: 30px;
+    margin-bottom: 130px;
+    padding: 10px;
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid #fff;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .button-text {
+    @include button;
+  }
+}
+
+.how_works {
+  font-family: $fontMontserrat;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.step {
+  width: 300px;
+  height: 240px;
+  background: url('../img/step1.jpg') no-repeat;
+  border-radius: 6px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  padding: 70px 20px 0 20px;
+
+
+  .step_button {
+    font-family: $fontMontserrat;
+    font-size: 10px;
+    background-color: $pink;
+    color: #fff;
+    letter-spacing: 0.3em;
+    width: 60px;
+    padding: 5px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-align: center;
+
+
+  }
+  .head {
+    font-family: $fontMontserrat;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    margin-top: 20px;
+    line-height: 1.2;
+  }
+  .paragraph {
+    font-family: $fontRoboto;
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 20px;
+    font-weight: 300;
+  }
+}
+
+.step2 {
+  background: url('../img/step2.jpg') no-repeat;
+}
+
+.step3 {
+  background: url('../img/step3.jpg') no-repeat;
+}
+
+.meet-partner {
+  font-family: $fontMontserrat;
+  font-weight: bold;
+  font-size: 22px;
+  color: #333333;
+  text-align: center;
+  margin: 40px auto 20px;
+  padding: 0 20px;
+}
+
+.partner {
+  text-align: center;
+  width: 220px;
+  margin: 20px auto;
+  .portrait {
+    @include portrait-after(url('../img/sprite.png') no-repeat, $pink);
+  }
+  .portrait2 {
+    @include portrait-after(url('../img/sprite.png') -24px 0 no-repeat, #ff9900);
+  }
+  .portrait3 {
+    @include portrait-after(url('../img/sprite.png') -45px 0 no-repeat, #1CD7AD);
+  }
+  .portrait4 {
+    @include portrait-after(url('../img/sprite.png') -73px 0 no-repeat, #4E73DB);
+  }
+  .head {
+    font-family: $fontMontserrat;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+    margin-top: 22px;
+  }
+  .paragraph {
+    font-family: $fontRoboto;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 300;
+    margin-top: 18px;
+    line-height: 1.3;
+  }
+}
+
+.show_more {
+  font-family: $fontMontserrat;
+  font-weight: bold;
+  font-size: 14px;
+  color: $pink;
+  border: 3px solid $pink;
+  border-radius: 15px;
+  width: 300px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  margin: 30px auto 0;
+}
+
+.ideas {
+  @extend .how_works;
+  display: block;
+
+}
+
+.what_intrests {
+  margin-top: 20px;
+  font-family: $fontRoboto;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+}
+
+.container {
+  height: auto;
+  .item {
+
+    // width: 300px;
+    img {
+      border-radius: 10px;
+    }
+    p {
+      font-family: $fontMontserrat;
+      font-weight: bold;
+      position: absolute;
+      color: #fff;
+      font-size: 22px;
+      top: 10%;
+      left: 10%;
+      z-index: 10;
+      &:first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.search_form {
+  clear: both;
+  text-align: center;
+  .text {
+    font-size: 18px;
+    width: 280px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+
+  .text[placeholder] {
+    font-family: $fontRoboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2;
+    box-sizing: border-box;
+    padding: 5px 15px;
+  }
+
+  .search {
+    @include button;
+    padding: 12px 0;
+    margin-top: 10px;
+  }
+}
+
+footer {
+
+  margin-top: 40px;
+  height: 190px;
+  border-top: 4px solid $pink;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 17px 0;
+  .medium-text {
+    @include medium-text;
+    font-size: 16px;
+    color: $pink;
+  }
+  .footer-list {
+    .small-head {
+      margin-top: 17px;
+      font-family: $fontMontserrat;
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+      span {
+        display: block;
+        margin-top: 18px;
+        font-family: $fontMontserrat;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #ccc;
+        img {
+          display: block;
+          width: 110px;
+          margin: 10px auto 20px;
+        }
+      }
+        .company-list {
+          display: table;
+          width: 200px;
+          margin: 10px auto;
+        }
+          .company-item {
+            display: table-cell;
+            font-family: $fontRoboto;
+            font-weight: 200;
+            font-size: 14px;
+            color: #666;
+            cursor: pointer;
+          }
+    }
+  }
+
+}
