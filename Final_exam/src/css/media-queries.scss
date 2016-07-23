@@ -1,3 +1,190 @@
 @media (min-width: 768px) {
+  header {
+    background-image: url('../img/header_tablet.jpg');
+    height: 700px;
+    box-sizing: border-box;
+    padding: 40px 50px;
+    .big-text {
+      font-size: 52px;
+      width: 490px;
+      margin: 0 auto;
+    }
+    .head-of-head {
+      overflow: auto;
+      margin-bottom: 30px;
+
+      .medium-text {
+        float: left;
+      }
+      .login {
+        float: right;
+        .reg {
+          margin-top: 0;
+          font-size: 14px;
+        }
+      }
+    }
+    .small-text {
+      font-size: 24px;
+      width: auto;
+      margin: 25px auto 35px;
+    }
+  }
+
+  .steps {
+    display: table;
+    width: 750px;
+    margin: 0 auto;
+    .step {
+      width: 236px;
+      height: 400px;
+      display: inline-block;
+      background: url('../img/step1_tablet.jpg') no-repeat;
+      border-radius: 6px;
+      float: left;
+      padding: 210px 20px 0 20px;
+    }
+    .step2 {
+      background-image: url('../img/step2_tablet.jpg');
+      margin-left: 21px;
+
+    }
+
+    .step3 {
+      background-image: url('../img/step3_tablet.jpg');
+      float: right;
+    }
+  }
+
+  .partners {
+    width: 510px;
+    margin: 0 auto;
+    height: 550px;
+    .partner {
+      display: inline-block;
+      padding: 0 10px;
+      vertical-align: top;
+
+    }
+
+  }
+
+  .show_more {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 190px;
+  }
+
+  .container {
+
+    width: 630px;
+    margin: 0 auto;
+    .item {
+      padding: 5px;
+      width: 200px;
+    }
+  }
+
+  .search_form {
+    .what_intrests {
+      margin-top: 35px;
+      margin-bottom: 35px;
+    }
+    .text {
+      display: inline-block;
+    }
+    .search {
+      display: inline-block;
+      width: 160px;
+      margin-left: 10px;
+    }
+  }
+
+  footer {
+
+    width: 100%;
+    margin-top: 100px;
+    display: table;
+
+      .footer-block {
+        .medium-text {
+          padding-top: 15px;
+        }
+
+        vertical-align: top;
+        display: table-cell;
+        text-align: left;
+        padding: 0 20px;
+        }
+        .company-list {
+          p {
+            padding-top: 5px;
+          }
+          .company-item {
+            display: block;
+            text-align: left;
+            line-height: 2;
+
+          }
+        }
+
+          .partners-item {
+            float: right;
+            text-align: right;
+            img {
+              margin: 10px 0;
+              width: auto;
+            }
+          }
+
+
+  }
+}
+
+@media (min-width: 960px) {
+  header {
+    background-image: url('../img/header_desktop.jpg');
+  }
+
+  .steps {
+    width: 950px;
+    margin: 0 auto;
+      .step {
+        width: 300px;
+        height: 400px;
+        background-image: url('../img/step1_desktop.jpg');
+      }
+
+      .step2 {
+        background-image: url('../img/step2_desktop.jpg');
+      }
+
+      .step3 {
+        background-image: url('../img/step3_desktop.jpg');
+      }
+  }
+
+  .partners {
+      display: table;
+      width: 924px;
+      height: auto;
+        .partner {
+          display: table-cell;
+          padding: 5px;
+        }
+  }
+
+  .container {
+    height: auto;
+    width: 960px;
+    margin: 0 auto;
+    .item {
+      padding: 10px;
+      width: 300px;
+    }
+  }
+
+
+
 
 }
