@@ -1,4 +1,5 @@
 //= reset.scss
+//= border-radius.htc
 
 $fontRoboto: 'Roboto', sans-serif;
 $fontMontserrat: 'Montserrat', sans-serif;
@@ -37,6 +38,7 @@ $pink: #FF4E50;
   margin: 0 auto;
   padding: 15px 0;
   border-radius: 25px;
+  behavior: url(border-radius.htc);
   border: 2px solid transparent;
   &:hover {
     cursor: pointer;
@@ -52,7 +54,7 @@ $pink: #FF4E50;
 
 
 
-header {
+.header {
   background: url('../img/header.jpg') no-repeat;
   background-size: cover;
   height: 540px;
@@ -288,7 +290,7 @@ header {
   }
 }
 
-footer {
+.footer {
   margin-top: 40px;
   height: 190px;
   border-top: 4px solid $pink;
