@@ -303,10 +303,10 @@ $pink: #FF4E50;
 
 .container {
   height: auto;
-  width: 300px;
+  width: 960px;
   margin: 0 auto;
   .item {
-    padding: 10px 0;
+    padding: 10px;
     width: 300px;
 
     img {
@@ -317,10 +317,12 @@ $pink: #FF4E50;
       font-family: $fontMontserrat;
       font-weight: bold;
       position: absolute;
+      top: 40%;
+      left: 0;
       color: #fff;
       font-size: 22px;
-      top: 40%;
-      left: 30%;
+      text-align: center;
+      width: 100%;
       z-index: 10;
       &:first-letter {
         text-transform: uppercase;
@@ -462,15 +464,6 @@ $pink: #FF4E50;
   width: 190px;
 }
 
-.container {
-  width: 630px;
-  margin: 0 auto;
-  .item {
-    padding: 5px;
-    width: 200px;
-  }
-}
-
 .search_form {
   .what_intrests {
     margin-top: 35px;
@@ -517,14 +510,4 @@ $pink: #FF4E50;
             width: auto;
           }
         }
-}
-
-.container {
-  height: auto;
-  width: 960px;
-  margin: 0 auto;
-  .item {
-    padding: 10px;
-    width: 300px;
-  }
 }
