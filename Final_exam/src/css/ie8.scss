@@ -55,10 +55,7 @@ $pink: #FF4E50;
 
 
 .header {
-  background: url('../img/header_desktop.jpg') no-repeat;
-  background-size: cover;
-  height: 540px;
-  text-align: center;
+
   .big-text {
     font-family: $fontMontserrat;
     font-weight: bold;
@@ -112,12 +109,48 @@ $pink: #FF4E50;
   }
 }
 
+.header {
+  background: url('../img/header_desktop.jpg') no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 700px;
+  box-sizing: border-box;
+  padding: 40px 50px;
+  .big-text {
+    font-size: 52px;
+    width: 490px;
+    margin: 0 auto;
+  }
+  .head-of-head {
+    overflow: auto;
+    margin-bottom: 30px;
+
+    .medium-text {
+      float: left;
+    }
+    .login {
+      float: right;
+      .reg {
+        margin-top: 0;
+        font-size: 14px;
+      }
+    }
+  }
+  .small-text {
+    font-size: 24px;
+    width: auto;
+    margin: 25px auto 35px;
+  }
+}
+
 .steps {
+  width: 960px;
+  margin: 0 auto;
   .wrap_jcarousel {
     width: 300px;
-    display: block;
+    display: inline-block;
     position: relative;
-    margin: 5px auto;
+    margin: 5px;
     .jcarousel {
       position: relative;
       overflow: hidden;
@@ -130,11 +163,11 @@ $pink: #FF4E50;
             float: left;
             .step {
               width: 300px;
-              height: 240px;
+              height: 400px;
               background: url('../img/step1.jpg') no-repeat;
               border-radius: 6px;
               box-sizing: border-box;
-              padding: 70px 20px 0 20px;
+              padding: 210px 20px 0 20px;
 
 
               .step_button {
@@ -176,13 +209,27 @@ $pink: #FF4E50;
           }
       }
     }
-    .jcarousel-prev, .jcarousel-next {
-      display: none;
+    .jcarousel-prev,
+    .jcarousel-next {
+      position: absolute;
+      top: 30%;
+      display: block;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .jcarousel-prev{
+      left: 20px;
+    }
+    .jcarousel-next{
+      right: 20px;
     }
   }
 }
 
 .partners {
+
     .partner {
       text-align: center;
       width: 220px;
@@ -368,4 +415,116 @@ $pink: #FF4E50;
 }
 
 
-//= media-queries.scss
+
+.steps {
+  width: 960px;
+  margin: 0 auto;
+  .wrap_jcarousel {
+    width: 300px;
+    margin: 5px;
+    .jcarousel {
+      width: 300px;
+      ul {
+        width: 1000px;
+        li {
+            .step {
+              width: 300px;
+              height: 400px;
+              background: url('../img/step1_desktop.jpg') no-repeat;
+            }
+            .step2 {
+              background-image: url('../img/step2_desktop.jpg');
+            }
+            .step3 {
+              background-image: url('../img/step3_desktop.jpg');
+            }
+        }
+      }
+    }
+
+  }
+}
+
+.partners {
+    display: table;
+    width: 924px;
+    height: auto;
+    margin: 0 auto;
+      .partner {
+        display: table-cell;
+        padding: 5px;
+      }
+}
+
+.show_more {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  width: 190px;
+}
+
+.container {
+  width: 630px;
+  margin: 0 auto;
+  .item {
+    padding: 5px;
+    width: 200px;
+  }
+}
+
+.search_form {
+  .what_intrests {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .text {
+    display: inline-block;
+  }
+  .search {
+    display: inline-block;
+    width: 160px;
+    margin-left: 10px;
+  }
+}
+
+.footer {
+  width: 100%;
+  margin-top: 100px;
+  display: table;
+    .footer-block {
+      .medium-text {
+        padding-top: 15px;
+      }
+      vertical-align: top;
+      display: table-cell;
+      text-align: left;
+      padding: 0 20px;
+      }
+      .company-list {
+        p {
+          padding-top: 5px;
+        }
+        .company-item {
+          display: block;
+          text-align: left;
+          line-height: 2;
+        }
+      }
+        .partners-item {
+          float: right;
+          text-align: right;
+          img {
+            margin: 10px 0;
+            width: auto;
+          }
+        }
+}
+
+.container {
+  height: auto;
+  width: 960px;
+  margin: 0 auto;
+  .item {
+    padding: 10px;
+    width: 300px;
+  }
+}

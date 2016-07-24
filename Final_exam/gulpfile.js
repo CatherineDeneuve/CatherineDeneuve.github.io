@@ -19,7 +19,7 @@ var gulp = require('gulp'),
         src: { //Пути откуда брать исходники
             html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
             js: 'src/js/script.js',//В стилях и скриптах нам понадобятся только main файлы
-            style: 'src/css/style.scss',
+            style: ['src/css/style.scss', 'src/css/ie8.scss'],
             img: 'src/img/*.*',
             fonts: 'src/fonts/**/*.*'
         },

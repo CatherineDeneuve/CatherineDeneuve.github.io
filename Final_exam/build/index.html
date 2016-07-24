@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic,100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
-  <script   src="https://code.jquery.com/jquery-2.2.4.js"></script>
-  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
-  <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+  <!--[if gte IE 8]>
+      <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/src/html5shiv.js"></script>
+      <link rel="stylesheet" href="css/ie8.css">
+      <![endif]-->  
   <script src="js/script.js"></script>
   <title>Final_exam</title>
 </head>
 <body>
-
-  <!-- HEADER -->
   <div class="header">
     <div class="head-of-head">
       <div class="login">
@@ -26,25 +25,65 @@
     <p class="small-text">And find the perfect partner to fullfill it</p>
     <p class="button-text">Find your holiday partner</p>
   </div>
-
-  <!-- CONTENT -->
     <p class="block_header">How Urlaubsglück works?</p>
     <div class="steps">
-        <div class="step">
-          <div class="step_button">step 1</div>
-          <p class="head">Sed leo enim, condimentum</p>
-          <p class="paragraph">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+      <!-- Начало первого слайдера -->
+        <div class="wrap_jcarousel">
+          <div class="jcarousel">
+            <ul>
+              <li><div class="step">
+              <div class="step_button">step 1</div>
+              <p class="head">Sed leo enim, condimentum</p>
+              <p class="paragraph">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p></div></li>
+              <li><div class="step step2">
+                <div class="step_button">step 2</div>
+                <p class="head">Morbi velit risus</p>
+                <p class="paragraph">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+              </div></li>
+            </ul>
+          </div>
+          <a class="jcarousel-prev" href="#"><img src="img/left-arrow.png" alt="Arrow to left" /></a>
+          <a class="jcarousel-next" href="#"><img src="img/right-arrow.png" alt="Arrow to right" /></a>
         </div>
-        <div class="step step2">
-          <div class="step_button">step 2</div>
-          <p class="head">Morbi velit risus</p>
-          <p class="paragraph">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+        <!-- Конец первого слайдера -->
+        <!-- Начало второго слайдера -->
+        <div class="wrap_jcarousel">
+          <div class="jcarousel">
+            <ul>
+              <li><div class="step step2">
+                  <div class="step_button">step 2</div>
+                  <p class="head">Morbi velit risus</p>
+                  <p class="paragraph">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+              </div></li>
+              <li><div class="step step3">
+                <div class="step_button">step 3</div>
+                <p class="head">Sed leo enim, condimentum</p>
+                <p class="paragraph">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+              </div></li>
+            </ul>
+          </div>
+          <a class="jcarousel-prev" href="#"><img src="img/left-arrow.png" alt="Arrow to left" /></a>
+          <a class="jcarousel-next" href="#"><img src="img/right-arrow.png" alt="Arrow to right" /></a>
         </div>
-        <div class="step step3">
+        <!-- Конец второго слайдера -->
+        <!-- Начало третьего слайдера -->
+        <div class="wrap_jcarousel">
+          <div class="jcarousel">
+            <ul>
+              <li><div class="step step3">
           <div class="step_button">step 3</div>
           <p class="head">Sed leo enim, condimentum</p>
           <p class="paragraph">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-        </div>
+        </div></li>
+        <li><div class="step">
+        <div class="step_button">step 1</div>
+        <p class="head">Sed leo enim, condimentum</p>
+        <p class="paragraph">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p></div></li>
+      </ul>
+    </div>
+    <a class="jcarousel-prev" href="#"><img src="img/left-arrow.png" alt="Arrow to left" /></a>
+    <a class="jcarousel-next" href="#"><img src="img/right-arrow.png" alt="Arrow to right" /></a>
+  </div>
     </div>
 
     <p class="block_header"> Meet a partner for your best holiday</p>

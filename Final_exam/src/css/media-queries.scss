@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-  header {
+  .header {
     background-image: url('../img/header_tablet.jpg');
     height: 700px;
     box-sizing: border-box;
@@ -32,29 +32,51 @@
   }
 
   .steps {
-    display: table;
     width: 750px;
     margin: 0 auto;
-    .step {
+    .wrap_jcarousel {
       width: 236px;
-      height: 400px;
       display: inline-block;
-      background: url('../img/step1_tablet.jpg') no-repeat;
-      border-radius: 6px;
-      float: left;
-      padding: 210px 20px 0 20px;
-    }
-    .step2 {
-      background-image: url('../img/step2_tablet.jpg');
-      margin-left: 21px;
+      margin: 5px;
+      .jcarousel {
+        width: 236px;
+        ul {
+          width: 500px;
+          li {
+              .step {
+                width: 236px;
+                height: 400px;
+                background: url('../img/step1_tablet.jpg') no-repeat;
+                padding: 210px 20px 0 20px;
+              }
+              .step2 {
+                background-image: url('../img/step2_tablet.jpg');
+              }
 
+              .step3 {
+                background-image: url('../img/step3_tablet.jpg');
+              }
+          }
+        }
+      }
+        .jcarousel-prev,
+        .jcarousel-next {
+          position: absolute;
+          top: 30%;
+          display: block;
+          text-decoration: none;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .jcarousel-prev{
+          left: 20px;
+        }
+        .jcarousel-next{
+          right: 20px;
+        }
     }
-
-    .step3 {
-      background-image: url('../img/step3_tablet.jpg');
-      float: right;
-    }
-  }
+}
 
   .partners {
     width: 510px;
@@ -64,11 +86,8 @@
       display: inline-block;
       padding: 0 10px;
       vertical-align: top;
-
     }
-
   }
-
   .show_more {
     margin-top: 40px;
     margin-bottom: 100px;
@@ -76,7 +95,6 @@
   }
 
   .container {
-
     width: 630px;
     margin: 0 auto;
     .item {
@@ -100,17 +118,14 @@
     }
   }
 
-  footer {
-
+  .footer {
     width: 100%;
     margin-top: 100px;
     display: table;
-
       .footer-block {
         .medium-text {
           padding-top: 15px;
         }
-
         vertical-align: top;
         display: table-cell;
         text-align: left;
@@ -124,10 +139,8 @@
             display: block;
             text-align: left;
             line-height: 2;
-
           }
         }
-
           .partners-item {
             float: right;
             text-align: right;
@@ -136,33 +149,42 @@
               width: auto;
             }
           }
-
-
   }
 }
 
 @media (min-width: 960px) {
-  header {
+  .header {
     background-image: url('../img/header_desktop.jpg');
   }
 
   .steps {
-    width: 950px;
+    width: 960px;
     margin: 0 auto;
-      .step {
+    .wrap_jcarousel {
+      width: 300px;
+      margin: 5px;
+      .jcarousel {
         width: 300px;
-        height: 400px;
-        background-image: url('../img/step1_desktop.jpg');
+        ul {
+          width: 1000px;
+          li {
+              .step {
+                width: 300px;
+                height: 400px;
+                background: url('../img/step1_desktop.jpg') no-repeat;
+              }
+              .step2 {
+                background-image: url('../img/step2_desktop.jpg');
+              }
+              .step3 {
+                background-image: url('../img/step3_desktop.jpg');
+              }
+          }
+        }
       }
 
-      .step2 {
-        background-image: url('../img/step2_desktop.jpg');
-      }
-
-      .step3 {
-        background-image: url('../img/step3_desktop.jpg');
-      }
-  }
+    }
+}
 
   .partners {
       display: table;
@@ -183,8 +205,4 @@
       width: 300px;
     }
   }
-
-
-
-
 }

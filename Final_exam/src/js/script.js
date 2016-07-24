@@ -1,3 +1,9 @@
+//= jquery.min.js
+//= masonry.js
+//= imagesloaded.js
+//= jcarousel.plugin.js
+
+var flag = false;
 $(function () {
   var $container = $('.container');
 
@@ -5,8 +11,9 @@ $(function () {
           $container.imagesLoaded( function() {
               $container.masonry({
                   // Настройки
-                  columnWidth: '.item',
-                  itemSelector: '.item'
+                  columnWidth: function( containerWidth ) {
+                    return containerWidth / 3
+                  }
               });
           });
   }
@@ -18,7 +25,11 @@ $(function () {
 
     function search(e) {
         e.preventDefault();
-        $container.masonry('destroy');
+        if (flag) {
+          $container.masonry('destroy');
+        } else {
+          flag = true;
+        }
         $('.container .item').remove();
         var $searchKey = $('.text').val();
         // initializeMasonry();
@@ -40,8 +51,6 @@ $(function () {
                   $('.container div').addClass('item');
                 }
                 initializeMasonry();
-
-
             },
             error: function () {
                 alert('Error!');
@@ -52,31 +61,41 @@ $(function () {
         $('.text').val('');
     }
 
+// CAROUSEL
 
-
-
-// var container = document.querySelector('.container');
-// var msnry;
-// // Инициализация Масонри, после загрузки изображений
-// function initializeMasonry(){
-//   imagesLoaded( container, function() {
-//     msnry = new Masonry( container, {
-//     // Настройки
-//     columnWidth: 200,
-//     itemSelector: '.item'
-//     });
-//   });
-// }
-
-// function initializeMasonry(){
-//         $container.imagesLoaded( function() {
-//             $container.masonry({
-//                 columnWidth: function( containerWidth ) {
-//                     return containerWidth / 3
-//                 }
-//             });
-//         });
-//     }
 
 
 });
+
+$(function() {
+  // Инициализация слайдера
+    $('.jcarousel').jcarousel();
+    // Прокрутка слайдера
+    // Кнопка PREV
+    $('.jcarousel-prev')
+    // Триггер класса inactive
+    .on('jcarouselcontrol:active', function() {
+      $(this).removeClass('inactive');
+    })
+    .on('jcarouselcontrol:inactive', function() {
+      $(this).addClass('inactive');
+    })
+    // Инициализация кнопки PREV
+    .jcarouselControl({
+      target: '-=1'
+    });
+    // Кнопка NEXT
+    $('.jcarousel-next')
+    // Триггер класса inactive
+    .on('jcarouselcontrol:active', function() {
+      $(this).removeClass('inactive');
+    })
+    .on('jcarouselcontrol:inactive', function() {
+      $(this).addClass('inactive');
+    })
+    // Инициализация кнопки NEXT
+    .jcarouselControl({
+      target: '+=1'
+    });
+
+  });

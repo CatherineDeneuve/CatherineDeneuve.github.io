@@ -1,0 +1,57 @@
+.wrap_jcarousel {
+  /*clear: both;*/
+  width: 300px;
+  margin: 10px;
+  display: inline-block;
+  // margin: 10px auto;
+  position: relative;
+  // border-radius: 10px;
+  // box-shadow: rgba(0,0,0,.5) 5px 5px 15px;
+
+}
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  // height: 410px;
+}
+
+.jcarousel ul {
+  width: 1000px;
+  position: relative;
+}
+
+.jcarousel ul li {
+  float: left;
+}
+
+/*  PREV NEXT BUTTONS  */
+.jcarousel-prev,
+.jcarousel-next{
+  position: absolute;
+  top: 30%;
+  display: block;
+  // width: 30px;
+  // height: 50px;
+  // color: rgba(0,0,0,.8);
+  text-decoration: none;
+  // font-size: 250%;
+}
+
+.jcarousel-prev:hover,
+.jcarousel-next:hover{
+  cursor: pointer;
+}
+
+.inactive {
+  cursor: default;
+  // opacity: 0.5;
+}
+
+.jcarousel-prev{
+  left: 20px;
+}
+.jcarousel-next{
+  right: 20px;
+}
