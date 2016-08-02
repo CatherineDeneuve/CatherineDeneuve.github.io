@@ -3,7 +3,7 @@ $OpenSans: 'Open Sans', sans-serif;
 header {
 
   width: 100%;
-  height: 680px;
+  min-height: 680px;
   background: url('../img/header.jpg') no-repeat;
   background-size: cover;
   font-family: $OpenSans;
@@ -257,6 +257,7 @@ header {
   position: relative;
   display: table;
   background: url('../img/stretch.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 550px;
@@ -320,6 +321,7 @@ header {
   height: 670px;
   background: url('../img/hand.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   font-family: $OpenSans;
   .wrapper {
     width: 900px;
