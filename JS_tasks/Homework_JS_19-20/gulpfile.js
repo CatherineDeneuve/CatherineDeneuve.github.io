@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     rigger = require('gulp-rigger'),
     sass = require('gulp-sass'),
     cssmin = require('gulp-clean-css'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant');
 
 
