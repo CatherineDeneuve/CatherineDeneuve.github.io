@@ -1,0 +1,404 @@
+@media (max-width: 1278px) {
+  header {
+    .wrapper {
+      width: 760px;
+      .head {
+        .search {
+          position: static;
+          margin-top: 40px;
+          margin-right: 20px;
+          float: right;
+        }
+        img {
+          position: absolute;
+          right: 40px;
+          bottom: -30px;
+        }
+        .menu {
+          float: left;
+          margin-left: 40px;
+          ul {
+
+            li {
+              margin: 0 10px;
+              padding: 0;
+            }
+          }
+        }
+        }
+    }
+
+
+  .wrapper {
+    width: 760px;
+    .start {
+      margin-top: 170px;
+      margin-left: 20px;
+      font-size: 35px;
+      width: 380px;
+    }
+  }
+}
+
+.paragraphs-columns {
+    .wrapper {
+      width: 760px;
+      padding: 40px 40px 120px 40px;
+    }
+}
+
+.about {
+  background-size: contain;
+  height: 250px;
+  .wrapper {
+    width: 760px;
+    .content {
+        width: 400px;
+        padding: 20px 40px 20px 350px;
+    }
+  }
+}
+
+.photo {
+  .wrapper {
+    width: 760px;
+    .content {
+      margin-left: 40px;
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.about2 {
+  background-size: contain;
+  height: 250px;
+  .wrapper {
+    width: 760px;
+    .content {
+        width: 400px;
+        padding: 20px 350px 40px 40px ;
+    }
+  }
+}
+
+footer {
+  .pink {
+    height: 360px;
+    .wrapper {
+      width: 760px;
+      padding: 80px 40px;
+    }
+  }
+  .blue {
+    height: 265px;
+    .wrapper {
+      width: 760px;
+      padding: 80px 40px;
+      p {
+        width: 400px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+}
+
+@media (max-width: 768px) {
+  header {
+    .wrapper {
+      width: 460px;
+      .head {
+        height: 200px;
+        line-height: 100px;
+        .search {
+          position: static;
+          float: right;
+          margin-top: 60px;
+          }
+
+        img {
+          vertical-align: none;
+          position: static;
+          margin-top: -20px;
+          margin-left: 20px;
+        }
+          .menu {
+            float: none;
+            height: 50%;
+            width: 460px;
+            margin: 0 auto;
+            ul {
+              height: 100%;
+              width: 400px;
+              margin: 0 auto;
+
+              li {
+                line-height: 100px;
+              }
+            }
+          }
+      }
+    }
+
+    .wrapper {
+      width: 460px;
+      .start {
+        width: 400px;
+        margin: 170px auto 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .paragraphs-columns {
+      .wrapper {
+        width: 460px;
+        box-sizing: border-box;
+        padding: 40px 20px 80px 20px;
+        .section {
+          width: 200px;
+        }
+      }
+  }
+
+  .pink {
+    .wrapper {
+      width: 460px;
+      .content {
+        h3 {
+          font-size: 24px;
+        }
+        p {
+          width: 420px;
+          margin: 20px auto;
+        }
+      }
+    }
+  }
+
+  .about {
+    background-size: cover;
+    background: #fff;
+    height: 400px;
+    .wrapper {
+      width: 460px;
+      .content {
+          padding: 0 20px;
+      }
+    }
+  }
+
+  .stretch {
+    .violet {
+      .wrapper {
+        width: 460px;
+        h3 {
+          font-size: 28px;
+        }
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .photo {
+    height: 450px;
+    .wrapper {
+      width: 460px;
+      box-sizing: border-box;
+      padding: 140px 20px 0;
+      .content {
+        margin-left: 0;
+        width: 360px;
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .about2 {
+    background-size: cover;
+    background: #fff;
+    height: 400px;
+    .wrapper {
+      width: 460px;
+      .content {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  footer {
+    .pink {
+      height: 260px;
+      .wrapper {
+        width: 460px;
+        box-sizing: border-box;
+        padding: 50px 30px;
+      }
+    }
+    .blue {
+      height: 165px;
+      .wrapper {
+        width: 460px;
+        padding: 50px 30px;
+        p {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  header {
+    .wrapper {
+      width: 300px;
+      .head {
+        .search {
+          margin-top: 0;
+          height: 26px;
+        }
+
+        img {
+          margin-top: 0;
+          margin-left: 0;
+        }
+          .menu {
+            width: 300px;
+            ul {
+              height: 100%;
+              width: 300px;
+              li {
+                margin: 0 5px;
+                a {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+      }
+    }
+
+    .wrapper {
+      width: 300px;
+      .start {
+        width: 300px;
+        margin: 170px auto 0;
+        font-size: 22px;
+        button {
+          height: 30px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .paragraphs-columns {
+      .wrapper {
+        width: 300px;
+        margin: 0 auto;
+        column-count: 1;
+        .section {
+          width: 280px;
+          margin: 0 auto;
+        }
+      }
+  }
+
+  .pink {
+    .wrapper {
+      width: 300px;
+      .content {
+        h3 {
+          font-size: 24px;
+        }
+        p {
+          width: 300px;
+          margin: 20px auto;
+        }
+      }
+    }
+  }
+
+  .about {
+    background-size: cover;
+    background: #fff;
+    height: 400px;
+    .wrapper {
+      width: 300px;
+      .content {
+          padding: 0 20px;
+      }
+    }
+  }
+
+  .stretch {
+    .violet {
+      .wrapper {
+        width: 300px;
+        h3 {
+          font-size: 28px;
+        }
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .photo {
+    height: 450px;
+    .wrapper {
+      width: 300px;
+      .content {
+        width: 300px;
+
+        h2 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .about2 {
+    background-size: cover;
+    background: #fff;
+    height: 400px;
+    .wrapper {
+      width: 300px;
+      .content {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  footer {
+    .pink {
+      .wrapper {
+        width: 300px;
+        box-sizing: border-box;
+        padding: 50px 30px;
+        .text {
+          width: auto;
+        }
+      }
+    }
+    .blue {
+      .wrapper {
+        width: 300px;
+        box-sizing: border-box;
+        padding: 50px 0 50px 30px;
+        p {
+          width: auto;
+        }
+      }
+    }
+  }
+}
