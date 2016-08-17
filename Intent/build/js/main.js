@@ -10072,6 +10072,54 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
+(function($){
+
+    $.fn.fancybox = function(options){
+
+      var defaults = {
+        overlayColor: 'rgba(0, 0, 0, 0.8)'
+      }
+
+      var settings = $.extend(defaults, options);
+
+      var $link = this;
+      var $body = $('body');
+      var $modal;
+      var $overlay;
+
+
+
+          function showModal(e) {
+            e.preventDefault();
+
+            var href = $(this).attr('href');
+
+            $modal = $('<div class="parent"><div class="fancybox-modal"><img src="' + href + '"></div></div>');
+            $overlay = $('<div class="fancybox-overlay"></div>');
+            
+
+            $overlay.css({
+              'background-color': settings.overlayColor
+            })
+            e.preventDefault();
+
+            $modal.one('click', hideModal);
+
+            $body.append($overlay);
+            $body.append($modal);
+        }
+
+        function hideModal() {
+            $modal.remove();
+            $overlay.remove();
+        }
+
+      $link.on('click', showModal);
+
+      return this;
+    };
+
+})(jQuery);
 $(function() {
     $('.small a').click(function(e){
       e.preventDefault();
@@ -10115,7 +10163,20 @@ $(function() {
 
     $('.low-navigation li').click(function(){
         $('.low-navigation li').removeClass('highlighted');
-        $(this).addClass('highlighted');        
+        $(this).addClass('highlighted');
+    });
+
+    $('.menu a').on('click', function(e) {
+        e.preventDefault();
+        $('.menu .active').removeClass('active');
+        $(this).addClass('active');
+        var tab = $(this).attr('href');
+        $('.pageContent').not(tab).css({'display':'none'});
+        $(tab).fadeIn(4);
+    });
+
+    $('a.fancybox').fancybox({
+      // overlayColor: 'rgba(255,100,255,0.7)'
     });
 
 

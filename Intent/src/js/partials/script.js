@@ -41,7 +41,20 @@ $(function() {
 
     $('.low-navigation li').click(function(){
         $('.low-navigation li').removeClass('highlighted');
-        $(this).addClass('highlighted');        
+        $(this).addClass('highlighted');
+    });
+
+    $('.menu a').on('click', function(e) {
+        e.preventDefault();
+        $('.menu .active').removeClass('active');
+        $(this).addClass('active');
+        var tab = $(this).attr('href');
+        $('.pageContent').not(tab).css({'display':'none'});
+        $(tab).fadeIn(4);
+    });
+
+    $('a.fancybox').fancybox({
+      // overlayColor: 'rgba(255,100,255,0.7)'
     });
 
 
