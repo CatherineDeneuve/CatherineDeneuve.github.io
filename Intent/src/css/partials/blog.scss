@@ -61,16 +61,28 @@
     text-align: center;
     padding-top: 20px;
     margin-bottom: 5px;
+    position: relative;
 
-
-    &:first-of-type {
-      background: url('../img/advert.jpg') no-repeat;
-    }
-    p {
+    &:after {
+      content: 'Advertise Here';
+      position: absolute;
+      top: 25%;
+      left: 6%;
       color: #c6c6c6;
       font-family: $Bitter;
       font-size: 14px;
       line-height: 1.5;
+    }
+
+
+    &:first-of-type {
+      background: url('../img/advert.jpg') no-repeat;
+      &:after {
+        content: "";
+      }
+    }
+    p {
+
     }
   }
 
@@ -99,6 +111,9 @@
     color: #252525;
     &:first-of-type {
       border-bottom: 4px solid $pink;
+    }
+    &:last-of-type {
+      padding-bottom: 80px;
     }
       .post-details {
         width: 110px;
@@ -137,6 +152,7 @@
   .pagination {
     position: absolute;
     bottom: 20px;
+
     li {
       display: inline-block;
       line-height: 1.5;
