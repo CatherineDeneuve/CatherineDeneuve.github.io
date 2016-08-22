@@ -27,6 +27,15 @@
     box-sizing: border-box;
     padding-top: 40px;
   }
+  .portfolio-navigation {
+    // @extend .low-navigation;
+  }
+  .portfolioContent {
+    display: none;
+  }
+  .portfolioContent.portfolio-active {
+    display: block;
+  }
   img {
     display: inline-block;
     position: relative;

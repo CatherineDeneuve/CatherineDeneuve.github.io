@@ -1,9 +1,9 @@
 $(function() {
     $('.small a').click(function(e){
       e.preventDefault();
-      $('.small a').removeClass('active');
+      $('.small a').removeClass('visible');
   		if($('.carousel img').attr('src') != $(this).attr('href')){
-      	$(this).addClass('active');
+      	$(this).addClass('visible');
       	$('.carousel img').attr('src', $(this).attr('href'));
   	   };
   	});
@@ -12,20 +12,20 @@ $(function() {
 
     $('.carousel-arrow-right').click(function() {
       if($('.carousel img').attr('src') == $('.small a:last').attr('href')) {
-        $('.active').removeClass('active');
-        $('.carousel img').attr('src', $('.small a:first').addClass('active').attr('href'));
+        $('.visible').removeClass('visible');
+        $('.carousel img').attr('src', $('.small a:first').addClass('visible').attr('href'));
       } else {
-        $('.carousel img').attr('src', $('.active').removeClass('active').next().addClass('active').attr('href'));
+        $('.carousel img').attr('src', $('.visible').removeClass('visible').next().addClass('visible').attr('href'));
       }
     })
 
 
     $('.carousel-arrow-left').click(function() {
       if($('.carousel img').attr('src') == $('.small a:first').attr('href')) {
-        $('.active').removeClass('active');
-        $('.carousel img').attr('src', $('.small a:last').addClass('active').attr('href'));
+        $('.visible').removeClass('visible');
+        $('.carousel img').attr('src', $('.small a:last').addClass('visible').attr('href'));
       } else {
-        $('.carousel img').attr('src', $('.active').removeClass('active').prev().addClass('active').attr('href'));
+        $('.carousel img').attr('src', $('.visible').removeClass('visible').prev().addClass('visible').attr('href'));
       }
     })
 
@@ -55,6 +55,20 @@ $(function() {
 
     $('.menu li').click(function(){
         $('.menu li').removeClass('highlighted');
+        $(this).addClass('highlighted');
+    });
+
+    $('.portfolio-navigation a').on('click', function(e) {
+        e.preventDefault();
+        $('.portfolio-navigation .portfolio-active').removeClass('portfolio-active');
+        $(this).addClass('portfolio-active');
+        var tab = $(this).attr('href');
+        $('.portfolioContent').not(tab).css({'display':'none'});
+        $(tab).fadeIn(4);
+    });
+
+    $('.portfolio-navigation li').click(function(){
+        $('.portfolio-navigation li').removeClass('highlighted');
         $(this).addClass('highlighted');
     });
 
