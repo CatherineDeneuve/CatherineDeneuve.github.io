@@ -27,7 +27,7 @@
     box-sizing: border-box;
     padding-top: 40px;
   }
-  
+
   .portfolioContent {
     display: none;
   }
@@ -37,7 +37,7 @@
   img {
     display: inline-block;
     position: relative;
-    cursor: url('../img/cursor.png'), pointer;
+    cursor: $cursor;
     z-index: -2;
   }
   .images a {
@@ -46,7 +46,6 @@
     width: 206px;
     margin-right: 8px;
     margin-bottom: 8px;
-    // z-index: 0;
     &:hover {
       box-shadow: inset 0px 0px 12px 1px rgba(0,0,0,0.75);
     }
@@ -58,9 +57,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  // background: rgba(0, 0, 0, 0.5);
-  // opacity: 0.2;
+  height: 100%;  
   z-index: 11;
 }
 

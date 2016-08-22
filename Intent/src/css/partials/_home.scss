@@ -49,7 +49,7 @@
             text-align: center;
             span {
               line-height: 30px;
-              cursor: url('../img/cursor.png'), pointer;
+              cursor: $cursor;
 
             }
             .genericon-leftarrow {
@@ -82,7 +82,7 @@
     box-sizing: border-box;
     &:hover {
       border: 2px solid  $pink;
-      cursor: url('../img/cursor.png'), pointer;
+      cursor: $cursor;
     }
   }
 }
@@ -177,17 +177,17 @@
           text-align: center;
           &:hover {
             background-color: $pink;
-            cursor: url('../img/cursor.png'), pointer;
+            cursor: $cursor;
             a {
             color: #fff;
-            cursor: url('../img/cursor.png'), pointer;
+            cursor: $cursor;
             }
           }
         }
 
         a {
           text-decoration: none;
-          color: #252525;
+          color: $textColor;
           font-family: $Bitter;
           font-size: 14px;
           line-height: 2;
@@ -209,7 +209,7 @@
         margin-right: 8px;
         height: 120px;
         margin-bottom: 8px;
-        cursor: url('../img/cursor.png'), pointer;
+        cursor: $cursor;
         position: relative;
         &:hover {
           span {
@@ -231,5 +231,5 @@
           }
       }
     }
-}
+  }
 }

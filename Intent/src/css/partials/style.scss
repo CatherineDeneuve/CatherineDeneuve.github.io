@@ -25,10 +25,14 @@
 
 
 
+
+
   $HelveticaThin: 'Helvetica Neue Regular Thin', Arial, sans-serif;
   $HelveticaMedium: 'Helvetica Neue Regular Medium', Arial, sans-serif;
   $Bitter: 'Bitter', serif;
   $pink: #EA5A4B;
+  $cursor: url('../img/cursor.png'), pointer;
+  $textColor: #252525;
 
   @mixin clearfix {
     &:after {
@@ -70,7 +74,7 @@ header {
 
       &:hover {
         color: $pink;
-        cursor: url('../img/cursor.png'), pointer;
+        cursor: $cursor;
       }
     }
   }
@@ -99,7 +103,7 @@ header {
             font-family: $HelveticaMedium;
             &:hover {
               color: $pink;
-              cursor: url('../img/cursor.png'), pointer;
+              cursor: $cursor;
             }
           }
 
@@ -177,7 +181,7 @@ footer {
     text-decoration: none;
     color: #adadad;
     &:hover {
-      cursor: url('../img/cursor.png'), pointer;
+      cursor: $cursor;
       color: $pink;
     }
   }
@@ -215,8 +219,13 @@ footer {
       padding: 0 5px;
         &:hover {
         color: #adadad;
-        cursor: url('../img/cursor.png'), pointer;
+        cursor: $cursor;
         }
     }
   }
 }
+
+@import 'partials/_home.scss';
+@import 'partials/_portfolio.scss';
+@import 'partials/_contact.scss';
+@import 'partials/_blog.scss';

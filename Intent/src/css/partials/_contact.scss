@@ -19,12 +19,11 @@
     .column-text {
       display: inline-block;
       width: 315px;
-      // padding-left: 30px;
       padding-right: 50px;
       box-sizing: border-box;
       font-family: $HelveticaMedium;
       font-size: 14px;
-      color: #252525;
+      color: $textColor;
       span {
         color: $pink;
       }
@@ -34,7 +33,6 @@
     }
 
     form {
-      // display: inline-block;
       float: right;
       width: 500px;
 
@@ -45,8 +43,8 @@
         margin-bottom: 20px;
         box-sizing: border-box;
         padding-left: 10px;
-        border: 1px solid #252525;
-        color: #252525;
+        border: 1px solid $textColor;
+        color: $textColor;
         font-family: $HelveticaMedium;
         font-size: 14px;
         &:focus {
@@ -66,19 +64,19 @@
           color: $pink;
         }
         &:-ms-input-placeholder {
-          color: #252525;
+          color: $textColor;
         }
         &::-webkit-input-placeholder {
-          color: #252525;
+          color: $textColor;
         }
         &::-moz-placeholder {
-          color: #252525;
+          color: $textColor;
         }
       }
 
 
       textarea {
-        border: 1px solid #252525;
+        border: 1px solid $textColor;
         display: block;
         margin-bottom: 20px;
         box-sizing: border-box;
@@ -102,13 +100,13 @@
           color: $pink;
         }
         &:-ms-input-placeholder {
-          color: #252525;
+          color: $textColor;
         }
         &::-webkit-input-placeholder {
-          color: #252525;
+          color: $textColor;
         }
         &::-moz-placeholder {
-          color: #252525;
+          color: $textColor;
         }
       }
       button {
@@ -119,7 +117,7 @@
         background-color: $pink;
         border: none;
         padding: 10px;
-        cursor: url('../img/cursor.png'), pointer;
+        cursor: $cursor;
       }
     }
 }

@@ -45,7 +45,7 @@
     a {
       text-decoration: none;
       color: #464646;
-      cursor: url('../img/cursor.png'), pointer;
+      cursor: $cursor;
       font-family: $HelveticaMedium;
       font-size: 14px;
       line-height: 1.2;
@@ -108,7 +108,7 @@
     width: 650px;
     padding-bottom: 40px;
     @include clearfix;
-    color: #252525;
+    color: $textColor;
     &:first-of-type {
       border-bottom: 4px solid $pink;
     }
@@ -145,7 +145,7 @@
         }
         a {
           text-decoration: none;
-          cursor: url('../img/cursor.png'), pointer;
+          cursor: $cursor;
         }
       }
   }
@@ -159,16 +159,16 @@
       margin-right: 5px;
       &:hover {
         background-color: $pink;
-        cursor: url('../img/cursor.png'), pointer;
+        cursor: $cursor;
         a {
           color: #fff;
-          cursor: url('../img/cursor.png'), pointer;
+          cursor: $cursor;
         }
       }
     }
     a {
       text-decoration: none;
-      color: #252525;
+      color: $textColor;
       opacity: 1;
       padding: 5px;
       font-family: $HelveticaMedium;
