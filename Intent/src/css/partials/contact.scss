@@ -1,0 +1,125 @@
+.content {
+  @include clearfix;
+    .map {
+      height: 400px;
+      width: 890px;
+      margin: 20px auto 30px;
+      iframe {
+        height: 100%;
+        width: 100%;
+        border: 0;
+      }
+    }
+
+
+    .wrapper-contact {
+      width: 890px;
+      margin: 0 auto;
+    }
+    .column-text {
+      display: inline-block;
+      width: 315px;
+      // padding-left: 30px;
+      padding-right: 50px;
+      box-sizing: border-box;
+      font-family: $HelveticaMedium;
+      font-size: 14px;
+      color: #252525;
+      span {
+        color: $pink;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    form {
+      // display: inline-block;
+      float: right;
+      width: 500px;
+
+      input {
+        display: inline-block;
+        width: 240px;
+        line-height: 2;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        border: 1px solid #252525;
+        color: #252525;
+        font-family: $HelveticaMedium;
+        font-size: 14px;
+        &:focus {
+          border: 1px solid $pink;
+          outline: none;
+        }
+        &:focus::-webkit-input-placeholder {
+          color: $pink;
+        }
+        &:focus::-moz-placeholder {
+          color: $pink;
+        }
+        &:focus:-moz-placeholder {
+          color: $pink;
+        }
+        &:focus:-ms-input-placeholder {
+          color: $pink;
+        }
+        &:-ms-input-placeholder {
+          color: #252525;
+        }
+        &::-webkit-input-placeholder {
+          color: #252525;
+        }
+        &::-moz-placeholder {
+          color: #252525;
+        }
+      }
+
+
+      textarea {
+        border: 1px solid #252525;
+        display: block;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        font-family: $HelveticaMedium;
+        font-size: 14px;
+        &:focus {
+          border: 1px solid $pink;
+          outline: none;
+        }
+        &:focus::-webkit-input-placeholder {
+          color: $pink;
+        }
+        &:focus::-moz-placeholder {
+          color: $pink;
+        }
+        &:focus:-moz-placeholder {
+          color: $pink;
+        }
+        &:focus:-ms-input-placeholder {
+          color: $pink;
+        }
+        &:-ms-input-placeholder {
+          color: #252525;
+        }
+        &::-webkit-input-placeholder {
+          color: #252525;
+        }
+        &::-moz-placeholder {
+          color: #252525;
+        }
+      }
+      button {
+        display: block;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: $pink;
+        border: none;
+        padding: 10px;
+        cursor: url('../img/cursor.png'), pointer;
+      }
+    }
+}

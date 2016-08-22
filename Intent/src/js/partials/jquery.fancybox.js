@@ -22,11 +22,11 @@
 
             $modal = $('<div class="parent"><div class="fancybox-modal"><img src="' + href + '"></div></div>');
             $overlay = $('<div class="fancybox-overlay"></div>');
-            
+
 
             $overlay.css({
               'background-color': settings.overlayColor
-            })
+            });
             e.preventDefault();
 
             $modal.one('click', hideModal);
@@ -40,7 +40,10 @@
             $overlay.remove();
         }
 
+        
+
       $link.on('click', showModal);
+      // $link.on('click', animate);
 
       return this;
     };

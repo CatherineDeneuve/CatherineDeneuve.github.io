@@ -18,7 +18,8 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
-        fonts: 'build/fonts/'
+        fonts: 'build/fonts/',
+        audio: 'build/audio/'
 
     },
     src: { //Пути откуда брать исходники
@@ -26,14 +27,16 @@ var path = {
         js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
         style: 'src/css/main.scss',
         img: 'src/img/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        audio: 'src/audio/*.*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
     html: 'src/**/*.html',
     js: 'src/js/partials/*.js',
     style: ['src/css/partials/*.scss', 'src/css/main.scss'],
     img: 'src/img/*.*',
-    fonts: 'src/fonts/**/*.*'
+    fonts: 'src/fonts/**/*.*',
+    audio: 'src/audio/*.*'
     }
 
 };
@@ -77,12 +80,18 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest(path.build.fonts));
 });
 
+gulp.task('audio', function() {
+  return  gulp.src(path.src.audio)
+        .pipe(gulp.dest(path.build.audio));
+});
+
 gulp.task('build', [
     'html',
     'style',
     'image',
     'js',
-    'fonts'
+    'fonts',
+    'audio'
 ]);
 
 gulp.watch([path.watch.html], ['html']);
@@ -90,6 +99,7 @@ gulp.watch([path.watch.style], ['style']);
 gulp.watch([path.watch.img], ['image']);
 gulp.watch([path.watch.js], ['js']);
 gulp.watch([path.watch.fonts], ['fonts']);
+gulp.watch([path.watch.audio], ['audio']);
 
 
 
