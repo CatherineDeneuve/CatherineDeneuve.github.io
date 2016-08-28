@@ -1,0 +1,73 @@
+$colorText: #3f4147;
+$pink: #a70c5d;
+$pointer: url('assets/img/cursor.png'), pointer;
+
+$GothamPro: 'GothamPro';
+$Medium: 'GothamPro-Medium';
+$MediumItalic: 'GothamPro-MediumItalic';
+$Italic: 'GothamPro-Italic';
+$BoldItalic: 'GothamPro-BoldItalic';
+$LightItalic: 'GothamPro-LightItalic';
+$BlackItalic: 'GothamPro-BlackItalic';
+$Black: 'GothamPro-Black';
+$Bold: 'GothamPro-Bold';
+$Light: 'GothamPro-Light';
+
+$Bandera: 'BanderaPro-Medium';
+$BanderaBold: 'BanderaPro-Bold';
+$PFDin: 'PFDin';
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin button {
+
+  background-color: $pink;
+  color: #fff;
+  text-align: center;
+
+  border: none;
+  text-transform: uppercase;
+  font-family: $Black;
+  font-size: 11px;
+
+  cursor: $pointer;
+  &:hover {
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+  }
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+@mixin placeholder {
+  color: $colorText;
+  text-transform: uppercase;
+  font-family: $Medium;
+  font-size: 11px;
+}
+
+@mixin sprite {
+  position: relative;
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    width: 40px;
+    height: 43px;
+    background-image: url('assets/img/sprite.svg');
+  }
+}
