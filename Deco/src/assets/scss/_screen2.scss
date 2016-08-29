@@ -36,6 +36,8 @@
   border-bottom: 1px solid #F4F4F4;
   position: relative;
   background: #fff;
+  box-sizing: border-box;
+  padding: 0 10px;
 
   &:before {
     content: "";
@@ -49,7 +51,6 @@
   }
   .wrapper {
     width: 1085px;
-    padding: 0 10px;
     box-sizing: border-box;
     margin: 0 auto;
     @include clearfix;
@@ -67,7 +68,6 @@
 
   #optima h4 {
     @include sprite;
-
     &:before {
       background-position: -43px 0;
       width: 42px;
@@ -102,13 +102,17 @@
     }
   }
 
+  #optima {
+    position: relative;
+  }
+
   #pink-arrow {
     color: $pink;
     font-weight: 500;
     font-family: Arial;
     position: absolute;
     top: 80px;
-    right: 533px;
+    left: 0;
     display: block;
     width: 5px;
     height: 5px;
@@ -149,6 +153,7 @@
     padding-left: 80px;
     padding-right: 110px;
     position: relative;
+    vertical-align: top;
 
     &:after {
       content: "i";
@@ -166,17 +171,12 @@
       font-weight: 600;
       font-size: 18px;
       padding: 5px 0;
-
-
-
     }
     &:hover:after {
       color: #fff;
       background-color: $pink;
       cursor: $pointer;
     }
-
-
   }
   article:nth-of-type(odd) {
     &:before {
@@ -184,16 +184,12 @@
       display: block;
       position: absolute;
       top: 10%;
-      right: 0;
-      width: 10px;
+      right: 2%;
+      width: 5px;
       height: 180px;
-      border-left: 1px dashed #EDEDEE;
+      border-right: 1px dashed #EDEDEE;
     }
-
   }
-
-
-
   h4 {
     font-size: 15px;
     text-transform: uppercase;
@@ -202,8 +198,6 @@
     margin-bottom: 20px;
     display: inline-block;
     width: 315px;
-
-
   }
   p, li {
     font-size: 13px;
@@ -223,7 +217,9 @@
 
 #modal {
   height: 540px;
-  width: 532px;
+  max-width: 532px;
+  min-width: 300px;
+  width: 50%;
   box-sizing: border-box;
   padding: 40px 0 0;
   position: absolute;
@@ -237,7 +233,6 @@
     color: $colorText;
     span {
       font-family: $Bold;
-
     }
     .employee {
       font-size: 13px;
@@ -248,21 +243,15 @@
       font-size: 10px;
       width: 124px;
     }
-
     .number {
       font-size: 18px;
     }
-
     .title {
       text-transform: uppercase;
       font-family: $Black;
       font-size: 10px;
       text-align: center;
-
     }
-
-
-
   }
 
   button {
@@ -273,29 +262,31 @@
     border-radius: 25px;
   }
 
-
 }
 
 @media (max-width: 980px) {
   .services {
+
     .wrapper {
       width: 740px;
+
     }
+
     article {
-      padding: 40px 10px 40px 50px;
+      width: 50%;
+      padding: 40px 10px 40px 60px;
     }
+
+
+
     #document h4,
     #contract h4,
     #optima h4,
     #escort h4  {
       max-width: 240px;
 
-      &:before {
-        left: -50px;
-      }
+
     }
-
-
   }
 }
 //  end max-width: 980px
@@ -304,37 +295,72 @@
   .slogan {
     .wrapper {
       width: 480px;
+
     }
   }
 
   .services {
     .wrapper {
-      width: 580px;
+      width: 560px;
+      margin: 0 auto;
     }
     article {
-      width: 100%;
-      padding-left: 120px;
+      width: 90%;
+      margin: 0 auto;
+      float: none;
+      box-sizing: border-box;
     }
-    #document h4,
-    #contract h4,
-    #optima h4,
-    #escort h4  {
-      // max-width: 240px;
 
+    article:nth-of-type(odd) {
       &:before {
-        left: -60px;
+        width: 0;
+        height: 0;
+      }
+    }
+
+    #pink-arrow {
+      top: 100px;
+      left: 20%;
+      transform: rotate(-90deg);
+      &:before {
+        height: 70px;
+      }
+      &:after {
+        height: 150px;
       }
     }
 
 
+    #modal {
+      width: 100%;
+      padding-bottom: 20px;
+      height: 580px;
+      top: 330px;
+      background: #fff;
+
+
+      table {
+        td {
+
+          h4 {
+            font-size: 12px;
+            max-width: 100%;
+            text-align: right;
+          }
+        }
+        .employee {
+          font-size: 11px;
+        }
+        .number {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }
 //  end max-width: 760px
 
-@media (max-width: 660px) {
 
-}
-//  end max-width: 660px
 
 @media (max-width: 580px) {
   .slogan {
@@ -345,25 +371,50 @@
 
   .services {
     .wrapper {
-      width: 320px;
+      width: auto;
     }
     article {
       width: 100%;
       padding-left: 10px;
     }
+
     #document h4,
     #contract h4,
     #optima h4,
     #escort h4  {
       max-width: 170px;
-      padding-left: 60px;
-
-      &:before {
-        left: 0;
+      padding-left: 0px;
+    }
+    #modal {
+      max-width: 100%;
+      padding: 0;
+      height: auto;
+      top: 390px;
+      padding-bottom: 40px;
+      table {
+        td {
+        max-width: 105px;
+          h4 {
+            font-size: 12px;
+            max-width: 100%;
+            text-align: right;
+          }
+        }
       }
     }
 
 
+      #pink-arrow {
+
+        &:before {
+          height: 70px;
+        }
+        &:after {
+          height: 150px;
+        }
+      }
   }
 }
+
+
 //  end max-width: 580px

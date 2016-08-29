@@ -19,8 +19,6 @@
     line-height: 25px;
     height: 25px;
     cursor: $pointer;
-    // vertical-align: top;
-
     span {
       display: inline-block;
       transform: rotate(90deg);
@@ -29,10 +27,8 @@
       font-size: 22px;
       line-height: 1;
       padding-bottom: 0;
-
     }
     .genericon {
-      // padding-bottom: 0;
       vertical-align: bottom;
     }
   }
@@ -56,7 +52,6 @@
   }
 
   .play {
-    // @include center;
     height: 25px;
     width: 25px;
     background: #ccc;
@@ -138,17 +133,11 @@
 
     }
   }
-
-
   .name {
     font-family: $Bold;
     font-size: 13px;
-    // padding-top: 40px;
     line-height: 3;
-
   }
-
-
 
   .job {
     font-family: $Bold;
@@ -169,17 +158,12 @@
   }
 }
 
-@media (max-width: 980px) {
 
-}
-//  end max-width: 960px
 
 @media (max-width: 760px) {
  .feedbacks {
-
    article {
      width: 80%;
-
      padding: 0 0 30px 0;
      margin: 0 auto;
      float: none;
@@ -188,13 +172,3 @@
  }
 }
 //  end max-width: 760px
-
-@media (max-width: 660px) {
-
-}
-//  end max-width: 660px
-
-@media (max-width: 580px) {
-
-}
-//  end max-width: 580px

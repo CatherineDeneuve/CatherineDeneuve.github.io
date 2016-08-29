@@ -2,24 +2,20 @@
 
 form {
   margin-top: 50px;
-  padding: 0;
+  box-sizing: border-box;
+  padding: 0 10px;
   .wrapper {
     width: 820px;
-    box-sizing: border-box;
-    padding: 0 10px;
     margin: 0 auto;
   }
 
   .inputs {
     float: left;
-
   }
 
   .addition {
     float: right;
   }
-
-
 
   input {
     display: block;
@@ -53,8 +49,9 @@ form {
   }
 
   .my-interests {
+
     max-width: 385px;
-    min-width: 300px;
+    min-width: 200px;
     height: 50px;
     line-height: 50px;
     text-transform: uppercase;
@@ -95,7 +92,7 @@ form {
     border: 1px solid #ccc;
     border-top: none;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 10px;
 
       input {
         display: inline-block;
@@ -192,60 +189,61 @@ form {
     textarea {
       width: 340px;
     }
-    .my-interests,
-    .interests {
-      width: 340px;
+    .checkboxes {
+      max-width: 340px;
     }
+
   }
 }
-//  end max-width: 960px
+//  end max-width: 980px
 
 @media (max-width: 760px) {
   form {
 
     .wrapper {
-      width: 320px;
+      width: auto;
+      padding: 0;
+      // margin: 0;
     }
 
     .inputs,
     .addition {
       float: none;
-      margin-top: 20px;
-      box-sizing: border-box;
-      // padding: 0 10px;
+      margin: 20px auto;
+      padding: 0;
+      max-width: 320px;
+      // box-sizing: border-box;
     }
 
     input[type=text] {
-      width: 300px;
+      width: 100%;
       padding: 5px 0;
     }
 
 
     textarea {
-      width: 300px;
+      max-width: 100%;
       padding: 0;
+      height: auto;
 
     }
 
-    .my-interests,
+    .checkboxes {
+      max-width: 320px;
+      position: static;
+      clear: none;
+      margin: 20px auto;
+    }
+
     .interests {
-      width: 300px;
-      margin: 0 auto;
-      // padding: 0;
+      width: 100%;
 
     }
 
+    button {
+      margin: 0 auto;
+    }
 
   }
 }
 //  end max-width: 760px
-
-@media (max-width: 660px) {
-
-}
-//  end max-width: 660px
-
-@media (max-width: 580px) {
-
-}
-//  end max-width: 580px
