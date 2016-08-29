@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script   src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Product Page</title>
+</head>
+<body>
+
+  <main>
+    <p><span class="crossed">$44.99/cs</span> <span class="red"> $38.80/cs  <span class="thin regular">Save 16%</span></span></p>
+    <p>Buy More & Save!</p>
+    <p><span class="red">Any Chobani 2 for $4  </span><span class="green">View Selection ></span></p>
+
+    <input type="checkbox" name="save" id="save" class="save"><label for = "save">Save $3.00  <span class="green">Details ></span>
+    <form action="">
+      <p class="text">Customize Your Item:</p>
+      <div class="selects">
+        <select class="" name="custom1">
+          <option value="">Customization 1</option>
+          <option value="saab">Option1</option>
+          <option value="saab">Option2</option>
+          <option value="saab">Option3</option>
+        </select>
+
+        <select class="" name="custom2">
+          <option value="">Customization 2</option>
+          <option value="saab">Option1</option>
+          <option value="saab">Option2</option>
+          <option value="saab">Option3</option>
+        </select>
+
+        <select class="" name="custom3">
+          <option value="">Customization 3</option>
+          <option value="saab">Option1</option>
+          <option value="saab">Option2</option>
+          <option value="saab">Option3</option>
+        </select>
+      </div>
+
+      <div class="radio">
+        <label class="radio-label"><input type="radio" name="radio" id="radio1">Single Cut</label>
+        <label class="radio-label"><input type="radio" name="radio" id="radio2">Double Cut</label>
+      </div>
+
+      <div class="number">
+        <span class="minus"></span>
+        <input type="text" value="1" class="figure"/>
+        <span class="plus"></span>
+        <p class="total">Total: $38.80 <span class="thin">0.46/lb <span class="grey">(est)</span></span></p>
+      </div>
+
+      <div class="submit">
+        <button class="cart">Add to cart</button>
+      </div>
+
+    </form>
+
+  </main>
+
+  <script src="script.js" charset="utf-8"></script>
+
+</body>
+</html>
