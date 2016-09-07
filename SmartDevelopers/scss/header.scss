@@ -1,0 +1,121 @@
+header {
+  height: 70px;
+  background: #fff;
+  border-bottom: 1px solid $border;
+
+  .logo-row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .logo-div, .icon-div {
+    display: inline-block;
+    padding: 0;
+  }
+  .logo-div {
+    text-align: left;
+  }
+  .icon-div {
+    text-align: right;
+  }
+  .row {
+    @include rowPaddings;
+    text-align: right;
+  }
+
+  .logo {
+    padding: 0;
+    width: 201px;
+    max-width: 201px;
+  }
+
+  .logo-div-large {
+    padding: 0;
+    position: relative;
+    background: none;
+    z-index: 2;
+    &:before {
+      content: "";
+      background: url('../img/logo-desktop.svg') no-repeat;
+      display: block;
+      height: 69px;
+      width: 200px;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+      top: -20px;
+      left: -15px;
+    }
+  }
+
+
+  i.icon-menu:before {
+    color:$orange;
+    padding: 0;
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: -10px;
+
+  }
+  .ru, .ukr {
+    @include ru;
+    @include ukr;
+  }
+  .phone {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .phones-menu {
+    font-family: $PTSans;
+    margin-top: -20px;
+    box-sizing: border-box;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    float: right;
+    text-align: left;
+    border-left: 1px solid #d5d5d5;
+    .schedule {
+      font-size: 11px;
+      color: #676767;
+    }
+  }
+
+  .main-menu-tablet {
+    float: right;
+    ul {
+      width: 100%;
+      height: 100%;
+      display: table;
+    }
+    li {
+      display: table-cell;
+      height: 100%;
+      line-height: 29px;
+    }
+    a {
+      color: #000;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: $PTSans;
+      text-decoration: none;
+      &:link {
+        text-decoration: none;
+      }
+      &:visited {
+        color: #000;
+      }
+      &:hover {
+        text-decoration: none;
+        color: $orange;
+        border-bottom: 2px solid $orange;
+      }
+    }
+    a.active {
+      color: $orange;
+      border-bottom: 2px solid $orange;
+    }
+
+
+  }
+
+}
