@@ -48,7 +48,7 @@ header {
   }
 
   .icon-menu {
-    display: none;
+
     &:before {
       color:$orange;
       padding: 0;
@@ -60,12 +60,13 @@ header {
 
 
   .cross {
+    display: none;
     line-height: 28px;
     margin-right: 10px;
     &:before {
       content: "X";
       font-size: 28px;
-      font-weight: 900;      
+      font-weight: 900;
       color: $orange;
     }
 
