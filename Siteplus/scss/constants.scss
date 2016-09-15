@@ -1,0 +1,63 @@
+$Raleway: 'Raleway', sans-serif;
+$OpenSans: 'Open Sans', sans-serif;
+$pink: #f84444;
+$gray: #7c7e88;
+$darkGray: #2c2e37;
+$lightGray: #949494;
+$borderColor: #E5E5E5;
+
+@mixin clearfix {
+  height: 0;
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin topic {
+  text-transform: uppercase;
+  font-family: $Raleway;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.2;
+  color: $darkGray;
+  text-align: center;
+}
+
+@mixin text {
+    color: $lightGray;
+    font-family: $OpenSans;
+    font-size: 26px;
+    line-height: 1.4;
+}
+
+@mixin img {
+  background-position: center center;
+  background-size: cover;
+  min-height: 500px;
+  width: 100%;
+}
+
+@mixin zigzag {
+  &:before {
+    content: url('../img/waves.png');
+    margin-bottom: 40px;
+    display: block;
+  }
+}
+
+@mixin zigzag-small {
+  &:before {
+    content: url('../img/waves-small.png');    
+  }
+}
+
+@mixin photo {
+  width: 678px;
+  height: 660px;
+}
+
+.clearfix {
+  @include clearfix;
+}

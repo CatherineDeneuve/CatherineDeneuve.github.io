@@ -1,0 +1,137 @@
+footer {
+  background: $darkGray;
+  box-sizing: border-box;
+  padding-left: 36px;
+  padding-right: 36px;
+  img {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  .footer-list {
+    column-count: 2;
+  }
+  .item-list {
+    a {
+      text-decoration: none;
+      @include text;
+      color: #fff;
+      line-height: 3;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  p {
+    @include text;
+    color: #fff;
+  }
+  .head {
+    text-transform: uppercase;
+    margin-top: 120px;
+    margin-bottom: 38px;
+  }
+  input {
+    width: 100%;
+    border: 4px solid #42434B;
+    background: none;
+    height: 70px;
+    line-height: 70px;
+    margin-top: 50px;
+    margin-bottom: 120px;
+
+    &::-webkit-input-placeholder {
+      @include text;
+      font-size: 24px;
+      color: #42434B;
+      padding-left: 35px;
+    }
+    &::-moz-placeholder {
+      @include text;
+      font-size: 24px;
+      color: #42434B;
+      padding-left: 35px;
+    }
+    &:-ms-input-placeholder {
+      @include text;
+      font-size: 24px;
+      color: #42434B;
+      padding-left: 35px;
+    }
+
+  }
+  .networks {
+    padding-bottom: 120px;
+  }
+  i {
+    font-size: 34px;
+    color: #fff;
+    margin-right: 10px;
+
+    &:hover {
+      cursor: pointer;
+      color: $pink;
+    }
+  }
+}
+
+@media(min-width:992px){
+  footer {
+    padding-top: 80px;
+    .item-list {
+      margin-bottom: 30px;
+      a {
+        line-height: 1.25;
+        margin-bottom: 30px;
+        font-size: 14px;
+      }
+    }
+    img, .head {
+      margin-top: 0;
+    }
+    .head {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 14px;
+      line-height: 2;
+    }
+    input {
+      height: 45px;
+      line-height: 45px;
+      margin-top: 36px;
+      &::-webkit-input-placeholder {
+        font-size: 14px;
+        padding-left: 20px;
+      }
+      &::-moz-placeholder {
+        font-size: 14px;
+        padding-left: 20px;
+      }
+      &:-ms-input-placeholder {
+        font-size: 14px;
+        padding-left: 20px;
+      }
+    }
+    .networks {
+      text-align: center;
+      padding-bottom: 68px;
+    }
+    i {
+      font-size: 24px;
+    }
+  }
+} /*end @media(min-width:992px)*/
+
+@media(min-width:1200px){
+
+  footer {
+    .form {
+      float: right;
+    }
+    i {
+      font-size: 18px;
+    }
+  }
+
+} /*end @media(min-width:1200px)*/

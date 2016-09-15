@@ -1,0 +1,166 @@
+section.team {
+  .topic {
+    @include zigzag;
+    @include zigzag-small;
+    @include topic;
+    margin-top: 20%;
+
+    text-align: center;
+    padding-bottom: 30px;
+
+  }
+  article.profile {
+    box-sizing: border-box;
+    padding-left: 36px;
+    padding-right: 36px;
+    .name {
+      font-family: $Raleway;
+      font-size: 30px;
+      color: $darkGray;
+      font-weight: bold;
+      padding-top: 78px;
+      line-height: 1em;
+    }
+
+    .job {
+      text-transform: uppercase;
+      font-family: $Raleway;
+      font-size: 30px;
+      color: $darkGray;
+      margin-top: 28px;
+    }
+
+    hr {
+      height: 4px;
+      background: #D1D1D1;
+      width: 60px;
+      border: none;
+      margin-left: 0;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      // display: block;
+    }
+
+    .text {
+      @include text;
+      margin-top: 60px;
+    }
+    i {
+      font-size: 34px;
+      color: $lightGray;
+      margin-right: 10px;
+
+      &:hover {
+        cursor: pointer;
+        color: $pink;
+      }
+    }
+
+    .networks {
+      margin-top: 60px;
+      margin-bottom: 120px;
+    }
+    .photo {
+      margin: 0 auto;
+      @include photo;
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+    .photo1 {
+      background-image: url('../img/profile1.jpg');
+    }
+    .photo2 {
+      background-image: url('../img/profile2.jpg');
+    }
+    .photo3 {
+      background-image: url('../img/profile3.jpg');
+    }
+    .photo4 {
+      background-image: url('../img/slide1.jpg');
+    }
+    .photo5 {
+      background-image: url('../img/slide2.jpg');
+    }
+    .photo6 {
+      background-image: url('../img/slide3.jpg');
+    }
+  }
+
+}
+
+@media(min-width:768px){
+
+} /*end @media(min-width:768px)*/
+
+@media(min-width:992px){
+  section.team {
+    padding-bottom: 155px;
+    .topic {
+      font-size: 26px;
+      padding-bottom: 120px;
+    }
+    .profiles {
+      width: 809px;
+      margin: 0 auto;
+
+    }
+    article.profile {
+      width: 330px;
+      box-sizing: content-box;
+      padding-left: 37px;
+      padding-right: 37px;
+      .photo {
+        width: 330px;
+        height: 332px;
+        background-position: center center;
+        background-size: contain;
+        overflow: hidden;
+
+      }
+      .name {
+        font-size: 15px;
+        padding-top: 55px;
+      }
+
+      .job {
+        font-size: 15px;
+        margin-top: 15px;
+      }
+
+      hr {
+        height: 3px;
+        width: 32px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        // display: block;
+      }
+
+      .text {
+        font-size: 14px;
+        line-height: 2;
+        margin-top: 0;
+      }
+
+      i {
+        font-size: 20px;
+      }
+
+      .networks {
+        margin-top: 35px;
+        margin-bottom: 65px;
+      }
+
+    }
+
+  }
+} /*end @media(min-width:992px)*/
+
+@media(min-width:1200px){
+  section.team {
+    .profiles {
+      width: 1214px;
+    }
+  }
+} /*end @media(min-width:1200px)*/
