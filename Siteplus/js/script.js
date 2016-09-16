@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  // SLIDER
+    // SLIDER
     var left = $('.carousel-arrow-left');
     var right = $('.carousel-arrow-right');
     var elementsList = $('.carousel-list');
@@ -15,7 +15,7 @@ $(document).ready(function() {
     var page = $('.pagination span');
 
 
-  function checkArrow () {
+    function checkArrow() {
         if (currentLeftValue == maximumOffset) {
             left.addClass('inactive');
         } else {
@@ -27,32 +27,42 @@ $(document).ready(function() {
             right.removeClass('inactive');
         }
     };
-    checkArrow ();
+    checkArrow();
 
     function goRight() {
-      if (currentLeftValue != minimumOffset) {
-          currentLeftValue -= img;
-          elementsList.animate({left: currentLeftValue + "px"}, 500);
-          checkArrow();
-      }
+        if (currentLeftValue != minimumOffset) {
+            currentLeftValue -= img;
+            elementsList.animate({
+                left: currentLeftValue + "px"
+            }, 500);
+            checkArrow();
+        }
     }
 
     function goLeft() {
-      if (currentLeftValue != maximumOffset) {
-          currentLeftValue += img;
-          elementsList.animate({left: currentLeftValue + "px"}, 500);
-          checkArrow();
-      }
+        if (currentLeftValue != maximumOffset) {
+            currentLeftValue += img;
+            elementsList.animate({
+                left: currentLeftValue + "px"
+            }, 500);
+            checkArrow();
+        }
     }
 
     page.click(function scrollSlider() {
-          var pageNumber = $(this).text();
-          page.css({color: '#949494'});
-          $(this).css({color: '#2c2e37'});
-          console.log('img', img);
-          currentLeftValue = -((pageNumber - 1) * img);
-          elementsList.animate({left: currentLeftValue + "px"}, 500);
-          checkArrow ();
+        var pageNumber = $(this).text();
+        page.css({
+            color: '#949494'
+        });
+        $(this).css({
+            color: '#2c2e37'
+        });
+        console.log('img', img);
+        currentLeftValue = -((pageNumber - 1) * img);
+        elementsList.animate({
+            left: currentLeftValue + "px"
+        }, 500);
+        checkArrow();
     });
 
     left.on('click', goLeft);
@@ -65,12 +75,12 @@ $(document).ready(function() {
     var overlay = $('menu');
     var menu = $('.icon-menu');
 
-    cross.click(function(){
-      overlay.fadeOut();
+    cross.click(function() {
+        overlay.fadeOut();
     });
 
-    menu.click(function(){
-      overlay.fadeIn();
+    menu.click(function() {
+        overlay.fadeIn();
     });
 
 }); //jQuery

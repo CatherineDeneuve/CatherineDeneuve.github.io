@@ -1,27 +1,27 @@
 mixin profile (back, name, job, text)
-  div.photo(class=back)
-  p.name= name
-  p.job= job
-  hr
-  p.text= text
-  div.networks
-    i.icon-twitter
-    i.icon-facebook
+    div.photo(class=back)
+    p.name= name
+    p.job= job
+    hr
+    p.text= text
+    div.networks
+        i.icon-twitter
+        i.icon-facebook
 
 
 section.team.container-fluid
-  .row
-    h2.topic.col-xs-offset-1.col-xs-10 our team
-    div.profiles
-      article.profile.col-xs-12.col-md-4
-        +profile("photo1", "Adam Smith", "CEO, Brand director", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
-      article.profile.col-xs-12.col-md-4
-        +profile("photo2", "Eric Johnson", "CEO, Operations director", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
-      article.profile.col-xs-12.col-md-6
-        +profile("photo3", "Cecelia Hines", "photographer", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
-      article.profile.col-xs-12.col-md-6
-        +profile("photo4", "Ben Ferguson", "brand, UI designer", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
-      article.profile.col-xs-12.col-md-6
-        +profile("photo5", "Judy Davis", "ux / ui designer", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
-      article.profile.col-xs-12.col-md-6
-        +profile("photo6", "Thomas Peterson", "project manager", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
+    .row
+        h2.topic.col-xs-offset-1.col-xs-10 our team
+        div.profiles
+            article.profile.col-xs-12.col-md-4
+                +profile("photo1", "Adam Smith", "CEO, Brand director", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
+            article.profile.col-xs-12.col-md-4
+                +profile("photo2", "Eric Johnson", "CEO, Operations director", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
+            article.profile.col-xs-12.col-md-6
+                +profile("photo3", "Cecelia Hines", "photographer", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
+            article.profile.col-xs-12.col-md-6
+                +profile("photo4", "Ben Ferguson", "brand, UI designer", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
+            article.profile.col-xs-12.col-md-6
+                +profile("photo5", "Judy Davis", "ux / ui designer", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")
+            article.profile.col-xs-12.col-md-6
+                +profile("photo6", "Thomas Peterson", "project manager", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat.")

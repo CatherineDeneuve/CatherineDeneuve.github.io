@@ -1,187 +1,65 @@
 section.about {
-  .topic {
-    @include topic;
-    padding-top: 130px;
-    padding-bottom: 120px;
-    width: 560px;
-    height: 151px;
-    margin: 0 auto 120px auto;
-    position: relative;
-
-    &:before {
-      content: url('../img/waves.png');
-      position: absolute;
-      top: 90px;
-      left: 50%;
-      transform: translate(-50%, 0);
-      margin-bottom: 40px;
-      display: block;
-    }
-  }
-
-  .photo-in-car {
-    background: url('../img/people_in_car.jpg') no-repeat;
-    background-position: left center;
-    background-size: cover;
-    min-height: 500px;
-    width: 100%;
-  }
-
-  .description {
-
-    .small-topic {
-      @include topic;
-      padding-top: 120px;
-      padding-bottom: 40px;
-    }
-    .text {
-      @include text;
-      text-align: center;
-      box-sizing: border-box;
-      padding: 0 50px 120px 50px;
-    }
-
-  }
-
-  .laptop-coffee {
-    background: url('../img/laptop-coffee.jpg') no-repeat;
-    @include img;
-  }
-
-  .text-presentation {
-    border-top: 1px solid $borderColor;
-    .text {
-      @include text;
-      box-sizing: border-box;
-      padding-top: 120px;
-    }
-    .buttons {
-      padding-top: 80px;
-      padding-bottom: 80px;
-      position: relative;
-      &:after {
-        position: absolute;
-        left: 50%;
-        top: 100%;
-        content: "";
-        display: block;
-        width: 3px;
-        height: 100px;
-        background: #e1e1e1;
-      }
-    }
-
-    button {
-      @include topic;
-      @include button;
-      width: 45%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      float: left;
-      &:last-of-type {
-        float: right;
-      }
-    }
-    .active  {
-      @include buttonActive;
-    }
-  }
-
-    .projects {
-      background: $darkGray;
-      margin-top: 100px;
-      position: relative;
-      z-index: -1;
-
-      .small-topic {
+    .topic {
         @include topic;
-        color: #fff;
-        padding-top: 180px;
+        padding-top: 130px;
+        padding-bottom: 120px;
+        width: 560px;
+        height: 151px;
+        margin: 0 auto 120px;
         position: relative;
+
         &:before {
-          position: absolute;
-          left: 50%;
-          top: 0;
-          content: "";
-          display: block;
-          width: 3px;
-          height: 100px;
-          background: #494b51;
+            content: url('../img/waves.png');
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            margin-bottom: 40px;
+            display: block;
         }
-      }
-      .text {
-        @include text;
-        text-align: center;
-        box-sizing: border-box;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-left: 50px;
-        padding-right: 50px;
-      }
-
-      .buttons {
-        padding-top: 80px;
-        padding-bottom: 170px;
-      }
-
-      button {
-        width: 45%;
-        @include button;
-        position: relative;
-        z-index: 5;
-        border-color: #56585f;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: #fff;
-        float: left;
-        background: none;
-
-        &:last-of-type {
-          float: right;
-        }
-      }
-      .active {
-        @include buttonActive;
-      }
     }
 
-}
-
-
-@media(min-width:992px){
-
-  section.about {
     .photo-in-car {
-      min-height: 400px;
-      max-width: 50%;
+        background: url('../img/people_in_car.jpg') no-repeat;
+        background-position: left center;
+        background-size: cover;
+        min-height: 500px;
+        width: 100%;
     }
-    .laptop-coffee {
-      background: url('../img/laptop-coffee.jpg') no-repeat;
-      max-width: 50%;
-      min-height: 400px;
-    }
+
     .description {
-      .small-topic {
-        font-size: 24px;
-      }
-      .text {
-        font-size: 14px;
-        line-height: 2;
-        text-align: left;
-      }
-    }
-    .text-presentation {
-        border-top: 1px solid transparent;
+        .small-topic {
+            @include topic;
+            padding-top: 120px;
+            padding-bottom: 40px;
+        }
 
         .text {
-            font-size: 14px;
-            line-height: 2;
-            text-align: justify;
+            @include text;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 0 50px 120px;
+        }
+    }
+
+    .laptop-coffee {
+        background: url('../img/laptop-coffee.jpg') no-repeat;
+        @include img;
+    }
+
+    .text-presentation {
+        border-top: 1px solid $borderColor;
+
+        .text {
+            @include text;
+            box-sizing: border-box;
+            padding-top: 120px;
         }
 
         .buttons {
-            padding-top: 50px;
-            padding-bottom: 170px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            position: relative;
 
             &:after {
                 position: absolute;
@@ -190,45 +68,176 @@ section.about {
                 content: "";
                 display: block;
                 width: 3px;
-                height: 50px;
+                height: 100px;
                 background: #e1e1e1;
             }
         }
-        button,
-        .active {
-          @include btn;
-        }
 
-    }
-    .projects {
-        margin-top: 50px;
-        .small-topic {
-            font-size: 26px;
-            padding-top: 120px;
-            margin-bottom: 0;
-            &:before {
-              height: 50px;
+        button {
+            @include topic;
+            @include button;
+            width: 45%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            float: left;
+
+            &:last-of-type {
+                float: right;
             }
         }
-        .text {
-            padding-top: 30px;
-            padding-bottom: 0;
-            width: 620px;
-            margin: 0 auto;
-            font-size: 14px;
-            line-height: 2;
-            box-sizing: border-box;
-        }
-        .buttons {
-          padding-top: 35px;
-          padding-bottom: 300px;
-        }
 
-        button,
         .active {
-          @include btn;
+            @include buttonActive;
         }
     }
-  }
 
-} /*end @media(min-width:992px)*/
+    .projects {
+        background: $darkGray;
+        margin-top: 100px;
+        position: relative;
+        z-index: -1;
+
+        .small-topic {
+            @include topic;
+            color: #fff;
+            padding-top: 180px;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                content: "";
+                display: block;
+                width: 3px;
+                height: 100px;
+                background: #494b51;
+            }
+        }
+
+        .text {
+            @include text;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 40px 50px;
+        }
+
+        .buttons {
+            padding-top: 80px;
+            padding-bottom: 170px;
+        }
+
+        button {
+            width: 45%;
+            @include button;
+            position: relative;
+            z-index: 5;
+            border-color: #56585f;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            float: left;
+            background: none;
+
+            &:last-of-type {
+                float: right;
+            }
+        }
+
+        .active {
+            @include buttonActive;
+        }
+    }
+}
+@media(min-width:992px) {
+    section.about {
+        .photo-in-car {
+            min-height: 400px;
+            max-width: 50%;
+        }
+
+        .laptop-coffee {
+            background: url('../img/laptop-coffee.jpg') no-repeat;
+            max-width: 50%;
+            min-height: 400px;
+        }
+
+        .description {
+            .small-topic {
+                font-size: 24px;
+            }
+
+            .text {
+                font-size: 14px;
+                line-height: 2;
+                text-align: left;
+            }
+        }
+
+        .text-presentation {
+            border-top: 1px solid transparent;
+
+            .text {
+                font-size: 14px;
+                line-height: 2;
+                text-align: justify;
+            }
+
+            .buttons {
+                padding-top: 50px;
+                padding-bottom: 170px;
+
+                &:after {
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    content: "";
+                    display: block;
+                    width: 3px;
+                    height: 50px;
+                    background: #e1e1e1;
+                }
+            }
+
+            .active,
+            button {
+                @include btn;
+            }
+        }
+
+        .projects {
+            margin-top: 50px;
+
+            .small-topic {
+                font-size: 26px;
+                padding-top: 120px;
+                margin-bottom: 0;
+
+                &:before {
+                    height: 50px;
+                }
+            }
+
+            .text {
+                padding-top: 30px;
+                padding-bottom: 0;
+                width: 620px;
+                margin: 0 auto;
+                font-size: 14px;
+                line-height: 2;
+                box-sizing: border-box;
+            }
+
+            .buttons {
+                padding-top: 35px;
+                padding-bottom: 300px;
+            }
+
+            .active,
+            button {
+                @include btn;
+            }
+        }
+    }
+}
+/*end @media(min-width:992px)*/

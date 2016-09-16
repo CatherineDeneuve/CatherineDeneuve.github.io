@@ -1,90 +1,97 @@
 section.blog {
-  .lady {
-    background: url('../img/lady.jpg') no-repeat;
-    @include img;
-  }
-  .topic {
-    @include topic;
-    @include zigzag;
-    padding-top: 120px;
-    padding-bottom: 40px;
-  }
-  .text {
-    @include text;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 0 50px 60px 50px;
-  }
-
-  button {
-    @include buttonActive;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 80px;
-  }
-}
-
-
-
-@media(min-width:992px){
-  section.blog {
-    box-sizing: border-box;
-    padding-left: 100px;
-
     .lady {
-      background: url('../img/lady_part.jpg') no-repeat;
-      float: right;
-      width: 40%;
-      height: 630px;
-      position: relative;
-      &:after {
-        content: url('../img/guys.jpg');
-        position: absolute;
-        top: 60%;
-        right: 40%;
-      }
+        background: url('../img/lady.jpg') no-repeat;
+        @include img;
     }
+
     .topic {
-      margin-top: 20%;
-      font-size: 24px;
-      text-align: left;
-      padding-bottom: 30px;
-      @include zigzag-small;
+        @include topic;
+        @include zigzag;
+        padding-top: 120px;
+        padding-bottom: 40px;
     }
+
     .text {
-      font-size: 14px;
-      text-align: left;
-      padding-left: 40px;
-      padding-bottom: 30px;
-      line-height: 2;
+        @include text;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 50px 60px;
     }
-    button,
-    .active {
-      @include btn;
-      margin-bottom: 80px;
-      margin-left: 40px;
-    }
-  }
-} /*end @media(min-width:992px)*/
 
-@media(min-width:1200px){
-  section.blog {
-    padding-left: 110px;
-    .lady {
-      background: url('../img/lady.jpg') no-repeat;
-      background-position: left center;
-      width: 50%;
-      &:after {
-        top: 50%;
-        right: 60%;
-      }
+    button {
+        @include buttonActive;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 80px;
     }
-    .topic {
-      margin-top: 10%;
-      font-size: 24px;
-      text-align: left;
-      padding-bottom: 30px;
-      @include zigzag-small;
+}
+@media(min-width:992px) {
+    section.blog {
+        box-sizing: border-box;
+        padding-left: 100px;
+
+        .lady {
+            background: url('../img/lady_part.jpg') no-repeat;
+            float: right;
+            width: 40%;
+            height: 630px;
+            position: relative;
+
+            &:after {
+                content: url('../img/guys.jpg');
+                position: absolute;
+                top: 60%;
+                right: 40%;
+            }
+        }
+
+        .topic {
+            margin-top: 20%;
+            font-size: 24px;
+            text-align: left;
+            padding-bottom: 30px;
+            @include zigzag-small;
+        }
+
+        .text {
+            font-size: 14px;
+            text-align: left;
+            padding-left: 40px;
+            padding-bottom: 30px;
+            line-height: 2;
+        }
+
+        .active,
+        button {
+            @include btn;
+            margin-bottom: 80px;
+            margin-left: 40px;
+        }
     }
-  }
-} /*end @media(min-width:1200px)*/
+}
+/*end @media(min-width:992px)*/
+@media(min-width:1200px) {
+    section.blog {
+        padding-left: 110px;
+
+        .lady {
+            background: url('../img/lady.jpg') no-repeat;
+            background-position: left center;
+            width: 50%;
+
+            &:after {
+                top: 50%;
+                right: 60%;
+            }
+        }
+
+        .topic {
+            margin-top: 10%;
+            font-size: 24px;
+            text-align: left;
+            padding-bottom: 30px;
+            @include zigzag-small;
+        }
+    }
+}
+/*end @media(min-width:1200px)*/
