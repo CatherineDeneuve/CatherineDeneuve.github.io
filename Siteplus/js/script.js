@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  // SLIDER
     var left = $('.carousel-arrow-left');
     var right = $('.carousel-arrow-right');
     var elementsList = $('.carousel-list');
@@ -56,5 +58,19 @@ $(document).ready(function() {
     left.on('click', goLeft);
     right.on('click', goRight);
     smallHider.on('click', goRight);
+
+    // OVERLAY
+
+    var cross = $('.cross');
+    var overlay = $('menu');
+    var menu = $('.icon-menu');
+
+    cross.click(function(){
+      overlay.slideUp('fast');
+    });
+
+    menu.click(function(){
+      overlay.slideDown('fast');
+    });
 
 }); //jQuery

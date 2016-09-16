@@ -3,7 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,800");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1229,6 +1229,113 @@ header {
   header nav {
     padding-top: 40px;
     width: 100%; }
+  header menu {
+    width: 98%;
+    margin: 1%;
+    height: 600px;
+    background: #fff;
+    position: relative;
+    z-index: 4;
+    display: none; }
+    header menu .cross {
+      width: 20px;
+      height: 20px;
+      font-weight: 600;
+      font-size: 18px;
+      position: absolute;
+      right: 30px;
+      top: 27px;
+      color: #2c2e37;
+      z-index: 5; }
+      header menu .cross:hover {
+        cursor: pointer; }
+    header menu .overlay-menu {
+      width: 570px;
+      margin: 0 auto;
+      display: table;
+      height: 150px; }
+    header menu .overlay-item {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+      box-sizing: border-box; }
+      header menu .overlay-item a {
+        color: #747474;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        margin-top: 60px; }
+      header menu .overlay-item:hover a {
+        cursor: pointer;
+        color: #f84444; }
+      header menu .overlay-item:before {
+        content: '';
+        position: absolute;
+        top: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 22px;
+        height: 22px;
+        background: url("../img/sprite.png"); }
+      header menu .overlay-item .overlay-item:hover:before {
+        cursor: pointer; }
+    header menu .overlay-item:nth-of-type(1):before {
+      background-position: 0 23px; }
+    header menu .overlay-item:hover:nth-of-type(1):before {
+      background-position: 0 0;
+      cursor: pointer; }
+    header menu .overlay-item:nth-of-type(2):before {
+      background-position: -21px 23px; }
+    header menu .overlay-item:hover:nth-of-type(2):before {
+      background-position: -21px 0;
+      cursor: pointer; }
+    header menu .overlay-item:nth-of-type(3):before {
+      background-position: -45px 23px; }
+    header menu .overlay-item:hover:nth-of-type(3):before {
+      background-position: -45px 0;
+      cursor: pointer; }
+    header menu .overlay-item:nth-of-type(4):before {
+      background-position: -70px 23px;
+      width: 24px; }
+    header menu .overlay-item:hover:nth-of-type(4):before {
+      background-position: -70px 0;
+      cursor: pointer; }
+    header menu .overlay-item:nth-of-type(5):before {
+      background-position: -97px 23px;
+      height: 23px;
+      width: 24px; }
+    header menu .overlay-item:hover:nth-of-type(5):before {
+      background-position: -97px 0;
+      cursor: pointer; }
+    header menu .columns {
+      column-count: 4;
+      width: 864px;
+      margin: 100px auto 0;
+      text-transform: uppercase; }
+      header menu .columns .column-list {
+        float: right; }
+      header menu .columns .head {
+        color: #2c2e37;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 16px; }
+      header menu .columns .column-item {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 14px; }
+        header menu .columns .column-item a {
+          color: #747474;
+          line-height: 2;
+          text-decoration: none; }
+          header menu .columns .column-item a:hover {
+            cursor: pointer;
+            color: #f84444;
+            text-decoration: none; }
   header .logo {
     width: auto;
     height: auto;

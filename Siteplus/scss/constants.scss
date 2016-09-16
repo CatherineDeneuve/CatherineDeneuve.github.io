@@ -5,6 +5,7 @@ $gray: #7c7e88;
 $darkGray: #2c2e37;
 $lightGray: #949494;
 $borderColor: #E5E5E5;
+$menuText: #747474;
 
 @mixin clearfix {
   height: 0;
@@ -49,7 +50,7 @@ $borderColor: #E5E5E5;
 
 @mixin zigzag-small {
   &:before {
-    content: url('../img/waves-small.png');    
+    content: url('../img/waves-small.png');
   }
 }
 

@@ -1,10 +1,54 @@
 header.container-fluid
   .row
     nav.col-xs-12
+
+
       a(href='index.html')
         img.logo(src='img/logo.png', alt='Logo')
       i.icon-menu
       i.icon-search
+
     .center
       button inside our studio
       p.frostebite.visible-lg frostebite
+
+    menu
+      .cross x
+      nav
+        ul.overlay-menu
+          li.overlay-item
+            a our story
+          li.overlay-item
+            a services
+          li.overlay-item
+            a work
+          li.overlay-item
+            a journal
+          li.overlay-item
+            a contact
+      hr
+      section.columns
+        - var list = ["Baxvers", "Akari", "Sushi", "Hopkins Coffee", "bananaboat", "Eyeywear"];
+        ul.column-list
+          p.head Digital
+          for name in list
+            li.column-item
+              a= name
+
+        ul.column-list
+          p.head Print
+          for name in list
+            li.column-item
+              a= name
+
+        ul.column-list
+          p.head Mobile
+          for name in list
+            li.column-item
+              a= name
+
+        ul.column-list
+          p.head Tablet
+          for name in list
+            li.column-item
+              a= name

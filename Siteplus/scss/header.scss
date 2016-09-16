@@ -11,6 +11,151 @@ header {
     width: 100%;
   }
 
+  menu {
+    width: 98%;
+    margin: 1%;
+    height: 600px;
+    background: #fff;
+    position: relative;
+    z-index: 4;
+    display: none;
+
+    .cross {
+      width: 20px;
+      height: 20px;
+      font-weight: 600;
+      font-size: 18px;
+      position: absolute;
+      right: 30px;
+      top: 27px;
+      color: $darkGray;
+      z-index: 5;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .overlay-menu {
+      width: 570px;
+      margin: 0 auto;
+      display: table;
+      height: 150px;
+    }
+    .overlay-item {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+      box-sizing: border-box;
+      a {
+        color: $menuText;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: $Raleway;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        margin-top: 60px;
+      }
+      &:hover a {
+        cursor: pointer;
+        color: $pink;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        top: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 22px;
+        height: 22px;
+        background: url('../img/sprite.png');
+
+      }
+      .overlay-item:hover:before {
+        cursor: pointer;
+      }
+
+    }
+    .overlay-item:nth-of-type(1):before {
+        background-position: 0 23px;
+    }
+    .overlay-item:hover:nth-of-type(1):before {
+      background-position: 0 0;
+      cursor: pointer;
+    }
+
+    .overlay-item:nth-of-type(2):before {
+        background-position: -21px 23px;
+    }
+    .overlay-item:hover:nth-of-type(2):before {
+      background-position: -21px 0;
+      cursor: pointer;
+    }
+
+    .overlay-item:nth-of-type(3):before {
+        background-position: -45px 23px;
+    }
+    .overlay-item:hover:nth-of-type(3):before {
+      background-position: -45px 0;
+      cursor: pointer;
+    }
+
+    .overlay-item:nth-of-type(4):before {
+        background-position: -70px 23px;
+        width: 24px;
+    }
+    .overlay-item:hover:nth-of-type(4):before {
+      background-position: -70px 0;
+      cursor: pointer;
+    }
+
+    .overlay-item:nth-of-type(5):before {
+        background-position: -97px 23px;
+        height: 23px;
+        width: 24px;
+    }
+    .overlay-item:hover:nth-of-type(5):before {
+      background-position: -97px 0;
+      cursor: pointer;
+    }
+
+    .columns {
+      column-count: 4;
+      width: 864px;
+      margin: 100px auto 0;
+      text-transform: uppercase;
+      .column-list {
+        float: right;
+      }
+      .head {
+        color: $darkGray;
+        font-family: $Raleway;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      .column-item {
+        font-family: $Raleway;
+        font-weight: 600;
+        font-size: 14px;
+        a {
+          color: $menuText;
+          line-height: 2;
+          text-decoration: none;
+          &:hover {
+            cursor: pointer;
+            color: $pink;
+            text-decoration: none;
+          }
+        }
+
+      }
+    }
+
+  }
+
+
+
   .logo {
     width: auto;
     height: auto;
