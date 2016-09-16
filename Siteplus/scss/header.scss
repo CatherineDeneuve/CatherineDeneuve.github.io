@@ -139,22 +139,20 @@ header {
         font-family: $Raleway;
         font-weight: 600;
         font-size: 14px;
-        a {
-          color: $menuText;
-          line-height: 2;
-          text-decoration: none;
-          &:hover {
-            cursor: pointer;
-            color: $pink;
+          a {
+            color: $menuText;
+            line-height: 2;
             text-decoration: none;
+              &:hover {
+                cursor: pointer;
+                color: $pink;
+                text-decoration: none;
+              }
           }
-        }
-
       }
     }
 
   }
-
 
 
   .logo {
@@ -187,26 +185,17 @@ header {
   }
 
   button {
+    @include buttonActive;
     max-width: 330px;
-    height: 60px;
+    // height: 60px;
     line-height: 60px;
-    border: none;
-    text-align: center;
-    font-family: $Raleway;
-    font-weight: bold;
-    font-size: 24px;
-    text-transform: uppercase;
-
-    color: #fff;
-    background: $pink;
-    box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
-    &:hover {
-      -webkit-box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
-      box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
-    }
+    // &:hover {
+    //   -webkit-box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
+    //   -moz-box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
+    //   box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
+    // }
   }
 }
 
@@ -217,9 +206,7 @@ header {
   }
 } /*end @media(min-width:768px)*/
 
-@media(min-width:992px){
 
-} /*end @media(min-width:992px)*/
 
 @media(min-width:1200px){
   header {

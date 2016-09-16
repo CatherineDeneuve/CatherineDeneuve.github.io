@@ -17,25 +17,14 @@ section.blog {
   }
 
   button {
-    font-size: 24px;
-    font-family: $Raleway;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: $pink;
+    @include buttonActive;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 4px solid $pink;
-    color: #fff;
     margin-bottom: 80px;
-    &:hover {
-      cursor: pointer;
-    }
   }
 }
 
-@media(min-width:768px){
 
-} /*end @media(min-width:768px)*/
 
 @media(min-width:992px){
   section.blog {
@@ -69,15 +58,11 @@ section.blog {
       padding-bottom: 30px;
       line-height: 2;
     }
-    button {
-      font-size: 12px;
-      padding-top: 14px;
-      padding-bottom: 14px;
+    button,
+    .active {
+      @include btn;
       margin-bottom: 80px;
       margin-left: 40px;
-      &:hover {
-        cursor: pointer;
-      }
     }
   }
 } /*end @media(min-width:992px)*/

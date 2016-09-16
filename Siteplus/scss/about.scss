@@ -73,101 +73,78 @@ section.about {
 
     button {
       @include topic;
+      @include button;
       width: 45%;
-      font-size: 24px;
-      background: #fff;
       padding-top: 20px;
       padding-bottom: 20px;
-      border: 4px solid $borderColor;
-      color: $darkGray;
-      box-sizing: border-box;
       float: left;
       &:last-of-type {
         float: right;
-      }
-      &:hover {
-        -webkit-box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
-        box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
-      }
-      &:focus {
-        outline: none;
       }
     }
     .active  {
-      background: $pink;
-      color: #fff;
-      border: 4px solid $pink;
-      &:hover {
-        box-shadow: none;
-      }
+      @include buttonActive;
     }
-
-
   }
 
-  .projects {
-    background: $darkGray;
-    margin-top: 100px;
-    position: relative;
-    z-index: -1;
-
-    .small-topic {
-      @include topic;
-      color: #fff;
-      padding-top: 180px;
+    .projects {
+      background: $darkGray;
+      margin-top: 100px;
       position: relative;
-      &:before {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        content: "";
-        display: block;
-        width: 3px;
-        height: 100px;
-        background: #494b51;
+      z-index: -1;
+
+      .small-topic {
+        @include topic;
+        color: #fff;
+        padding-top: 180px;
+        position: relative;
+        &:before {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          content: "";
+          display: block;
+          width: 3px;
+          height: 100px;
+          background: #494b51;
+        }
+      }
+      .text {
+        @include text;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .buttons {
+        padding-top: 80px;
+        padding-bottom: 170px;
+      }
+
+      button {
+        width: 45%;
+        @include button;
+        position: relative;
+        z-index: 5;
+        border-color: #56585f;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        float: left;
+        background: none;
+
+        &:last-of-type {
+          float: right;
+        }
+      }
+      .active {
+        @include buttonActive;
       }
     }
-    .text {
-      @include text;
-      text-align: center;
-      box-sizing: border-box;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
 
-    .buttons {
-      padding-top: 80px;
-      padding-bottom: 170px;
-    }
-
-    button {
-      @include topic;
-      width: 45%;
-      font-size: 24px;
-      font-family: $Raleway;
-      font-weight: bold;
-      text-transform: uppercase;
-      background: none;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border: 4px solid #56585f;
-      color: #fff;
-      box-sizing: border-box;
-      float: left;
-      &:last-of-type {
-        float: right;
-      }
-    }
-    .active,
-    button:hover {
-      background: $pink;
-      color: #fff;
-      border: 4px solid $pink;
-    }
-  }
 }
 
 
@@ -194,67 +171,63 @@ section.about {
       }
     }
     .text-presentation {
-      border-top: 1px solid transparent;
+        border-top: 1px solid transparent;
 
-      .text {
-        font-size: 14px;
-        line-height: 2;
-        text-align: justify;
-      }
-
-      .buttons {
-        padding-top: 50px;
-        padding-bottom: 170px;
-
-        &:after {
-          position: absolute;
-          left: 50%;
-          top: 100%;
-          content: "";
-          display: block;
-          width: 3px;
-          height: 50px;
-          background: #e1e1e1;
+        .text {
+            font-size: 14px;
+            line-height: 2;
+            text-align: justify;
         }
-      }
-      button {
-        font-size: 12px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-      }
+
+        .buttons {
+            padding-top: 50px;
+            padding-bottom: 170px;
+
+            &:after {
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                content: "";
+                display: block;
+                width: 3px;
+                height: 50px;
+                background: #e1e1e1;
+            }
+        }
+        button,
+        .active {
+          @include btn;
+        }
 
     }
     .projects {
-      margin-top: 50px;
-      .small-topic {
-        font-size: 26px;
-        padding-top: 120px;
-        margin-bottom: 0;
-        &:before {
-          height: 50px;
+        margin-top: 50px;
+        .small-topic {
+            font-size: 26px;
+            padding-top: 120px;
+            margin-bottom: 0;
+            &:before {
+              height: 50px;
+            }
         }
-      }
-      .text {
-        padding-top: 30px;
-        padding-bottom: 0;
-        width: 620px;
-        margin: 0 auto;
-        font-size: 14px;
-        line-height: 2;
-        box-sizing: border-box;
-      }
+        .text {
+            padding-top: 30px;
+            padding-bottom: 0;
+            width: 620px;
+            margin: 0 auto;
+            font-size: 14px;
+            line-height: 2;
+            box-sizing: border-box;
+        }
+        .buttons {
+          padding-top: 35px;
+          padding-bottom: 300px;
+        }
 
-      .buttons {
-        padding-top: 35px;
-        padding-bottom: 300px;
-      }
-
-      button {
-        font-size: 12px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-      }
-
+        button,
+        .active {
+          @include btn;
+        }
     }
   }
 

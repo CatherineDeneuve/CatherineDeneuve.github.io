@@ -59,6 +59,51 @@ $menuText: #747474;
   height: 660px;
 }
 
+@mixin button {
+  // @include topic;
+  font-size: 24px;
+  background: #fff;
+  border: 4px solid $borderColor;
+  color: $darkGray;
+  box-sizing: border-box;
+  font-family: $Raleway;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  &:hover {
+    -webkit-box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin buttonActive {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: $Raleway;
+  font-weight: 800;
+  background: $pink;
+  color: #fff;
+  border: 4px solid $pink;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    -webkit-box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -1px 14px 0px rgba(0,0,0,0.75);
+  }
+
+}
+
+@mixin btn {
+  font-size: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 .clearfix {
   @include clearfix;
 }
