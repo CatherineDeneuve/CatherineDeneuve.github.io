@@ -2009,8 +2009,7 @@ footer {
     color: #fff;
     padding-left: 35px;
     font-family: "Open Sans", sans-serif;
-    font-size: 24px;
-    box-sizing: border-box; }
+    font-size: 24px; }
     footer input:focus {
       outline: none;
       border-color: #fff; }
@@ -2073,8 +2072,6 @@ footer {
         font-size: 14px; }
       footer input:-ms-input-placeholder {
         font-size: 14px; }
-      footer input:focus {
-        border: 2px solid #fff; }
     footer .networks {
       text-align: center;
       padding-bottom: 68px; }
