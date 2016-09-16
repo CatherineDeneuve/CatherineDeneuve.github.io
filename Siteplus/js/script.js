@@ -66,11 +66,11 @@ $(document).ready(function() {
     var menu = $('.icon-menu');
 
     cross.click(function(){
-      overlay.slideUp('fast');
+      overlay.fadeOut();
     });
 
     menu.click(function(){
-      overlay.slideDown('fast');
+      overlay.fadeIn();
     });
 
 }); //jQuery

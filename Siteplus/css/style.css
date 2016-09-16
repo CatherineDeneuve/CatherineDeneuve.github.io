@@ -1372,6 +1372,10 @@ header {
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px; }
+    header button:hover {
+      -webkit-box-shadow: inset 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: inset 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: inset 0px -1px 14px 0px rgba(0, 0, 0, 0.75); }
 
 @media (min-width: 768px) {
   header {
@@ -1485,11 +1489,18 @@ section.about .text-presentation {
     float: left; }
     section.about .text-presentation button:last-of-type {
       float: right; }
-  section.about .text-presentation .active,
-  section.about .text-presentation button:hover {
+    section.about .text-presentation button:hover {
+      -webkit-box-shadow: inset 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: inset 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: inset 0px -1px 14px 0px rgba(0, 0, 0, 0.75); }
+    section.about .text-presentation button:focus {
+      outline: none; }
+  section.about .text-presentation .active {
     background: #f84444;
     color: #fff;
     border: 4px solid #f84444; }
+    section.about .text-presentation .active:hover {
+      box-shadow: none; }
 section.about .projects {
   background: #2c2e37;
   margin-top: 100px;
@@ -2077,10 +2088,25 @@ footer {
     font-size: 26px;
     line-height: 1.4;
     color: #fff;
-    line-height: 3; }
+    line-height: 3;
+    position: relative; }
+    footer .item-list a:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 0%;
+      height: 1px;
+      background-color: #fff;
+      transition: 0.3s all linear;
+      box-sizing: border-box; }
     footer .item-list a:hover {
-      cursor: pointer;
-      text-decoration: underline; }
+      cursor: pointer; }
+  footer .item-list a:hover:after {
+    cursor: pointer;
+    width: 50%; }
   footer p {
     color: #949494;
     font-family: "Open Sans", sans-serif;
@@ -2186,7 +2212,9 @@ footer {
       text-align: center;
       padding-bottom: 68px; }
     footer i {
-      font-size: 24px; } }
+      font-size: 24px; }
+
+  /*footer*/ }
 /*end @media(min-width:992px)*/
 @media (min-width: 1200px) {
   footer .form {
@@ -2204,6 +2232,5 @@ footer {
       font-size: 14px; }
   footer i {
     font-size: 18px; } }
-/*end @media(min-width:1200px)*/
 
 /*# sourceMappingURL=style.css.map */

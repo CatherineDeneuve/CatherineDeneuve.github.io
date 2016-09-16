@@ -16,10 +16,27 @@ footer {
       @include text;
       color: #fff;
       line-height: 3;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 0%;
+        height: 1px;
+        background-color: #fff;
+        transition: 0.3s all linear;
+        box-sizing: border-box;
+      }
       &:hover {
         cursor: pointer;
-        text-decoration: underline;
       }
+    }
+    a:hover:after {
+      cursor: pointer;
+      width: 50%;
     }
   }
   p {
@@ -93,6 +110,7 @@ footer {
       color: $pink;
     }
   }
+
 }
 
 @media(min-width:992px){
@@ -148,7 +166,7 @@ footer {
     i {
       font-size: 24px;
     }
-  }
+  } /*footer*/
 
 
 } /*end @media(min-width:992px)*/
@@ -180,4 +198,4 @@ footer {
     }
   }
 
-} /*end @media(min-width:1200px)*/
+}
