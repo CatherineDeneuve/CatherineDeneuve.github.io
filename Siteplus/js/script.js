@@ -72,7 +72,7 @@ $(document).ready(function() {
     // OVERLAY
 
     var cross = $('.cross');
-    var overlay = $('menu');
+    var overlay = $('.menu');
     var menu = $('.icon-menu');
 
     cross.click(function() {

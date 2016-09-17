@@ -1126,7 +1126,7 @@ hr {
   visibility: hidden; }
 
 .text-hide {
-  font: 0/0 a;
+  font: 0px/0;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -1403,14 +1403,17 @@ header {
   header nav {
     padding-top: 40px;
     width: 100%; }
-  header menu {
+  header .menu {
     width: 98%;
     margin: 1%;
     background: #fff;
     position: relative;
     z-index: 4;
     display: none; }
-    header menu .cross {
+    header .menu .nav {
+      border-bottom: 1px solid #f1f1f1;
+      height: 180px; }
+    header .menu .cross {
       width: 20px;
       height: 20px;
       font-weight: 600;
@@ -1420,20 +1423,17 @@ header {
       top: 27px;
       color: #2c2e37;
       z-index: 5; }
-      header menu .cross:hover {
+      header .menu .cross:hover {
         cursor: pointer; }
-    header menu .overlay-menu {
+    header .menu .overlay-menu {
       width: 570px;
       margin: 0 auto;
-      display: table;
-      height: 150px; }
-    header menu .overlay-item {
+      display: table; }
+    header .menu .overlay-item {
       display: table-cell;
       text-align: center;
-      vertical-align: middle;
-      position: relative;
-      box-sizing: border-box; }
-      header menu .overlay-item a {
+      position: relative; }
+      header .menu .overlay-item a {
         color: #747474;
         text-transform: uppercase;
         font-size: 14px;
@@ -1441,75 +1441,80 @@ header {
         font-weight: 600;
         text-decoration: none;
         display: block;
-        margin-top: 60px; }
-      header menu .overlay-item:hover a {
+        padding-top: 40px; }
+      header .menu .overlay-item:hover a {
         cursor: pointer;
         color: #f84444; }
-      header menu .overlay-item:before {
+      header .menu .overlay-item:before {
         content: '';
         position: absolute;
-        top: 55px;
         left: 50%;
         transform: translateX(-50%);
         width: 22px;
         height: 22px;
         background: url("../img/sprite.png"); }
-      header menu .overlay-item .overlay-item:hover:before {
+      header .menu .overlay-item .overlay-item:hover:before {
         cursor: pointer; }
-    header menu .overlay-item:nth-of-type(1):before {
+    header .menu .overlay-item:nth-of-type(1):before {
       background-position: 0 23px; }
-    header menu .overlay-item:hover:nth-of-type(1):before {
+    header .menu .overlay-item:hover:nth-of-type(1):before {
       background-position: 0 0;
       cursor: pointer; }
-    header menu .overlay-item:nth-of-type(2):before {
+    header .menu .overlay-item:nth-of-type(2):before {
       background-position: -21px 23px; }
-    header menu .overlay-item:hover:nth-of-type(2):before {
+    header .menu .overlay-item:hover:nth-of-type(2):before {
       background-position: -21px 0;
       cursor: pointer; }
-    header menu .overlay-item:nth-of-type(3):before {
+    header .menu .overlay-item:nth-of-type(3):before {
       background-position: -45px 23px; }
-    header menu .overlay-item:hover:nth-of-type(3):before {
+    header .menu .overlay-item:hover:nth-of-type(3):before {
       background-position: -45px 0;
       cursor: pointer; }
-    header menu .overlay-item:nth-of-type(4):before {
+    header .menu .overlay-item:nth-of-type(4):before {
       background-position: -70px 23px;
       width: 24px; }
-    header menu .overlay-item:hover:nth-of-type(4):before {
+    header .menu .overlay-item:hover:nth-of-type(4):before {
       background-position: -70px 0;
       cursor: pointer; }
-    header menu .overlay-item:nth-of-type(5):before {
+    header .menu .overlay-item:nth-of-type(5):before {
       background-position: -97px 23px;
       height: 23px;
       width: 24px; }
-    header menu .overlay-item:hover:nth-of-type(5):before {
+    header .menu .overlay-item:hover:nth-of-type(5):before {
       background-position: -97px 0;
       cursor: pointer; }
-    header menu .columns {
-      column-count: 4;
-      width: 864px;
-      margin: 100px auto 0;
+    header .menu .columns {
+      width: 1000px;
+      height: 370px;
+      margin: 80px auto 0;
       text-transform: uppercase;
-      padding-bottom: 100px; }
-      header menu .columns .column-list {
-        float: right; }
-      header menu .columns .head {
+      padding-bottom: 120px;
+      overflow: hidden; }
+      header .menu .columns .column-list {
+        width: 250px;
+        float: left;
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-right: 50px; }
+      header .menu .columns .head {
         color: #2c2e37;
         font-family: "Raleway", sans-serif;
         font-weight: 600;
         font-size: 20px;
-        margin-bottom: 16px;
-        padding-left: 15px; }
-      header menu .columns .column-item {
+        display: block;
+        padding-left: 15px;
+        padding-bottom: 10px; }
+      header .menu .columns .column-item {
         font-family: "Raleway", sans-serif;
         font-weight: 600;
-        font-size: 14px; }
-        header menu .columns .column-item a {
+        font-size: 14px;
+        padding-top: 12px;
+        padding-bottom: 12px; }
+        header .menu .columns .column-item a {
           color: #747474;
           padding: 15px;
-          text-decoration: none;
-          line-height: 3;
-          box-sizing: padding-box; }
-          header menu .columns .column-item a:hover {
+          text-decoration: none; }
+          header .menu .columns .column-item a:hover {
             cursor: pointer;
             background: #2c2e37;
             text-decoration: none;
@@ -1931,7 +1936,6 @@ section.slider {
     section.slider:before {
       content: '';
       position: absolute;
-      z-index: 4px;
       top: 472px;
       left: 0;
       width: 18%;
@@ -2026,7 +2030,6 @@ section.slider {
       section.slider .pagination:before {
         content: '';
         position: absolute;
-        z-index: 4px;
         top: 50%;
         left: -320%;
         width: 300%;
