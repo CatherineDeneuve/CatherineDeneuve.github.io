@@ -7,6 +7,15 @@ header {
     min-height: 800px;
     position: relative;
 
+    .icon-down {
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-weight: 600;
+    }
+
     nav {
         padding-top: 40px;
         width: 100%;

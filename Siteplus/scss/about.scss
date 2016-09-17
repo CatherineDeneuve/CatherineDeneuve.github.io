@@ -150,6 +150,13 @@ section.about {
 }
 @media(min-width:992px) {
     section.about {
+        .topic {
+            @include zigzag-small;
+            font-size: 26px;
+            margin-bottom: 50px;
+            width: 350px;
+        }
+
         .photo-in-car {
             min-height: 400px;
             max-width: 50%;
@@ -240,3 +247,14 @@ section.about {
     }
 }
 /*end @media(min-width:992px)*/
+@media(min-width:1200px) {
+    section.about {
+        margin-top: 40px;
+
+        .topic {
+            font-size: 23px;
+            width: 310px;
+        }
+    }
+}
+/*end @media(min-width:1200px)*/

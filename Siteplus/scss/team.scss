@@ -1,7 +1,6 @@
 section.team {
     .topic {
         @include zigzag;
-        @include zigzag-small;
         @include topic;
         margin-top: 20%;
         text-align: center;
@@ -104,6 +103,7 @@ section.team {
         .topic {
             font-size: 26px;
             padding-bottom: 120px;
+            @include zigzag-small;
         }
 
         .profiles {

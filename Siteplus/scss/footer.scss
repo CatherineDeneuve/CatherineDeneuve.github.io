@@ -25,7 +25,7 @@ footer {
             &:after {
                 content: '';
                 position: absolute;
-                top: 100%;
+                top: 105%;
                 left: 50%;
                 transform: translateX(-50%);
                 display: block;
@@ -43,7 +43,7 @@ footer {
 
         a:hover:after {
             cursor: pointer;
-            width: 50%;
+            width: 100%;
         }
     }
 

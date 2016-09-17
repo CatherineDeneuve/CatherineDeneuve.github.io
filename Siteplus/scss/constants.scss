@@ -53,7 +53,6 @@ $menuText: #747474;
     height: 660px;
 }
 @mixin button {
-    // @include topic;
     font-size: 24px;
     background: #fff;
     border: 4px solid $borderColor;
@@ -89,6 +88,10 @@ $menuText: #747474;
         -webkit-box-shadow: inset 0 -1px 14px 0 rgba(0,0,0,0.75);
         -moz-box-shadow: inset 0 -1px 14px 0 rgba(0,0,0,0.75);
         box-shadow: inset 0 -1px 14px 0 rgba(0,0,0,0.75);
+    }
+
+    &:focus {
+        outline: none;
     }
 }
 @mixin btn {
