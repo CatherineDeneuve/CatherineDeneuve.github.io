@@ -19,6 +19,7 @@ footer {
             @include text;
             color: #fff;
             line-height: 3;
+            transition: 0.3s all linear;
             position: relative;
 
             &:after {

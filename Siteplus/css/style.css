@@ -1300,8 +1300,8 @@ hr {
     display: none !important; } }
 @font-face {
   font-family: 'fontello';
-  src: url("../fonts/fontello/fontello.eot?32165036");
-  src: url("../fonts/fontello/fontello.eot?32165036#iefix") format("embedded-opentype"), url("../fonts/fontello/fontello.woff2?32165036") format("woff2"), url("../fonts/fontello/fontello.woff?32165036") format("woff"), url("../fonts/fontello/fontello.ttf?32165036") format("truetype"), url("../fonts/fontello/fontello.svg?32165036#fontello") format("svg");
+  src: url("../fonts/fontello/fontello.eot?35936031");
+  src: url("../fonts/fontello/fontello.eot?35936031#iefix") format("embedded-opentype"), url("../fonts/fontello/fontello.woff2?35936031") format("woff2"), url("../fonts/fontello/fontello.woff?35936031") format("woff"), url("../fonts/fontello/fontello.ttf?35936031") format("truetype"), url("../fonts/fontello/fontello.svg?35936031#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
@@ -1310,11 +1310,12 @@ hr {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?32165036#fontello') format('svg');
+    src: url('../font/fontello.svg?35936031#fontello') format('svg');
   }
 }
 */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class*=" icon-"]:before,
+[class^="icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -1322,7 +1323,7 @@ hr {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -1332,7 +1333,7 @@ hr {
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -1361,6 +1362,10 @@ hr {
   content: '\e804'; }
 
 /* 'юаД' */
+.icon-down:before {
+  content: '\e805'; }
+
+/* 'юаЕ' */
 .icon-twitter:before {
   content: '\f099'; }
 
@@ -1388,6 +1393,13 @@ header {
   width: 100%;
   min-height: 800px;
   position: relative; }
+  header .icon-down {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: 600; }
   header nav {
     padding-top: 40px;
     width: 100%; }
@@ -1541,6 +1553,8 @@ header {
       -webkit-box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75);
       -moz-box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75);
       box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75); }
+    header button:focus {
+      outline: none; }
 
 @media (min-width: 768px) {
   header {
@@ -1677,6 +1691,8 @@ section.about .text-presentation {
       -webkit-box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75);
       -moz-box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75);
       box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75); }
+    section.about .text-presentation .active:focus {
+      outline: none; }
 section.about .projects {
   background: #2c2e37;
   margin-top: 100px;
@@ -1753,8 +1769,16 @@ section.about .projects {
       -webkit-box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75);
       -moz-box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75);
       box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75); }
+    section.about .projects .active:focus {
+      outline: none; }
 
 @media (min-width: 992px) {
+  section.about .topic {
+    font-size: 26px;
+    margin-bottom: 50px;
+    width: 350px; }
+    section.about .topic:before {
+      content: url("../img/waves-small.png"); }
   section.about .photo-in-car {
     min-height: 400px;
     max-width: 50%; }
@@ -1816,6 +1840,13 @@ section.about .projects {
       padding-top: 14px;
       padding-bottom: 14px; } }
 /*end @media(min-width:992px)*/
+@media (min-width: 1200px) {
+  section.about {
+    margin-top: 40px; }
+    section.about .topic {
+      font-size: 23px;
+      width: 310px; } }
+/*end @media(min-width:1200px)*/
 section.slider {
   position: relative;
   z-index: 2; }
@@ -2083,6 +2114,8 @@ section.blog button {
     -webkit-box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75);
     box-shadow: inset 0 -1px 14px 0 rgba(0, 0, 0, 0.75); }
+  section.blog button:focus {
+    outline: none; }
 
 @media (min-width: 992px) {
   section.blog {
@@ -2153,8 +2186,6 @@ section.team .topic {
     content: url("../img/waves.png");
     margin-bottom: 40px;
     display: block; }
-  section.team .topic:before {
-    content: url("../img/waves-small.png"); }
 section.team article.profile {
   box-sizing: border-box;
   padding-left: 36px;
@@ -2223,6 +2254,8 @@ section.team article.profile {
     section.team .topic {
       font-size: 26px;
       padding-bottom: 120px; }
+      section.team .topic:before {
+        content: url("../img/waves-small.png"); }
     section.team .profiles {
       width: 809px;
       margin: 0 auto; }
@@ -2285,7 +2318,7 @@ footer {
     footer .item-list a:after {
       content: '';
       position: absolute;
-      top: 100%;
+      top: 105%;
       left: 50%;
       transform: translateX(-50%);
       display: block;
@@ -2298,7 +2331,7 @@ footer {
       cursor: pointer; }
   footer .item-list a:hover:after {
     cursor: pointer;
-    width: 50%; }
+    width: 100%; }
   footer p {
     color: #949494;
     font-family: "Open Sans", sans-serif;

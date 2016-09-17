@@ -83,4 +83,13 @@ $(document).ready(function() {
         overlay.fadeIn();
     });
 
+    //SCROLL
+
+    $('.go-to').click(function() {
+        var scroll_el = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 10000);
+    });
+
 }); //jQuery

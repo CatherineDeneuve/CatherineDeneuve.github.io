@@ -15,7 +15,7 @@ header {
     menu {
         width: 98%;
         margin: 1%;
-        height: 600px;
+        // height: 600px;
         background: #fff;
         position: relative;
         z-index: 4;
@@ -136,6 +136,7 @@ header {
             width: 864px;
             margin: 100px auto 0;
             text-transform: uppercase;
+            padding-bottom: 100px;
 
             .column-list {
                 float: right;
@@ -147,6 +148,7 @@ header {
                 font-weight: 600;
                 font-size: 20px;
                 margin-bottom: 16px;
+                padding-left: 15px;
             }
 
             .column-item {
@@ -156,13 +158,17 @@ header {
 
                 a {
                     color: $menuText;
-                    line-height: 2;
+                    padding: 15px;
                     text-decoration: none;
+                    line-height: 3;
+                    // display: block;
+                    box-sizing: padding-box;
 
                     &:hover {
                         cursor: pointer;
-                        color: $pink;
+                        background: $darkGray;
                         text-decoration: none;
+                        color: #fff;
                     }
                 }
             }
