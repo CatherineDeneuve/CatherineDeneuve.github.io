@@ -1676,8 +1676,7 @@ section.about .text-presentation {
 section.about .projects {
   background: #2c2e37;
   margin-top: 100px;
-  position: relative;
-  z-index: -1; }
+  position: relative; }
   section.about .projects .small-topic {
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
