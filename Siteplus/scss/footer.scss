@@ -15,25 +15,25 @@ footer {
 
     .item-list {
         a {
-            text-decoration: none;
             @include text;
+            position: relative;
             color: #fff;
             line-height: 3;
+            text-decoration: none;
             transition: 0.3s all linear;
-            position: relative;
 
             &:after {
-                content: '';
                 position: absolute;
                 top: 105%;
                 left: 50%;
                 transform: translateX(-50%);
+                content: '';
                 display: block;
                 width: 0;
                 height: 1px;
+                box-sizing: border-box;
                 background-color: #fff;
                 transition: 0.3s all linear;
-                box-sizing: border-box;
             }
 
             &:hover {
@@ -42,8 +42,8 @@ footer {
         }
 
         a:hover:after {
-            cursor: pointer;
             width: 100%;
+            cursor: pointer;
         }
     }
 
@@ -53,17 +53,17 @@ footer {
     }
 
     .head {
-        text-transform: uppercase;
         margin-top: 120px;
         margin-bottom: 38px;
+        text-transform: uppercase;
     }
 
     .wrapper {
+        position: relative;
         height: 70px;
         width: 100%;
         margin-top: 50px;
         margin-bottom: 120px;
-        position: relative;
 
         &:after {
             content: url('../img/arrow_down.png');
@@ -82,15 +82,15 @@ footer {
 
     input {
         height: 70px;
-        line-height: 70px;
         width: 100%;
         border: 4px solid #42434B;
-        background: none;
-        color: #fff;
+        box-sizing: border-box;
         padding-left: 35px;
         font-family: $OpenSans;
+        line-height: 70px;
         font-size: 24px;
-        box-sizing: border-box;
+        color: #fff;
+        background: none;
 
         &:focus {
             outline: none;
@@ -118,9 +118,9 @@ footer {
     }
 
     i {
+        margin-right: 10px;
         font-size: 34px;
         color: #fff;
-        margin-right: 10px;
 
         &:hover {
             cursor: pointer;
@@ -136,8 +136,8 @@ footer {
             margin-bottom: 30px;
 
             a {
-                line-height: 1.25;
                 margin-bottom: 30px;
+                line-height: 1.25;
                 font-size: 14px;
             }
         }
@@ -148,8 +148,8 @@ footer {
         }
 
         .head {
-            font-size: 15px;
             margin-bottom: 0;
+            font-size: 15px;
         }
 
         p {
@@ -158,14 +158,14 @@ footer {
         }
 
         .wrapper {
-            margin-top: 36px;
             height: 45px;
+            margin-top: 36px;
         }
 
         input {
             height: 45px;
-            line-height: 45px;
             padding-left: 20px;
+            line-height: 45px;
             font-size: 14px;
 
             &::-webkit-input-placeholder {
@@ -186,8 +186,8 @@ footer {
         }
 
         .networks {
-            text-align: center;
             padding-bottom: 68px;
+            text-align: center;
         }
 
         i {
@@ -205,9 +205,9 @@ footer {
 
         input {
             height: 38px;
-            line-height: 38px;
-            font-size: 14px;
             padding-left: 15px;
+            font-size: 14px;
+            line-height: 38px;
 
             &::-webkit-input-placeholder {
                 font-size: 14px;

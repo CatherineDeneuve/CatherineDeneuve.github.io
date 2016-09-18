@@ -1,45 +1,49 @@
 header {
+    position: relative;
+    width: 100%;
+    min-height: 800px;
     background-image: url("../img/hero_back.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    width: 100%;
-    min-height: 800px;
-    position: relative;
 
     .icon-down {
         position: absolute;
         left: 50%;
         bottom: 5%;
         transform: translateX(-50%);
-        color: #fff;
         font-weight: 600;
+        color: #fff;
     }
 
     nav {
-        padding-top: 40px;
         width: 100%;
+        padding-top: 40px;
     }
 
-    menu {
-        width: 98%;
-        margin: 1%;
-        // height: 600px;
-        background: #fff;
+    .menu {
         position: relative;
         z-index: 4;
         display: none;
+        width: 98%;
+        margin: 1%;
+        background: #fff;
+
+        .nav {
+            height: 180px;
+            border-bottom: 1px solid #f1f1f1;
+        }
 
         .cross {
+            position: absolute;
+            right: 30px;
+            top: 27px;
+            z-index: 5;
             width: 20px;
             height: 20px;
             font-weight: 600;
             font-size: 18px;
-            position: absolute;
-            right: 30px;
-            top: 27px;
             color: $darkGray;
-            z-index: 5;
 
             &:hover {
                 cursor: pointer;
@@ -47,28 +51,25 @@ header {
         }
 
         .overlay-menu {
+            display: table;
             width: 570px;
             margin: 0 auto;
-            display: table;
-            height: 150px;
         }
 
         .overlay-item {
+            position: relative;
             display: table-cell;
             text-align: center;
-            vertical-align: middle;
-            position: relative;
-            box-sizing: border-box;
 
             a {
-                color: $menuText;
-                text-transform: uppercase;
-                font-size: 14px;
-                font-family: $Raleway;
-                font-weight: 600;
-                text-decoration: none;
                 display: block;
-                margin-top: 60px;
+                padding-top: 40px;
+                text-transform: uppercase;
+                font-family: $Raleway;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 14px;
+                color: $menuText;
             }
 
             &:hover a {
@@ -79,7 +80,6 @@ header {
             &:before {
                 content: '';
                 position: absolute;
-                top: 55px;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 22px;
@@ -97,8 +97,8 @@ header {
         }
 
         .overlay-item:hover:nth-of-type(1):before {
-            background-position: 0 0;
             cursor: pointer;
+            background-position: 0 0;
         }
 
         .overlay-item:nth-of-type(2):before {
@@ -106,8 +106,8 @@ header {
         }
 
         .overlay-item:hover:nth-of-type(2):before {
-            background-position: -21px 0;
             cursor: pointer;
+            background-position: -21px 0;
         }
 
         .overlay-item:nth-of-type(3):before {
@@ -115,68 +115,73 @@ header {
         }
 
         .overlay-item:hover:nth-of-type(3):before {
-            background-position: -45px 0;
             cursor: pointer;
+            background-position: -45px 0;
         }
 
         .overlay-item:nth-of-type(4):before {
-            background-position: -70px 23px;
             width: 24px;
+            background-position: -70px 23px;
         }
 
         .overlay-item:hover:nth-of-type(4):before {
-            background-position: -70px 0;
             cursor: pointer;
+            background-position: -70px 0;
         }
 
         .overlay-item:nth-of-type(5):before {
-            background-position: -97px 23px;
             height: 23px;
             width: 24px;
+            background-position: -97px 23px;
         }
 
         .overlay-item:hover:nth-of-type(5):before {
-            background-position: -97px 0;
             cursor: pointer;
+            background-position: -97px 0;
         }
 
         .columns {
-            column-count: 4;
-            width: 864px;
-            margin: 100px auto 0;
+            width: 1000px;
+            height: 370px;
+            overflow: hidden;
+            margin: 80px auto 0;
+            padding-bottom: 120px;
             text-transform: uppercase;
-            padding-bottom: 100px;
 
             .column-list {
-                float: right;
+                float: left;
+                width: 250px;
+                box-sizing: border-box;
+                padding-left: 50px;
+                padding-right: 50px;
             }
 
             .head {
-                color: $darkGray;
+                display: block;
+                padding-left: 15px;
+                padding-bottom: 10px;
                 font-family: $Raleway;
                 font-weight: 600;
                 font-size: 20px;
-                margin-bottom: 16px;
-                padding-left: 15px;
+                color: $darkGray;
             }
 
             .column-item {
+                padding-top: 12px;
+                padding-bottom: 12px;
                 font-family: $Raleway;
                 font-weight: 600;
                 font-size: 14px;
 
                 a {
-                    color: $menuText;
                     padding: 15px;
                     text-decoration: none;
-                    line-height: 3;
-                    // display: block;
-                    box-sizing: padding-box;
+                    color: $menuText;
 
                     &:hover {
                         cursor: pointer;
-                        background: $darkGray;
                         text-decoration: none;
+                        background: $darkGray;
                         color: #fff;
                     }
                 }
@@ -185,17 +190,17 @@ header {
     }
 
     .logo {
+        float: left;
         width: auto;
         height: auto;
-        float: left;
     }
 
     .icon-menu,
     .icon-search {
+        float: right;
+        vertical-align: top;
         font-size: 32px;
         color: $gray;
-        vertical-align: top;
-        float: right;
 
         &:hover {
             cursor: pointer;
@@ -224,24 +229,24 @@ header {
 }
 @media(min-width:768px) {
     header {
-        background-image: url("../img/hero_tablet.jpg");
         min-height: 770px;
+        background-image: url("../img/hero_tablet.jpg");
     }
 }
 /*end @media(min-width:768px)*/
 @media(min-width:1200px) {
     header {
-        background-image: url("../img/hero_desktop.jpg");
         min-height: 900px;
+        background-image: url("../img/hero_desktop.jpg");
 
         .frostebite {
+            margin-top: 20px;
+            letter-spacing: 50px;
             font-family: $Raleway;
             font-size: 35px;
             font-weight: bold;
             text-transform: uppercase;
             color: #fff;
-            letter-spacing: 50px;
-            margin-top: 20px;
         }
     }
 }

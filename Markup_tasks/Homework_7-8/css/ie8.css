@@ -1,45 +1,42 @@
 .header {
-  background: url(../img/back1.jpg) center top no-repeat;
+    background: url(../img/back1.jpg) center top no-repeat;
 }
 
 .transparent {
-  background: transparent;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)";
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)";
 }
 
-.radiobuttons--white input + label span {
-  background-color: inherit;
+.radiobuttons--white input+label span {
+    background-color: inherit;
 }
 
 .slide {
-  margin-top: -10px;
+    margin-top: -10px;
 }
 
 .violet_menu {
-  clear: both;
-  overflow: hidden;
-  /*height: 344px;*/
-  border-top: 1px solid black;
-  background: linear-gradient(#745083, #322539);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#745083', endColorstr='#322539')";
-  width: 100%;
+    clear: both;
+    overflow: hidden;
+    /*height: 344px;*/
+    border-top: 1px solid black;
+    background: linear-gradient(#745083, #322539);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#745083', endColorstr='#322539')";
+    width: 100%;
 }
 
-
-.navi_text,
-.white_text,
-.update_text {
-  display:inline-block;
-  zoom:1;
+.navi_text, .white_text, .update_text {
+    display: inline-block;
+    zoom: 1;
 }
 
 .navi_more:hover {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#ffffff')";
-  zoom: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#ffffff')";
+    zoom: 1;
 }
 
 .update {
-  width: 455px;
+    width: 455px;
 }
 
 
@@ -67,6 +64,7 @@
   background: url(../img/sprite_logotypes.png) -367px 0 no-repeat;
 }*/
 
+
 /*.copyright_ie {
   font: italic 16px Georgia, 'Open Sans', sans-serif;
   color: #c5c5c5;
@@ -74,12 +72,11 @@
   margin-top: 10px;
 }*/
 
-
 .footer {
-  height: 115px;
-  background: url(../img/footer.jpg) center bottom no-repeat;
+    height: 115px;
+    background: url(../img/footer.jpg) center bottom no-repeat;
 }
 
-.design span{
+.design span {
     margin-right: 60px;
 }

@@ -4,22 +4,20 @@ section.slider {
 
     .carousel-hider {
         position: relative;
-        margin: -90px auto 0;
         width: 600px;
         height: 1163px;
         overflow: hidden;
+        margin: -90px auto 0;
     }
 
     .carousel-list {
-        list-style: none;
-        width: 1800px;
         position: absolute;
+        width: 1800px;
+        list-style: none;
     }
 
     .carousel-element {
-        display: block;
         float: left;
-        position: relative;
         max-width: 600px;
     }
 
@@ -40,24 +38,24 @@ section.slider {
 
     .sign {
         @include text;
+        padding-left: 30px;
+        margin-top: 58px;
+        margin-bottom: 120px;
         font-style: italic;
         text-align: center;
         background: url('../img/clock.png') no-repeat;
         background-position: 20% center;
-        padding-left: 30px;
-        margin-top: 58px;
-        margin-bottom: 120px;
     }
 
     .icon-play {
         position: absolute;
         top: 300px;
         left: 50%;
-        border: 4px solid #fff;
-        color: #fff;
-        font-size: 28px;
-        padding: 27px 20px;
         transform: translate(-50%, -50%);
+        padding: 27px 20px;
+        border: 4px solid #fff;
+        font-size: 28px;
+        color: #fff;
 
         &:hover {
             cursor: pointer;
@@ -65,8 +63,8 @@ section.slider {
     }
 
     i {
-        color: $gray;
         font-size: 24px;
+        color: $gray;
     }
 
     .inactive {
@@ -102,7 +100,6 @@ section.slider {
         &:before {
             content: '';
             position: absolute;
-            z-index: 4px;
             top: 472px;
             left: 0;
             width: 18%;
@@ -112,10 +109,10 @@ section.slider {
 
         .carousel-hider-big {
             position: relative;
-            margin: -220px auto;
             width: 600px;
             height: 1213px;
             overflow: hidden;
+            margin: -220px auto;
         }
 
         .pagination {
@@ -142,16 +139,14 @@ section.slider {
         }
 
         .carousel-list {
-            list-style: none;
-            width: 1800px;
             position: absolute;
             left: 0;
+            width: 1800px;
+            list-style: none;
         }
 
         .carousel-element {
-            display: block;
             float: left;
-            position: relative;
             width: 600px;
         }
 
@@ -173,16 +168,16 @@ section.slider {
         }
 
         .carousel-text {
-            padding-left: 130px;
             box-sizing: border-box;
+            padding-left: 130px;
             padding-bottom: 50px;
         }
 
         .topic {
-            text-align: left;
-            font-size: 24px;
             padding-top: 80px;
             padding-bottom: 30px;
+            text-align: left;
+            font-size: 24px;
         }
 
         .text {
@@ -193,13 +188,13 @@ section.slider {
         }
 
         .sign {
+            margin-top: 50px;
+            margin-bottom: 120px;
+            padding-left: 30px;
             font-size: 14px;
             text-align: left;
             background: url('../img/clock-small.png') no-repeat;
             background-position: 0 center;
-            padding-left: 30px;
-            margin-top: 50px;
-            margin-bottom: 120px;
         }
     }
 }
@@ -219,10 +214,10 @@ section.slider {
 
         .carousel-hider-big {
             position: relative;
-            margin: -220px 40px 0 0;
             width: 600px;
             height: 1163px;
             overflow: hidden;
+            margin: -220px 40px 0 0;
         }
 
         .pagination {
@@ -233,7 +228,6 @@ section.slider {
             &:before {
                 content: '';
                 position: absolute;
-                z-index: 4px;
                 top: 50%;
                 left: -320%;
                 width: 300%;
@@ -243,16 +237,14 @@ section.slider {
         }
 
         .carousel-list {
-            list-style: none;
-            width: 1800px;
             position: absolute;
             left: 0;
+            width: 1800px;
+            list-style: none;
         }
 
         .carousel-element {
-            display: block;
             float: left;
-            position: relative;
             width: 600px;
         }
 
@@ -263,10 +255,10 @@ section.slider {
         .carousel-hider-small {
             position: relative;
             top: 0;
-            margin: -145px auto 0;
             width: 450px;
             height: 450px;
             overflow: hidden;
+            margin: -145px auto 0;
 
             &:hover {
                 cursor: pointer;

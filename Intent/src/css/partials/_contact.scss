@@ -1,123 +1,143 @@
 .content {
-  @include clearfix;
+    @include clearfix;
+
     .map {
-      height: 400px;
-      width: 890px;
-      margin: 20px auto 30px;
-      iframe {
+        height: 400px;
+        width: 890px;
+        margin: 20px auto 30px;
+    }
+
+    .map-frame {
         height: 100%;
         width: 100%;
         border: 0;
-      }
     }
-
 
     .wrapper-contact {
-      width: 890px;
-      margin: 0 auto;
+        width: 890px;
+        margin: 0 auto;
     }
+
     .column-text {
-      display: inline-block;
-      width: 315px;
-      padding-right: 50px;
-      box-sizing: border-box;
-      font-family: $HelveticaMedium;
-      font-size: 14px;
-      color: $textColor;
-      span {
-        color: $pink;
-      }
-      p {
-        margin-bottom: 20px;
-      }
+        display: inline-block;
+        width: 315px;
+        box-sizing: border-box;
+        padding-right: 50px;
+        font-family: $HelveticaMedium;
+        font-size: 14px;
+        color: $textColor;
     }
 
-    form {
-      float: right;
-      width: 500px;
+    .company-name {
+        color: $pink;
+    }
 
-      input {
+    .contact-details {
+        margin-bottom: 20px;
+    }
+
+    .feedback {
+        float: right;
+        width: 500px;
+    }
+
+    .feedback-input {
         display: inline-block;
         width: 240px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 1px solid $textColor;
+        padding-left: 10px;
         line-height: 2;
-        margin-bottom: 20px;
-        box-sizing: border-box;
-        padding-left: 10px;
-        border: 1px solid $textColor;
+        font-family: $HelveticaMedium;
+        font-size: 14px;
         color: $textColor;
-        font-family: $HelveticaMedium;
-        font-size: 14px;
+
         &:focus {
-          border: 1px solid $pink;
-          outline: none;
+            border: 1px solid $pink;
+            outline: none;
         }
+
         &:focus::-webkit-input-placeholder {
-          color: $pink;
+            color: $pink;
         }
+
         &:focus::-moz-placeholder {
-          color: $pink;
+            color: $pink;
         }
+
         &:focus:-moz-placeholder {
-          color: $pink;
+            color: $pink;
         }
+
         &:focus:-ms-input-placeholder {
-          color: $pink;
+            color: $pink;
         }
+
         &:-ms-input-placeholder {
-          color: $textColor;
+            color: $textColor;
         }
+
         &::-webkit-input-placeholder {
-          color: $textColor;
+            color: $textColor;
         }
+
         &::-moz-placeholder {
-          color: $textColor;
+            color: $textColor;
         }
-      }
+    }
 
-
-      textarea {
-        border: 1px solid $textColor;
+    .feedback-text {
         display: block;
-        margin-bottom: 20px;
         box-sizing: border-box;
+        border: 1px solid $textColor;
+        margin-bottom: 20px;
         padding-left: 10px;
         font-family: $HelveticaMedium;
         font-size: 14px;
+
         &:focus {
-          border: 1px solid $pink;
-          outline: none;
+            border: 1px solid $pink;
+            outline: none;
         }
+
         &:focus::-webkit-input-placeholder {
-          color: $pink;
+            color: $pink;
         }
+
         &:focus::-moz-placeholder {
-          color: $pink;
+            color: $pink;
         }
+
         &:focus:-moz-placeholder {
-          color: $pink;
+            color: $pink;
         }
+
         &:focus:-ms-input-placeholder {
-          color: $pink;
+            color: $pink;
         }
+
         &:-ms-input-placeholder {
-          color: $textColor;
+            color: $textColor;
         }
+
         &::-webkit-input-placeholder {
-          color: $textColor;
+            color: $textColor;
         }
+
         &::-moz-placeholder {
-          color: $textColor;
+            color: $textColor;
         }
-      }
-      button {
+    }
+
+    .feedback-submit {
         display: block;
         margin-bottom: 50px;
-        text-transform: uppercase;
-        color: #fff;
-        background-color: $pink;
         border: none;
         padding: 10px;
+        text-transform: uppercase;
         cursor: $cursor;
-      }
+        color: #fff;
+        background-color: $pink;
     }
 }

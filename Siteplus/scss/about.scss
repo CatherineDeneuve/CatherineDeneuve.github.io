@@ -1,12 +1,12 @@
 section.about {
     .topic {
         @include topic;
+        position: relative;
+        height: 151px;
+        width: 560px;
         padding-top: 130px;
         padding-bottom: 120px;
-        width: 560px;
-        height: 151px;
         margin: 0 auto 120px;
-        position: relative;
 
         &:before {
             content: url('../img/waves.png');
@@ -14,17 +14,17 @@ section.about {
             top: 90px;
             left: 50%;
             transform: translate(-50%, 0);
-            margin-bottom: 40px;
             display: block;
+            margin-bottom: 40px;
         }
     }
 
     .photo-in-car {
+        min-height: 500px;
+        width: 100%;
         background: url('../img/people_in_car.jpg') no-repeat;
         background-position: left center;
         background-size: cover;
-        min-height: 500px;
-        width: 100%;
     }
 
     .description {
@@ -36,15 +36,15 @@ section.about {
 
         .text {
             @include text;
-            text-align: center;
             box-sizing: border-box;
             padding: 0 50px 120px;
+            text-align: center;
         }
     }
 
     .laptop-coffee {
-        background: url('../img/laptop-coffee.jpg') no-repeat;
         @include img;
+        background: url('../img/laptop-coffee.jpg') no-repeat;
     }
 
     .text-presentation {
@@ -57,9 +57,9 @@ section.about {
         }
 
         .buttons {
+            position: relative;
             padding-top: 80px;
             padding-bottom: 80px;
-            position: relative;
 
             &:after {
                 position: absolute;
@@ -76,10 +76,10 @@ section.about {
         button {
             @include topic;
             @include button;
+            float: left;
             width: 45%;
             padding-top: 20px;
             padding-bottom: 20px;
-            float: left;
 
             &:last-of-type {
                 float: right;
@@ -92,15 +92,15 @@ section.about {
     }
 
     .projects {
-        background: $darkGray;
-        margin-top: 100px;
         position: relative;
+        margin-top: 100px;
+        background: $darkGray;
 
         .small-topic {
             @include topic;
-            color: #fff;
-            padding-top: 180px;
             position: relative;
+            padding-top: 180px;
+            color: #fff;
 
             &:before {
                 position: absolute;
@@ -116,9 +116,9 @@ section.about {
 
         .text {
             @include text;
-            text-align: center;
             box-sizing: border-box;
             padding: 40px 50px;
+            text-align: center;
         }
 
         .buttons {
@@ -127,15 +127,15 @@ section.about {
         }
 
         button {
-            width: 45%;
             @include button;
-            position: relative;
+            float: left;
+            // position: relative;
             z-index: 5;
-            border-color: #56585f;
+            width: 45%;
             padding-top: 20px;
             padding-bottom: 20px;
             color: #fff;
-            float: left;
+            border-color: #56585f;
             background: none;
 
             &:last-of-type {
@@ -152,9 +152,9 @@ section.about {
     section.about {
         .topic {
             @include zigzag-small;
-            font-size: 26px;
-            margin-bottom: 50px;
             width: 350px;
+            margin-bottom: 50px;
+            font-size: 26px;
         }
 
         .photo-in-car {
@@ -163,9 +163,9 @@ section.about {
         }
 
         .laptop-coffee {
-            background: url('../img/laptop-coffee.jpg') no-repeat;
             max-width: 50%;
             min-height: 400px;
+            background: url('../img/laptop-coffee.jpg') no-repeat;
         }
 
         .description {
@@ -174,9 +174,9 @@ section.about {
             }
 
             .text {
-                font-size: 14px;
                 line-height: 2;
                 text-align: left;
+                font-size: 14px;
             }
         }
 
@@ -215,9 +215,9 @@ section.about {
             margin-top: 50px;
 
             .small-topic {
-                font-size: 26px;
                 padding-top: 120px;
                 margin-bottom: 0;
+                font-size: 26px;
 
                 &:before {
                     height: 50px;
@@ -225,13 +225,13 @@ section.about {
             }
 
             .text {
-                padding-top: 30px;
-                padding-bottom: 0;
                 width: 620px;
                 margin: 0 auto;
-                font-size: 14px;
-                line-height: 2;
                 box-sizing: border-box;
+                padding-top: 30px;
+                padding-bottom: 0;
+                line-height: 2;
+                font-size: 14px;
             }
 
             .buttons {
@@ -252,8 +252,8 @@ section.about {
         margin-top: 40px;
 
         .topic {
-            font-size: 23px;
             width: 310px;
+            font-size: 23px;
         }
     }
 }

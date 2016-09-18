@@ -1,185 +1,196 @@
 .content {
-  box-sizing: border-box;
-  padding: 20px;
-  position: relative;
-  .blogContent {
-    display: none;
-  }
-  .blogContent.active {
-    display: block;
-  }
-  .menu-head {
-    // padding-top: 10px;
-    font-family: $Bitter;
-    font-size: 18px;
-    color: #464646;
-    line-height: 2;
-    margin-bottom: 10px;
-    &:last-of-type {
-      padding-top: 30px;
-    }
-  }
-  .sidebar {
-    width: 206px;
-    float: right;
-    color: #464646;
-    margin-top: 40px;
-  }
-
-  .sidebar-title {
-    font-weight: bold;
-    font-family: $Bitter;
-    font-size: 16px;
-    border-bottom: 4px solid $pink;
-    line-height: 1.5;
-    padding-left: 5px;
-  }
-
-  .sidebar-text {
-    box-sizing: border-box;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    font-family: $HelveticaMedium;
-    font-size: 14px;
-    line-height: 1.2;
-    a {
-      text-decoration: none;
-      color: #464646;
-      cursor: $cursor;
-      font-family: $HelveticaMedium;
-      font-size: 14px;
-      line-height: 1.2;
-    }
-  }
-  .advert {
-    width: 96px;
-    height: 96px;
-    display: inline-block;
-    background-color: #f5f5f5;
-    border: 1px solid #C9C9C9;
-    box-sizing: border-box;
-    text-align: center;
-    padding-top: 20px;
-    margin-bottom: 5px;
     position: relative;
+    box-sizing: border-box;
+    padding: 20px;
 
-    &:after {
-      content: 'Advertise Here';
-      position: absolute;
-      top: 25%;
-      left: 6%;
-      color: #c6c6c6;
-      font-family: $Bitter;
-      font-size: 14px;
-      line-height: 1.5;
+    .blogContent {
+        display: none;
     }
 
-
-    &:first-of-type {
-      background: url('../img/advert.jpg') no-repeat;
-      &:after {
-        content: "";
-      }
+    .blogContent.active {
+        display: block;
     }
-    p {
 
+    .menu-head {
+        margin-bottom: 10px;
+        font-family: $Bitter;
+        font-size: 18px;
+        color: #464646;
+        line-height: 2;
+
+        &:last-of-type {
+            padding-top: 30px;
+        }
     }
-  }
 
-  .video {
-    width: 650px;
-    height: 400px;
-    border: 1px solid #ccc;
-    margin-bottom: 40px;
-  }
-
-  iframe {
-    width: 100%;
-    height: 100%;
-  }
-
-  audio {
-    display: block;
-    margin-bottom: 40px;
-    width: 650px;
-  }
-
-  .blog-post {
-    width: 650px;
-    padding-bottom: 40px;
-    @include clearfix;
-    color: $textColor;
-    &:first-of-type {
-      border-bottom: 4px solid $pink;
+    .sidebar {
+        float: right;
+        width: 206px;
+        margin-top: 40px;
+        color: #464646;
     }
-    &:last-of-type {
-      padding-bottom: 80px;
+
+    .sidebar-title {
+        border-bottom: 4px solid $pink;
+        padding-left: 5px;
+        font-weight: bold;
+        font-family: $Bitter;
+        font-size: 16px;
+        line-height: 1.5;
     }
-      .post-details {
-        width: 110px;
+
+    .sidebar-text {
+        box-sizing: border-box;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        font-family: $HelveticaMedium;
+        font-size: 14px;
+        line-height: 1.2;
+
+        a {
+            cursor: $cursor;
+            font-family: $HelveticaMedium;
+            font-size: 14px;
+            line-height: 1.2;
+            text-decoration: none;
+            color: #464646;
+        }
+    }
+
+    .advert {
+        position: relative;
         display: inline-block;
+        width: 96px;
+        height: 96px;
+        box-sizing: border-box;
+        border: 1px solid #C9C9C9;
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 5px;
+        background-color: #f5f5f5;
+
+        &:after {
+            content: 'Advertise Here';
+            position: absolute;
+            top: 25%;
+            left: 6%;
+            font-family: $Bitter;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #c6c6c6;
+        }
+
+        &:first-of-type {
+            background: url('../img/advert.jpg') no-repeat;
+
+            &:after {
+                content: "";
+            }
+        }
+    }
+
+    .video {
+        width: 650px;
+        height: 400px;
+        border: 1px solid #ccc;
+        margin-bottom: 40px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    audio {
+        display: block;
+        width: 650px;
+        margin-bottom: 40px;
+    }
+
+    .blog-post {
+        @include clearfix;
+        width: 650px;
+        padding-bottom: 40px;
+        color: $textColor;
+
+        &:first-of-type {
+            border-bottom: 4px solid $pink;
+        }
+
+        &:last-of-type {
+            padding-bottom: 80px;
+        }
+    }
+
+    .post-details {
         float: left;
+        width: 110px;
         line-height: 2;
         font-size: 14px;
+
         dt {
-          font-family: $Bitter;
-
-
+            font-family: $Bitter;
         }
+
         dd {
-          color: $pink;
-          font-family: $HelveticaMedium;
-          font-weight: 300;
+            font-family: $HelveticaMedium;
+            font-weight: 300;
+            color: $pink;
         }
+    }
 
-      }
-      .post {
-        display: inline-block;
-        width: 510px;
+    .post {
         float: right;
+        width: 510px;
         font-size: 14px;
         font-family: $HelveticaMedium;
         line-height: 1.5;
+
         p:nth-child(2) {
-          margin-top: 20px;
+            margin-top: 20px;
         }
-        a {
-          text-decoration: none;
-          cursor: $cursor;
-        }
-      }
-  }
-  .pagination {
-    position: absolute;
-    bottom: 20px;
 
-    li {
-      display: inline-block;
-      line-height: 1.5;
-      margin-right: 5px;
-      &:hover {
-        background-color: $pink;
-        cursor: $cursor;
         a {
-          color: #fff;
-          cursor: $cursor;
+            cursor: $cursor;
+            text-decoration: none;
         }
-      }
     }
-    a {
-      text-decoration: none;
-      color: $textColor;
-      opacity: 1;
-      padding: 5px;
-      font-family: $HelveticaMedium;
-      font-weight: 500;
 
+    .pagination {
+        position: absolute;
+        bottom: 20px;
     }
+
+    .pagination-item {
+        display: inline-block;
+        margin-right: 5px;
+        line-height: 1.5;
+
+        &:hover {
+            cursor: $cursor;
+            background-color: $pink;
+            color: #fff;
+
+            .pagination-link {
+                color: #fff;
+            }
+        }
+    }
+
+    .pagination-link {
+        opacity: 1;
+        padding: 5px;
+        font-family: $HelveticaMedium;
+        font-weight: 500;
+        text-decoration: none;
+        color: $textColor;
+    }
+
     .highlighted {
-      background-color: $pink;
-      a {
-        color: #fff;
-      }
+        background-color: $pink;
+
+        .pagination-link {
+            color: #fff;
+        }
     }
-  }
 }

@@ -1,94 +1,106 @@
 footer {
-  background-color: #333;
-  .footer-menu {
-    padding-top: 20px;
-    font-family: $PTSans;
-  }
-  li {
-    color: #fff;
-    display: inline-block;
-    padding: 0 5px;
-  }
-  a {
-    color: #fff;
-    line-height: 2.5;
-    font-size: 14px;
-    &:hover {
-      color: $orange;
-      text-decoration: none;
+    background-color: #333;
+
+    .footer-menu {
+        padding-top: 20px;
+        font-family: $PTSans;
     }
-  }
-  p {
-    color: #fff;
-    font-size: 12px;
-  }
-  img {
-    max-width: 191px;
-    padding: 0 0 30px 0;
-  }
 
-  .img-mobile {
-    padding-bottom: 20px;
-  }
-
-
-  .ru, .ukr {
-    margin-bottom: 15px;
-    @include ru;
-    @include ukr;
-  }
-
-  .phone {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: $PTSans;
-  }
-
-  .phones {
-    margin-bottom: 30px;
-  }
-
-  .phones-mobile {
-    margin-bottom: 5px;
-  }
-
-  .column {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    font-family: $PTSans;
-    h4 {
-      color: $orange;
-      text-transform: uppercase;
-    }
     li {
-      display: block;
-      padding-left: 0;
-      font-size: 14px;
+        color: #fff;
+        display: inline-block;
+        padding: 0 5px;
     }
-    .address {
-      margin-top: 30px;
-    }
-  }
 
-  .networks {
-    margin-top: 20px;
-    i {
-      padding: 3px 1px;
-      color: #000;
-      background: #fff;
-      border-radius: 50%;
-      font-size: 18px;
-      margin-right: 15px;
+    a {
+        color: #fff;
+        line-height: 2.5;
+        font-size: 14px;
+
+        &:hover {
+            color: $orange;
+            text-decoration: none;
+        }
     }
-  }
-  .large-footer {
-    background: #424242;
-    text-align: center;
-    li {
-      font-family: $PTSans;
-      display: inline-block;
-      padding: 10px 20px;
+
+    p {
+        color: #fff;
+        font-size: 12px;
     }
-  }
+
+    img {
+        max-width: 191px;
+        padding: 0 0 30px;
+    }
+
+    .img-mobile {
+        padding-bottom: 20px;
+    }
+
+    .ru,
+    .ukr {
+        margin-bottom: 15px;
+        @include ru;
+        @include ukr;
+    }
+
+    .phone {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: $PTSans;
+    }
+
+    .phones {
+        margin-bottom: 30px;
+    }
+
+    .phones-mobile {
+        margin-bottom: 5px;
+    }
+
+    .column {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-family: $PTSans;
+
+        h4 {
+            color: $orange;
+            text-transform: uppercase;
+        }
+
+        li {
+            display: block;
+            padding-left: 0;
+            font-size: 14px;
+        }
+
+        .address {
+            margin-top: 30px;
+        }
+    }
+
+    .networks {
+        margin-top: 20px;
+
+        i {
+            padding: 3px 1px;
+            color: #000;
+            background: #fff;
+            border-radius: 50%;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+    }
+
+    .large-footer {
+        background: #424242;
+        text-align: center;
+
+        li {
+            font-family: $PTSans;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 header.container-fluid
     a.go-to(href="#footer")
-      i.icon-down
+        i.icon-down
     .row
         nav.col-xs-12
 
@@ -14,9 +14,9 @@ header.container-fluid
             button inside our studio
             p.frostebite.visible-lg frostebite
 
-        menu.hidden-xs.hidden-sm.hidden-md
+        .menu.hidden-xs.hidden-sm.hidden-md
             .cross x
-            nav
+            .nav
                 ul.overlay-menu
                     li.overlay-item
                         a our story
@@ -28,29 +28,33 @@ header.container-fluid
                         a journal
                     li.overlay-item
                         a contact
-            hr
-            section.columns
+
                 - var list = ["Baxvers", "Akari", "Sushi", "Hopkins Coffee", "bananaboat", "Eyeywear"];
-                ul.column-list
-                    p.head Digital
-                    for name in list
-                        li.column-item
-                            a= name
+            .columns
+                .column-list
+                    h3.head Digital
+                    ul
+                        for name in list
+                            li.column-item
+                                a= name
 
-                ul.column-list
-                    p.head Print
-                    for name in list
-                        li.column-item
-                            a= name
+                .column-list
+                    h3.head Print
+                    ul
+                        for name in list
+                            li.column-item
+                                a= name
 
-                ul.column-list
-                    p.head Mobile
-                    for name in list
-                        li.column-item
-                            a= name
+                .column-list
+                    h3.head Mobile
+                    ul
+                        for name in list
+                            li.column-item
+                                a= name
 
-                ul.column-list
-                    p.head Tablet
-                    for name in list
-                        li.column-item
-                            a= name
+                .column-list
+                    h3.head Tablet
+                    ul
+                        for name in list
+                            li.column-item
+                                a= name

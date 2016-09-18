@@ -1,7 +1,7 @@
 section.blog {
     .lady {
-        background: url('../img/lady.jpg') no-repeat;
         @include img;
+        background: url('../img/lady.jpg') no-repeat;
     }
 
     .topic {
@@ -13,16 +13,16 @@ section.blog {
 
     .text {
         @include text;
-        text-align: center;
         box-sizing: border-box;
         padding: 0 50px 60px;
+        text-align: center;
     }
 
     button {
         @include buttonActive;
+        margin-bottom: 80px;
         padding-top: 20px;
         padding-bottom: 20px;
-        margin-bottom: 80px;
     }
 }
 @media(min-width:992px) {
@@ -31,33 +31,33 @@ section.blog {
         padding-left: 100px;
 
         .lady {
-            background: url('../img/lady_part.jpg') no-repeat;
             float: right;
-            width: 40%;
-            height: 630px;
             position: relative;
+            height: 630px;
+            width: 40%;
+            background: url('../img/lady_part.jpg') no-repeat;
 
             &:after {
-                content: url('../img/guys.jpg');
                 position: absolute;
                 top: 60%;
                 right: 40%;
+                content: url('../img/guys.jpg');
             }
         }
 
         .topic {
-            margin-top: 20%;
-            font-size: 24px;
-            text-align: left;
-            padding-bottom: 30px;
             @include zigzag-small;
+            margin-top: 20%;
+            padding-bottom: 30px;
+            text-align: left;
+            font-size: 24px;
         }
 
         .text {
-            font-size: 14px;
-            text-align: left;
             padding-left: 40px;
             padding-bottom: 30px;
+            text-align: left;
+            font-size: 14px;
             line-height: 2;
         }
 
@@ -75,9 +75,9 @@ section.blog {
         padding-left: 110px;
 
         .lady {
+            width: 50%;
             background: url('../img/lady.jpg') no-repeat;
             background-position: left center;
-            width: 50%;
 
             &:after {
                 top: 50%;
@@ -86,11 +86,11 @@ section.blog {
         }
 
         .topic {
-            margin-top: 10%;
-            font-size: 24px;
-            text-align: left;
-            padding-bottom: 30px;
             @include zigzag-small;
+            margin-top: 10%;
+            padding-bottom: 30px;
+            text-align: left;
+            font-size: 24px;
         }
     }
 }
