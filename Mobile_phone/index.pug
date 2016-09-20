@@ -1,0 +1,127 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title Mobile Phone
+        link(rel='stylesheet', href='css/style.css')
+        script(src="https://code.jquery.com/jquery-2.2.4.min.js")
+        script(src="js/script.js")
+    body
+
+
+
+        header
+            .head
+                .container
+                    .row
+                      .col-xs-12
+                        h1.logo
+                            a(href="index.html")
+                                img(src="img/Logo.png", alt="logo")
+                        i.icon-menu.hidden-md.hidden-lg
+                        nav.menu.hidden-xs.hidden-sm.visible-md.visible-lg.col-md-8
+                            - var menu = ["home", "features", "gallery", "video", "prices", "testimonials", "download", "contact"];
+                            ul.menu-list
+                                for name in menu
+                                    li.menu-item
+                                        a.menu-link= name
+                        .nav.menu.hidden-md.hidden-lg.col-xs-12
+                            i.icon-cancel-1
+
+                            - var menu = ["home", "features", "gallery", "video", "prices", "testimonials", "download", "contact"];
+                            ul.menu-list
+                                for name in menu
+                                    li.menu-item
+                                        a.menu-link= name
+                        section.slider.col-xs-12
+                            i.icon-left-open-big.inactive.hidden-xs.hidden-sm
+                            i.icon-right-open-big.hidden-xs.hidden-sm
+                            .inputs
+                                input#input1(type="radio", name="slider")
+                                label(for="input1").radio
+                                input#input2(type="radio", name="slider")
+                                label(for="input2").radio
+                                input#input3(type="radio", name="slider")
+                                label(for="input3").radio
+                            .carousel-hider
+                              .slider-list
+                                  article.slide1
+                                      h2.slider-head Simple, Beautiful &#160;
+                                          span.bold and Amazing
+                                      p.slider-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nici
+                                      button.slider-button Download
+                                      button.slider-button Learn more
+                                      p.store-links Avalaible on:
+                                          i.icon-apple
+                                          i.icon-android
+                                  article.slide2
+                                      h2.slider-head Slide&#160;
+                                          span.bold number Two
+                                      p.slider-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nici
+                                      button.slider-button Download
+                                      button.slider-button Learn more
+                                      p.store-links Avalaible on:
+                                          i.icon-apple
+                                          i.icon-android
+                                  article.slide3
+                                      h2.slider-head Slide&#160;
+                                          span.bold number Three
+                                      p.slider-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nici
+                                      button.slider-button Download
+                                      button.slider-button Learn more
+                                      p.store-links Avalaible on:
+                                          i.icon-apple
+                                          i.icon-android
+        section.services
+            .container
+                .row
+                    h2.services-head Summarise the features &#160;
+                        span.light summarise what your product is all about
+                    .service.col-xs-12.col-md-3
+                        i.icon-lamp
+                        h4.service-head Attractive Layout
+                        p.service-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+                    .service.col-xs-12.col-md-3
+                        i.icon-mobile
+                        h4.service-head fresh design
+                        p.service-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+                    .service.col-xs-12.col-md-3
+                        .comments
+                            i.icon-comment.icon-comment1
+                            i.icon-comment.icon-comment2
+                            i.icon-comment.icon-comment3
+                        h4.service-head multipurpose
+                        p.service-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+                    .service.col-xs-12.col-md-3
+                        i.icon-chat
+                        h4.service-head easy to customize
+                        p.service-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+        section.accounts
+            .container
+                .row
+                    h2.accounts-head List account
+                    article.post.col-xs-12
+                        .new
+                        .photo
+                        h4.account-name Eva Mendes
+                        p.account-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+                    article.post.col-xs-12
+                        .online
+                        .photo
+                        h4.account-name Eva Mendes
+                        p.account-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum my nibh.
+
+
+                    article.post.col-xs-12
+                        .online
+                        .photo
+                        h4.account-name Eva Mendes
+                        p.account-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum my nibh.
+
+                    article.post.col-xs-12
+                        .online
+                        .photo
+                        h4.account-name Eva Mendes
+                        p.account-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum my nibh.

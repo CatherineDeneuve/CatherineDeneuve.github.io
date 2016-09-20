@@ -1,0 +1,122 @@
+section.services {
+    font-family: $Lato;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #e7e7e7;
+
+    .services-head {
+        @include sectionHead;
+    }
+
+    .light {
+        font-size: 17px;
+        font-weight: 300;
+    }
+
+    .service {
+        margin-top: 55px;
+        text-align: center;
+        box-sizing: border-box;
+
+        &:nth-of-type(3) .service-head {
+            padding-top: 52px;
+        }
+    }
+
+    .comments {
+        width: 184px;
+        height: 179px;
+        border-radius: 50%;
+        background: $blue;
+        margin: 5px auto 0;
+        cursor: pointer;
+
+        &:hover {
+            background: $darkGray;
+
+            .icon-comment1 {
+                color: $darkGray;
+            }
+        }
+    }
+
+    .icon-chat,
+    .icon-lamp,
+    .icon-mobile {
+        position: relative;
+        padding: 45px 40px;
+        font-size: 74px;
+        border-radius: 50%;
+        background: $blue;
+        color: #fff;
+        cursor: pointer;
+
+        &:before {
+            position: relative;
+            margin-top: 60px;
+        }
+
+        &:hover {
+            background: #414042;
+        }
+    }
+
+    .icon-comment1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -55%);
+        color: $blue;
+        font-size: 74px;
+        position: relative;
+        display: block;
+        z-index: 1;
+    }
+
+    .icon-comment2 {
+        position: absolute;
+        margin-top: -22px;
+        left: 44%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 72px;
+        position: relative;
+        display: block;
+        z-index: 2;
+    }
+
+    .icon-comment3 {
+        position: absolute;
+        margin-top: -140px;
+        margin-left: -30px;
+        color: #fff;
+        font-size: 68px;
+        display: inline-block;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .service-head {
+        padding-top: 90px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px;
+        font-family: $Lato;
+
+        &:nth-of-type(3) {
+            padding-top: 60px;
+        }
+    }
+
+    .service-text {
+        margin-top: 25px;
+        font-size: 13px;
+        color: $grayText;
+        font-family: $Lato;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,12 @@
+$Lato: 'Lato', sans-serif;
+$OpenSans: 'Open Sans', sans-serif;
+$blue: #4bcaff;
+$grayText: #838383;
+$darkGray: #414042;
+@mixin sectionHead {
+    width: 316px;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 29px;
+    color: $darkGray;
+}
