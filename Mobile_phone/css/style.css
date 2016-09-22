@@ -1296,7 +1296,9 @@ header {
     color: #fff;
     box-sizing: border-box;
     padding-top: 50px;
-    height: 700px; }
+    height: 700px;
+    margin: 0 auto;
+    width: 80vw; }
   header .icon-left-open-big,
   header .icon-right-open-big {
     position: absolute;
@@ -1351,7 +1353,7 @@ header {
   header .bold {
     font-weight: 700; }
   header .slider-text {
-    width: 60vw;
+    width: 58vw;
     margin: 40px auto 30px;
     font-size: 18px;
     font-weight: 300; }
@@ -1401,6 +1403,7 @@ header {
       color: #4bcaff; }
   header .carousel-hider {
     width: 80vw;
+    margin: 0 auto;
     height: 700px;
     overflow: hidden;
     position: relative; }
@@ -1507,6 +1510,8 @@ header {
       margin-left: 35px; }
   header .slider {
     padding-left: 43%; }
+  header .slider-text {
+    width: 40vw; }
   header .carousel-hider {
     width: 40vw; }
   header .slider-list {
