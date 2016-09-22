@@ -45,7 +45,7 @@ header {
     }
 
     .inactive {
-        opacity: 0.2;
+        opacity: 0.4;
     }
 
     .active {
@@ -63,7 +63,7 @@ header {
     .inputs {
         position: absolute;
         z-index: 3;
-        bottom: 10%;
+        bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -112,8 +112,8 @@ header {
     }
 
     .slider-text {
-        margin-top: 40px;
-        margin-bottom: 30px;
+        width: 60vw;
+        margin: 40px auto 30px;
         font-size: 18px;
         font-weight: 300;
     }
@@ -247,7 +247,7 @@ header {
             position: static;
             float: right;
             height: 100%;
-            width: 80%;
+            width: 60%;
             background: none;
         }
 
@@ -267,7 +267,7 @@ header {
 
         .menu-link {
             line-height: 100px;
-            font-size: 13px;
+            font-size: 11px;
             border-bottom: none;
             border-top: 3px solid transparent;
 
@@ -278,8 +278,12 @@ header {
             }
         }
 
+        .inputs {
+            bottom: 10%;
+        }
+
         .slider {
-            padding-left: 45%;
+            padding-left: 48%;
         }
 
         .slider-head {
@@ -288,6 +292,37 @@ header {
 
         .slider-text {
             text-align: left;
+            width: 35vw;
+        }
+
+        .slider-button {
+            margin-left: 0;
+        }
+
+        .store-links {
+            margin-left: 0;
+        }
+
+        .carousel-hider {
+            width: 35vw;
+        }
+
+        .slider-list {
+            width: (35vw * 3);
+        }
+
+        .slide1,
+        .slide2,
+        .slide3 {
+            width: 35vw;
+        }
+    }
+}
+/*End of min-width:992px*/
+@media(min-width:1200px) {
+    header {
+        .menu-link {
+            font-size: 13px;
         }
 
         .slider-button {
@@ -298,8 +333,8 @@ header {
             }
         }
 
-        .store-links {
-            margin-left: 0;
+        .slider {
+            padding-left: 43%;
         }
 
         .carousel-hider {
@@ -314,14 +349,6 @@ header {
         .slide2,
         .slide3 {
             width: 40vw;
-        }
-    }
-}
-/*End of min-width:992px*/
-@media(min-width:1200px) {
-    header {
-        .menu {
-            width: 60%;
         }
     }
 }

@@ -1308,7 +1308,7 @@ header {
     padding: 17px;
     background: #6b7980; }
   header .inactive {
-    opacity: 0.2; }
+    opacity: 0.4; }
   header .active {
     opacity: 1; }
   header .icon-left-open-big {
@@ -1318,7 +1318,7 @@ header {
   header .inputs {
     position: absolute;
     z-index: 3;
-    bottom: 10%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%); }
   header .radio {
@@ -1351,8 +1351,8 @@ header {
   header .bold {
     font-weight: 700; }
   header .slider-text {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    width: 60vw;
+    margin: 40px auto 30px;
     font-size: 18px;
     font-weight: 300; }
   header .slider-button {
@@ -1455,7 +1455,7 @@ header {
     position: static;
     float: right;
     height: 100%;
-    width: 80%;
+    width: 60%;
     background: none; }
   header .menu-list {
     height: 100%;
@@ -1469,25 +1469,44 @@ header {
     display: table-cell; }
   header .menu-link {
     line-height: 100px;
-    font-size: 13px;
+    font-size: 11px;
     border-bottom: none;
     border-top: 3px solid transparent; }
     header .menu-link:hover {
       border-top: 3px solid #4bcaff;
       border-bottom: none;
       color: #4bcaff; }
+  header .inputs {
+    bottom: 10%; }
   header .slider {
-    padding-left: 45%; }
+    padding-left: 48%; }
   header .slider-head {
     margin-left: 0; }
   header .slider-text {
-    text-align: left; }
+    text-align: left;
+    width: 35vw; }
+  header .slider-button {
+    margin-left: 0; }
+  header .store-links {
+    margin-left: 0; }
+  header .carousel-hider {
+    width: 35vw; }
+  header .slider-list {
+    width: 105vw; }
+  header .slide1,
+  header .slide2,
+  header .slide3 {
+    width: 35vw; } }
+/*End of min-width:992px*/
+@media (min-width: 1200px) {
+  header .menu-link {
+    font-size: 13px; }
   header .slider-button {
     display: inline-block; }
     header .slider-button:last-of-type {
       margin-left: 35px; }
-  header .store-links {
-    margin-left: 0; }
+  header .slider {
+    padding-left: 43%; }
   header .carousel-hider {
     width: 40vw; }
   header .slider-list {
@@ -1496,10 +1515,6 @@ header {
   header .slide2,
   header .slide3 {
     width: 40vw; } }
-/*End of min-width:992px*/
-@media (min-width: 1200px) {
-  header .menu {
-    width: 60%; } }
 section.services {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
@@ -1598,6 +1613,48 @@ section.services {
     font-family: "Lato", sans-serif;
     font-weight: 400; }
 
+@media (min-width: 992px) {
+  section.services .service:nth-of-type(3) .service-head {
+    padding-top: 64px; }
+  section.services .icon-chat,
+  section.services .icon-lamp,
+  section.services .icon-mobile {
+    padding: 35px 30px;
+    font-size: 68px; }
+  section.services .comments {
+    width: 155px;
+    height: 151px;
+    margin-top: 15px; }
+  section.services .icon-comment1 {
+    font-size: 68px; }
+  section.services .icon-comment2 {
+    margin-top: -26px;
+    font-size: 68px; }
+  section.services .icon-comment3 {
+    font-size: 64px; } }
+@media (min-width: 1200px) {
+  section.services .service:nth-of-type(3) .service-head {
+    padding-top: 52px; }
+  section.services .comments {
+    width: 184px;
+    height: 179px;
+    margin: 5px auto 0; }
+  section.services .icon-chat,
+  section.services .icon-lamp,
+  section.services .icon-mobile {
+    padding: 45px 40px;
+    font-size: 74px; }
+    section.services .icon-chat:hover,
+    section.services .icon-lamp:hover,
+    section.services .icon-mobile:hover {
+      background: #414042; }
+  section.services .icon-comment1 {
+    font-size: 74px; }
+  section.services .icon-comment2 {
+    margin-top: -22px;
+    font-size: 72px; }
+  section.services .icon-comment3 {
+    font-size: 68px; } }
 section.accounts {
   box-sizing: border-box;
   padding-top: 60px;

@@ -99,8 +99,11 @@ $(document).ready(function() {
     var right = $('.icon-right-open-big');
     var elementsList = $('.slider-list');
 
+
     var listWidth = $('.slider-list').width();
     var slide = $('.carousel-hider').width();
+
+    console.log(listWidth);
 
     var currentLeftValue = 0;
     var minimumOffset = -(listWidth - slide);
