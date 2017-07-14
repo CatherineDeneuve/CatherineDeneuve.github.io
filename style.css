@@ -11,6 +11,6 @@ p {
 }
 
 img {
-  float: left;
+  align: left;
   height: 100%;
 }
