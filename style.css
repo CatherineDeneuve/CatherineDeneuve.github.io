@@ -8,8 +8,9 @@ body {
 }
 
 div {
-  display: inline-block;
-  width: 30%;
+  float: right;
+  width: 50%;
+   padding-top: 10%;
 }
 
 p {
