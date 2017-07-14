@@ -2,6 +2,16 @@ body {
   background: #000;
 }
 
+div {
+  position: absolute;
+  left: 50%;
+}
+
 p {
-color: #fff;
+  color: #fff;
+}
+
+img {
+  height: 100%;
+  width: auto;
 }
