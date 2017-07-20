@@ -9,14 +9,21 @@ body {
 
 div {
   float: right;  
-   padding-top: 10%;
+   padding-top: 20%;
+   padding-right: 20%;
 }
 
 p {
   color: #fff;
+  font-family: 'Fresca', sans-serif;
+  font-size: 24;
 }
 
 img {
   float: left;
   height: 100%;
+}
+
+a {
+	color: #fff;
 }
