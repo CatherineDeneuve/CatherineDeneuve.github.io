@@ -5,11 +5,13 @@
 
 li {
   width: 200px;
+  list-style: none;
+
 }
 
-ol {
+.wrapper__list {
   margin: 20px auto;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Architects Daughter', cursive;
 }
 
 span {
@@ -21,11 +23,7 @@ span:hover {
   cursor: pointer;
 }
 
-h3 {
-  text-align: center;
-}
-
-button {
+.wrapper__button {
   display: block;
   margin: 10px auto;
   font-family: 'Roboto', sans-serif;
@@ -39,19 +37,20 @@ button {
   box-shadow: 9px 10px 20px -6px rgba(0, 0, 0, 0.75);
 }
 
-textarea {
+.wrapper__textarea {
   margin: 20px auto;
   width: 300px;
   display: block;
   resize: none;
   font-family: 'Permanent Marker', cursive;
+  outline-color: #6de61c;
 }
 
-#addButton {
-  width: 40px;
+.wrapper__button_button-add {
+  width: 80px;
 }
 
-#sortButton {
+.wrapper__button_button-sort {
   display: block;
   margin: 0 auto;
   width: 100px;

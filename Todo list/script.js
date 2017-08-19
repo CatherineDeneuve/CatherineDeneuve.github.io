@@ -1,14 +1,12 @@
 $(document).ready(function() {
-  //поиск дом элементов вынести вверх, чтобы он происходил один раз
-  var tasksArray = [];
-  var sortedTasks = [];
+  var tasks = [];
+  var count = 1;
 
   var addButton = $('#addButton');
   addButton.on('click', addTaskToList);
 
   var sortButton = $('#sortButton');
   sortButton.on('click', sortList);
-
 
   var list = document.getElementById('list');
   list.state = 0;
@@ -17,22 +15,29 @@ $(document).ready(function() {
   function addTaskToList() {
     var input = document.getElementById('task');
     if (!input.value) return;
+    var task = {
+      number: count,
+      name: input.value
+    };
+    count++;
+    tasks.push(task);
 
-    tasksArray.push(input.value);
+
     var li = document.createElement('li');
+    $(li).addClass('wrapper__task');
     list.appendChild(li);
-    li.innerHTML = input.value;
+    li.innerHTML = task.number + ". " + input.value;
 
     input.value = "";
+    enableSorting();
     showLog();
 
-    if(tasksArray.length > 1) {
-      $('#sortButton').css("visibility", "visible");
-    }
+
 
     $(li).hover(
       function() {
         var span = document.createElement('span');
+        $(span).addClass('wrapper__task__cross');
         span.innerHTML = 'X';
         $(this).append($(span));
         $(span).on("click", removeTask);
@@ -46,52 +51,62 @@ $(document).ready(function() {
   }
 
   function removeTask() {
-    var text = $(this).parent().contents().get(0).nodeValue;
-    var search = tasksArray.indexOf(text);
-
-    if (search !== -1) {
-      tasksArray.splice(search, 1);
-    }
+    var indexLi = $(this).parent().index();
+    tasks.splice(indexLi, 1);
     $(this).parent().remove();
+    enableSorting();
     showLog();
-
   }
 
   function showLog() {
-    (list.state) ? console.log(sortedTasks) : console.log(tasksArray);
-    sortedTasks = [];
+    console.log(tasks);
+  }
+
+  function enableSorting() {
+    if (tasks.length > 1) {
+      $('#sortButton').css("visibility", "visible");
+    } else {
+      $('#sortButton').css("visibility", "hidden");
+    }
   }
 
   function toggleText() {
-    list.state = list.state == 0 ? 1 : 0;//контроллер
     var text = document.getElementById('sortButton').firstChild;
-    text.data = text.data == "Sort By Task Name" ? "Sort By Task Number" : "Sort By Task Name";
+    text.data = list.state == 1 ? "Sort By Task Number" : "Sort By Task Name";
+  }
+
+  function toggleListState(){
+    list.state = list.state == 0 ? 1 : 0;
   }
 
 
   function sortList() {
+    toggleListState();
     toggleText();
 
     var listitems = $(list).children('li').get();
-    if (!list.state) {
-      $.each(listitems, function(index, value) {
-        value = tasksArray[index];
-        $(this).contents().get(0).nodeValue = value;
-      });
+    (!list.state) ? tasks.sort(compareNumber) : tasks.sort(compareName);
 
-    } else {
-      listitems.sort(function(a, b) {
-        return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase());
-      })
-
-
-      $.each(listitems, function(idx, itm) {
-        sortedTasks.push($(itm).text());
-        $(list).append(itm);
-      });
-
-    }
+    $.each(listitems, function(index) {
+      listitems[index].innerHTML = tasks[index].number + '. ' + tasks[index].name;
+    });
     showLog();
+  }
+
+  function compareNumber(a, b) {
+    if (a.number < b.number)
+      return -1;
+    if (a.number > b.number)
+      return 1;
+    return 0;
+  }
+
+  function compareName(a, b) {
+    if (a.name < b.name)
+      return -1;
+    if (a.name > b.name)
+      return 1;
+    return 0;
   }
 
 });
