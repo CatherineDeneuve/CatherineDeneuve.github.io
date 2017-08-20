@@ -1,58 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
 .wrapper {
   margin: 0 auto;
-  width: 320px;
-}
+  width: 320px; }
 
-li {
-  width: 200px;
-  list-style: none;
-
-}
+.wrapper__task {
+  width: 100%;
+  word-wrap: break-word;
+  list-style: none; }
 
 .wrapper__list {
+  width: 300px;
   margin: 20px auto;
-  font-family: 'Architects Daughter', cursive;
-}
+  padding-left: 0;
+  font-family: "Lato", sans-serif; }
 
-span {
-  float: right;
-  color: red;
-}
+.wrapper__task__cross {
+  float: right; }
+  .wrapper__task__cross:hover {
+    color: red;
+    cursor: pointer; }
 
-span:hover {
-  cursor: pointer;
-}
-
-.wrapper__button {
+.wrapper__button, .wrapper__button_button-sort, .wrapper__button_button-add {
+  -webkit-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+  -ms-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
   display: block;
   margin: 10px auto;
-  font-family: 'Roboto', sans-serif;
+  padding: 5px 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   border-radius: 20px;
   background-color: #6de61c;
   color: #fff;
   border: none;
   outline: none;
-  -webkit-box-shadow: 9px 10px 20px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 9px 10px 20px -6px rgba(0, 0, 0, 0.75);
-  box-shadow: 9px 10px 20px -6px rgba(0, 0, 0, 0.75);
-}
+  cursor: pointer; }
+
+.wrapper__textarea:invalid ~ .wrapper__button_button-add {
+  background-color: #CDCDCD;
+  cursor: not-allowed; }
 
 .wrapper__textarea {
+  -webkit-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+  -ms-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
   margin: 20px auto;
   width: 300px;
   display: block;
   resize: none;
-  font-family: 'Permanent Marker', cursive;
-  outline-color: #6de61c;
-}
-
-.wrapper__button_button-add {
-  width: 80px;
-}
+  font-family: "Lato", sans-serif;
+  outline-color: #6de61c; }
 
 .wrapper__button_button-sort {
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-  visibility: hidden;
-}
+  visibility: hidden; }
+
+/*# sourceMappingURL=style.css.map */

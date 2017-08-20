@@ -1,0 +1,68 @@
+@import url( 'https://fonts.googleapis.com/css?family=Lato|Roboto')
+
+$font-text: 'Lato', sans-serif
+$font-button: 'Roboto', sans-serif
+$green: #6de61c
+$grey-disabled-button: #CDCDCD
+
+@mixin box-shadow($shadow)
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  -ms-box-shadow: $shadow
+  box-shadow: $shadow
+
+
+.wrapper
+  margin: 0 auto
+  width: 320px
+
+.wrapper__task
+  width: 100%
+  word-wrap: break-word
+  list-style: none
+
+.wrapper__list
+  width: 300px
+  margin: 20px auto
+  padding-left: 0
+  font-family: $font-text
+
+.wrapper__task__cross
+  float: right
+  &:hover
+    color: red
+    cursor: pointer
+
+.wrapper__button
+  @include box-shadow(5px 5px 10px -5px rgba(0, 0, 0, 0.75))
+  display: block
+  margin: 10px auto
+  padding: 5px 15px
+  font-family: $font-button
+  font-size: 16px
+  border-radius: 20px
+  background-color: $green
+  color: #fff
+  border: none
+  outline: none
+  cursor: pointer
+
+.wrapper__textarea:invalid ~ .wrapper__button_button-add
+  background-color: $grey-disabled-button
+  cursor: not-allowed
+
+.wrapper__textarea
+  @include box-shadow(5px 5px 10px -5px rgba(0, 0, 0, 0.75))
+  margin: 20px auto
+  width: 300px
+  display: block
+  resize: none
+  font-family: $font-text
+  outline-color: $green
+
+.wrapper__button_button-sort
+  @extend .wrapper__button
+  visibility: hidden
+
+.wrapper__button_button-add
+  @extend .wrapper__button

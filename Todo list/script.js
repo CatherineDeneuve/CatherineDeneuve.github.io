@@ -1,6 +1,5 @@
 $(document).ready(function() {
   var tasks = [];
-  var count = 1;
 
   var addButton = $('#addButton');
   addButton.on('click', addTaskToList);
@@ -16,44 +15,55 @@ $(document).ready(function() {
     var input = document.getElementById('task');
     if (!input.value) return;
     var task = {
-      number: count,
+      number: tasks.length + 1,
       name: input.value
     };
-    count++;
-    tasks.push(task);
 
+    tasks.push(task);
 
     var li = document.createElement('li');
     $(li).addClass('wrapper__task');
     list.appendChild(li);
     li.innerHTML = task.number + ". " + input.value;
-
     input.value = "";
+    $(li).append(addCross());
     enableSorting();
     showLog();
 
+  }
 
+  function addCross(){
+    var span = document.createElement('span');
+    $(span).addClass('wrapper__task__cross');
+    span.innerHTML = 'X';
 
-    $(li).hover(
+    $(span).on("click", removeTask);
+
+    $(span).hover(
       function() {
-        var span = document.createElement('span');
-        $(span).addClass('wrapper__task__cross');
-        span.innerHTML = 'X';
-        $(this).append($(span));
-        $(span).on("click", removeTask);
-
+        $(this).parent().css('color', 'red');
       },
       function() {
-        $(this).find("span:last").remove();
+        $(this).parent().css('color', 'black');
       }
     );
 
+    return span;
   }
 
   function removeTask() {
     var indexLi = $(this).parent().index();
     tasks.splice(indexLi, 1);
     $(this).parent().remove();
+    var listitems = $(list).children('li').get();
+
+    $.each(listitems, function(index) {
+      if (tasks[index].number <= indexLi) return;
+      tasks[index].number--;
+      listitems[index].innerHTML = tasks[index].number + '. ' + tasks[index].name;
+      listitems[index].append(addCross());
+
+    });
     enableSorting();
     showLog();
   }
@@ -75,7 +85,7 @@ $(document).ready(function() {
     text.data = list.state == 1 ? "Sort By Task Number" : "Sort By Task Name";
   }
 
-  function toggleListState(){
+  function toggleListState() {
     list.state = list.state == 0 ? 1 : 0;
   }
 
@@ -85,20 +95,18 @@ $(document).ready(function() {
     toggleText();
 
     var listitems = $(list).children('li').get();
-    (!list.state) ? tasks.sort(compareNumber) : tasks.sort(compareName);
+    (!list.state) ? tasks.sort(compareNumber): tasks.sort(compareName);
 
     $.each(listitems, function(index) {
       listitems[index].innerHTML = tasks[index].number + '. ' + tasks[index].name;
+      listitems[index].append(addCross());
+
     });
     showLog();
   }
 
   function compareNumber(a, b) {
-    if (a.number < b.number)
-      return -1;
-    if (a.number > b.number)
-      return 1;
-    return 0;
+    return a.number - b.number;
   }
 
   function compareName(a, b) {
