@@ -12,10 +12,8 @@ a {
 
   box-sizing: border-box;
   -webkit-box-shadow: inset 28px 0px 78px -52px rgba(0,0,0,0.75);
--moz-box-shadow: inset 28px 0px 78px -52px rgba(0,0,0,0.75);
-box-shadow: inset 28px 0px 78px -52px rgba(0,0,0,0.75);
-
-
+  -moz-box-shadow: inset 28px 0px 78px -52px rgba(0,0,0,0.75);
+  box-shadow: inset 28px 0px 78px -52px rgba(0,0,0,0.75);
 }
 
 embed {
