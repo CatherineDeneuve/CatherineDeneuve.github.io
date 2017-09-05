@@ -6,14 +6,16 @@ a {
   float: right;
   width: 79%;
   height: 100vh;
-  padding-left: 100px;
+  padding-left: 10%;
   background: url('../images/pattern.png') no-repeat, url('../images/pattern2.png') right center no-repeat;
   background-size: auto 100%;
 
   box-sizing: border-box;
   -webkit-box-shadow: inset 28px 0px 78px -52px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 28px 0px 78px -52px rgba(0,0,0,0.75);
-  box-shadow: inset 28px 0px 78px -52px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 28px 0px 78px -52px rgba(0,0,0,0.75);
+box-shadow: inset 28px 0px 78px -52px rgba(0,0,0,0.75);
+
+
 }
 
 embed {
@@ -145,12 +147,12 @@ a.active{
 }
 
 #docZone {
-  position: relative;
+  /*position: relative;
 	bottom: 0;
   left: 0;
-  margin-top: 40px;
+  margin-top: 40px;*/
 	/*margin-left: 80px;*/
-  height: 20%;
+  /*height: 20%;*/
 }
 
 #docDiv {
