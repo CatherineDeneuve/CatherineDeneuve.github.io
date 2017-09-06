@@ -9,8 +9,8 @@ $(document).ready(function() {
 		var content = link.import.querySelector('#intro');
 
 		var div = $('.lr_div')[0];
-		var docZone = $('#docZone');
-		docZone.css("display", "none");
+		/*var docZone = $('#docZone');
+		docZone.css("display", "none");*/
 		$(div).empty();
 		div.appendChild(content.cloneNode(true));
 	}
@@ -19,6 +19,7 @@ $(document).ready(function() {
     e.preventDefault();
     $('.menu .active').removeClass('active');
     $(this).addClass('active');
+
 
   });
 
@@ -49,7 +50,9 @@ $(document).ready(function() {
 
   $('.menu li').click(function() {
     $('.menu li').removeClass('highlighted');
+    $('.menu li a').addClass('usual');
     $(this).addClass('highlighted');
+      $('.arrow').css("display", "inline-block");
     var indLi = $('.menu li').index($(this));
     var link = $('link[rel="import"]')[indLi];
     var content = link.import.querySelector('.lr_text');
