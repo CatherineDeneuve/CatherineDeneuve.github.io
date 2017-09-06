@@ -4,7 +4,7 @@ a {
 
 .view_screen {
     float: right;
-    width: 79%;
+    width: 85%;
     height: 100vh;
     padding-left: 8%;
     padding-right: 4%;
@@ -56,6 +56,39 @@ embed {
     color: #000;
 }
 
+table {
+    border-collapse: collapse;
+    border: 1px solid  #D3D3D3;
+    width: auto;
+    /*table-layout: fixed;*/
+
+}
+
+tr {
+    border: none;
+
+}
+th {
+    border: 1px solid  #D3D3D3;
+    height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+td {
+    border-right: 1px solid  #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+}
+
+tr:hover {
+    background-color: #D3D3D3;
+}
+
+th, td {
+    padding: 5px 5px 5px 10px;
+}
+
 .lr_text .topic {
     font-weight: 600;
 
@@ -81,10 +114,33 @@ embed {
     font-size: 24px;
     padding-left: 0;
     color: #000;
+    line-height: 0.5;
+}
+
+.header a {
+    line-height: 1;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header a:hover {
     color: #9cd10e;
+    cursor: default;
+}
+
+.head {
+    display: inline-block;
+    width: 80%;
+}
+
+.decor_head{
+    font-family: 'Open Sans', sans-serif;
+    width: 5%;
+    display: inline-block;
+    color: #9cd10e;
+    font-size: 80px;
+    font-weight: 100;
 }
 
 .menu a {
@@ -95,10 +151,18 @@ embed {
 
 .sidebar {
     float: left;
-    width: 21%;
+    width: 15%;
     height: 100%;
 
 }
+
+.arrow {
+    display: none;
+}
+
+
+
+
 
 .menu li {
     font-family: 'neosanspro-regular', sans-serif;
@@ -110,8 +174,17 @@ embed {
 
 }
 
+.menu a:hover {
+    cursor: default;
+}
+
 .menu li:not(.highlighted):hover {
     background-color: #f2fadd;
+
+}
+
+.menu li:not(.highlighted):hover a{
+    color: #9cd10e;
 }
 
 .menu li:not(.header) a {
@@ -119,10 +192,7 @@ embed {
     line-height: 50px;
 }
 
-.header a {
-    line-height: 30px;
-    color: #000;
-}
+
 
 .highlighted {
     background-color: #9cd10e;

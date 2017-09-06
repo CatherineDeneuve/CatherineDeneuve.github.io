@@ -36,14 +36,14 @@ $(document).ready(function() {
     div.appendChild(objectPdf);
   });
 
-  function highlight() {
+  /*function highlight() {
     $('li').hover(function() {
       $(this).addClass('hover');
     }, function() {
       $(this).removeClass('hover');
     });
   }
-  highlight();
+  highlight();*/
 
 
 
@@ -57,9 +57,7 @@ $(document).ready(function() {
     var div = $('.lr_div')[0];
     $(div).empty();
     div.appendChild(content.cloneNode(true));
-    var docZone = $('#docZone');    
-    $('#doc').prop('href', 'files/lr' + (indLi + 1) + '.docx');
-    docZone.css("display", "block");
+
   });
 
   $('.header').click(function() {
