@@ -8,4 +8,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'opensans-light';
+    src: url('../fonts/OPENSANS/OPENSANS-LIGHT.eot');
+    src: url('../fonts/OPENSANS/OPENSANS-LIGHT.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OPENSANS/OPENSANS-LIGHT.woff') format('woff'),
+    url('../fonts/OPENSANS/OPENSANS-LIGHT.woff2') format('woff'),
+    url('../fonts/OPENSANS/OPENSANS-LIGHT.svg') format('woff'),
+    url('../fonts/OPENSANS/OPENSANS-LIGHT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
