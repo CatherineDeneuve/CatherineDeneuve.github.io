@@ -20,4 +20,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'neosanspro-medium';
+    src: url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.eot');
+    src: url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.woff') format('woff'),
+    url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.woff2') format('woff2'),
+    url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.svg') format('woff'),
+    url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
