@@ -10,7 +10,6 @@ a {
     background: url('../images/pattern.png') no-repeat, url('../images/pattern2.png') right center no-repeat;
     background-size: auto 100%;
 
-    /*box-sizing: border-box;*/
     -webkit-box-shadow: inset 28px 0px 78px -52px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 28px 0px 78px -52px rgba(0, 0, 0, 0.75);
     box-shadow: inset 28px 0px 78px -52px rgba(0, 0, 0, 0.75);
@@ -21,8 +20,6 @@ embed {
     width: 100%;
     height: 96%;
 }
-
-
 
 
 #style-2::-webkit-scrollbar-track {
@@ -136,7 +133,6 @@ embed {
 
 .header {
     display: table;
-
     margin-bottom: 20px;
     padding-top: 0;
     text-align: center;
@@ -179,8 +175,7 @@ embed {
 }
 
 .menu {
-    position: relative;
-    height: 100vh;
+   height: 100%;
 }
 
 .menu a {
@@ -191,7 +186,16 @@ embed {
 .sidebar {
     float: left;
     width: 300px;
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
     height: 100%;
+    width: 300px;
+    top: 0;
+    left: 0;
+
 }
 
 .arrow {
@@ -202,11 +206,11 @@ embed {
     width: 10px;
     height: 15px;
     background: url('../images/sprite.png') -30px -58px no-repeat;
-
 }
 
 .menu li:not(.highlighted):hover .arrow{
     background: url('../images/sprite.png') -20px -58px no-repeat;
+
 }
 
 .menu li {
@@ -220,14 +224,17 @@ embed {
     font-size: 16px;
     box-sizing: border-box;
     width: 100%;
+
 }
 
 .menu a:hover {
     cursor: default;
+
 }
 
 .menu li:not(.highlighted):hover {
     background-color: #f2fadd;
+    font-weight: bolder;
 }
 
 .menu li:not(.highlighted):hover a {
@@ -256,14 +263,19 @@ embed {
 }
 
 .dopmat {
+    box-sizing: border-box;
     padding-left: 15%;
-    position: absolute;
-    bottom: 60px;
+
+    width: 100%;
+
+
 }
 
 .dopmat a {
     color: #ABABAB;
     font-size: 18px;
+    vertical-align: bottom;
+
 }
 
 /*iframe {

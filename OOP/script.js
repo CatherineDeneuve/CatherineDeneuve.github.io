@@ -1,8 +1,11 @@
 $(document).ready(function () {
 
+    window.addEventListener('WebComponentsReady', function () {
+        showIntro();
+    });
+
     // $('img[src*="fiot_ukr_blue.png"]').fadeIn(6000);
 
-    showIntro();
 
     function showIntro() {
         var link = $('link[href="pages/intro.html"]')[0];
